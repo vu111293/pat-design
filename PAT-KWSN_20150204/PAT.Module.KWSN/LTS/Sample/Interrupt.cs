@@ -1,0 +1,146 @@
+﻿using System.Collections.Generic;
+using PAT.Common.Classes.Expressions;
+using PAT.Common.Classes.Expressions.ExpressionClass;
+using PAT.Common.Classes.Ultility;
+using PAT.Common.Classes.ModuleInterface;
+using PAT.KWSN.Assertions;
+
+namespace PAT.KWSN.LTS{
+   public sealed class Interrupt : Process
+    {
+        public Process FirstProcess;
+        public Process SecondProcess;
+
+        public Interrupt(Process firstProcess, Process secondProcess)
+        {
+            FirstProcess = firstProcess;
+            SecondProcess = secondProcess;
+            ProcessID = DataStore.DataManager.InitializeProcessID(FirstProcess.ProcessID + Constants.INTERRUPT + SecondProcess.ProcessID);
+        }
+
+        public override void MoveOneStep(Valuation GlobalEnv, List<Configuration> list)
+        {
+            System.Diagnostics.Debug.Assert(list.Count == 0);
+
+            FirstProcess.MoveOneStep(GlobalEnv, list);
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                Configuration step = list[i];
+                if (step.Event != Constants.TERMINATION)
+                {
+                    Interrupt inter = new Interrupt(step.Process, SecondProcess);
+                    step.Process = inter;
+                }      
+            }
+
+            List<Configuration> list2 = new List<Configuration>();
+            SecondProcess.MoveOneStep(GlobalEnv, list2);
+            for (int i = 0; i < list2.Count; i++)
+            {
+                Configuration step = list2[i];
+                if (step.Event == Constants.TAU)
+                {
+                    Interrupt inter = new Interrupt(FirstProcess, step.Process);
+
+                    step.Process = inter;
+                }
+
+                list.Add(step);
+            }
+
+            //return returnList;
+        }
+
+        public override void SyncOutput(Valuation GlobalEnv, List<ConfigurationWithChannelData> list)
+        {
+            FirstProcess.SyncOutput(GlobalEnv, list);
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                Configuration step = list[i];
+                if (step.Event != Constants.TERMINATION)
+                {
+                    Interrupt inter = new Interrupt(step.Process, SecondProcess);
+                    step.Process = inter;
+                } 
+            }
+
+            SecondProcess.SyncOutput(GlobalEnv, list);
+
+            //return returnList;
+        }
+
+        public override void SyncInput(ConfigurationWithChannelData eStep, List<Configuration> list)
+        {
+            //List<Configuration> returnList = new List<Configuration>();
+            //List<Configuration> list1 = new List<Configuration>();
+            FirstProcess.SyncInput(eStep, list);
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                Configuration step = list[i];
+
+                if (step.Event != Constants.TERMINATION)
+                {
+                    Interrupt inter = new Interrupt(step.Process, SecondProcess);
+                    step.Process = inter;
+                }
+                //list.Add(list1[i]); 
+                list[i] = step;
+            }
+
+            SecondProcess.SyncInput(eStep, list);
+            //list1 = 
+            //for (int i = 0; i < list1.Count; i++)
+            //{
+            //    list.Add(list1[i]);
+            //}
+
+            //return returnList;
+        }
+
+        public override List<string> GetGlobalVariables()
+        {
+            List<string> Variables = FirstProcess.GetGlobalVariables();
+            Common.Classes.Ultility.Ultility.AddList<string>(Variables, SecondProcess.GetGlobalVariables());
+
+            return Variables;
+        }
+
+        public override List<string> GetChannels()
+        {
+            List<string> channel = FirstProcess.GetChannels();
+            Common.Classes.Ultility.Ultility.AddList<string>(channel, SecondProcess.GetChannels());
+
+            return channel;
+        }
+
+        public override string ToString()
+        {
+            return "(" + FirstProcess.ToString() + "interrupt" + SecondProcess.ToString() + ")";
+        }
+
+        public override HashSet<string> GetAlphabets(Dictionary<string, string> visitedDefinitionRefs)
+        {
+            HashSet<string> list = SecondProcess.GetAlphabets(visitedDefinitionRefs);
+            list.UnionWith(FirstProcess.GetAlphabets(visitedDefinitionRefs));
+            return list;
+        }
+
+        public override Process ClearConstant(Dictionary<string, Expression> constMapping)
+        {
+            return new Interrupt(FirstProcess.ClearConstant(constMapping), SecondProcess.ClearConstant(constMapping));
+        }
+
+        public override bool MustBeAbstracted()
+        {
+            return FirstProcess.MustBeAbstracted() || SecondProcess.MustBeAbstracted();
+        }
+
+        public override bool IsBDDEncodable()
+        {
+            return FirstProcess.IsBDDEncodable() && SecondProcess.IsBDDEncodable();
+        }
+    }
+}

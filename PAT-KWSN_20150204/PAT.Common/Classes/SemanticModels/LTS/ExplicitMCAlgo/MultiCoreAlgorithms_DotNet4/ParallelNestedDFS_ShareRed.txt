@@ -1,0 +1,75 @@
+localBlueDFS(i){
+	add permutation(initialStates)[i] to blueStack[i]
+	while (blueStack[i].Count > 0){
+		if (globalStop) return
+		v = blueStack[i].Peek()
+		if (v.color[i] = white){
+			v.color[i] = cyan
+			for (all w in successors(v)){
+				if (w.color[i] = cyan & (v is accepting || w is accepting){
+					report counterexample
+					return
+				}
+			}
+		}
+		blueDone = true;
+		for (all w in permutation(successors(v))[i]){
+			if (w.color[i] = white & w.globalRed = false){
+				blueStack[i].Push(w)
+				blueDone = false
+				break
+			}
+		}
+		if (blueDone){
+			if (v is deadlock & v is accepting){
+				report counterexample
+				return
+			}
+			if (all w in successors(v) already globalRed){
+				v.globalRed = true
+			}
+			else if (v is accepting){
+				v.count = v.count + 1
+				localStop = localRedDFS(v, i)
+				if (localStop){
+					return
+				}
+			}
+			v.color[i] = blue
+			blueStack.Pop()
+		}
+	}
+}
+
+localFDSRed(acceptingState, i){
+	add acceptingState to redStack[i]
+	while (redStack[i].Count > 0){
+		if (globalStop) return
+		v = redStack[i].Peek()
+		if (v.color[i] != pink){
+			v.color[i] = pink
+			for (all w in successors(v)){
+				if (w.color[i] = cyan){
+					report counterexample
+					return
+				}
+			}
+		}
+		redDone = true
+		for (all w in permutation(successors(v))[i]){
+			if (w.color[i] != pink & v.globalRed = false){
+				redStack.Push(w)
+				redDone = false
+				break
+			}
+		}
+		if (redDone){
+			if (v is accepting){
+				v.count = v.count - 1
+				wait(v.count = 0)
+			}
+			v.globalRed = true
+			redStack.Pop()
+		}
+	}
+}

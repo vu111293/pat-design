@@ -1,0 +1,79 @@
+localBlueDFS(i){
+	add permutation(initialStates)[i] to blueStack[i]
+	while (blueStack[i].Count > 0){
+		if (globalStop) return
+		v = blueStack[i].Peek()
+		if (v.cyan[i] = false){
+			v.cyan[i] = true
+			for (all w in successors(v)){
+				if (w.cyan[i] = true & (v is accepting || w is accepting){
+					report counterexample
+					return
+				}
+			}
+		}
+		blueDone = true;
+		for (all w in permutation(successors(v))[i]){
+			if (!w.cyan[i] & w.globalBlue = false){
+				blueStack[i].Push(w)
+				blueDone = false
+				break
+			}
+		}
+		if (blueDone){
+			v.globalBlue = true
+			if (v is deadlock & v is accepting){
+				report counterexample
+				return
+			}
+			if (all w in successors(v) already globalRed){
+				v.globalRed = true
+			}
+			else if (v is accepting){
+				R = {}
+				localStop = localRedDFS(v, R, i)
+				if (localStop){
+					return
+				}
+			}
+			for (all s in R){
+				if (s is accepting & s != v){
+					wait(s globalRed)
+				}
+			}
+			for (all s in R){
+				s.globalRed = true
+			}
+			v.cyan[i] = false
+			blueStack.Pop()
+		}
+	}
+}
+
+localFDSRed(acceptingState, R, i){
+	add acceptingState to redStack[i]
+	while (redStack[i].Count > 0){
+		if (globalStop) return
+		v = redStack[i].Peek()
+		if (v not in R){
+			R = R U {v}
+			for (all w in successors(v)){
+				if (w.cyan[i]){
+					report counterexample
+					return
+				}
+			}
+		}
+		redDone = true
+		for (all w in permutation(successors(v))[i]){
+			if (w not in R & v.globalRed = false){
+				redStack.Push(w)
+				redDone = false
+				break
+			}
+		}
+		if (redDone){
+			redStack.Pop()
+		}
+	}
+}

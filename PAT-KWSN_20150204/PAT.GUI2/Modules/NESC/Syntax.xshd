@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<SyntaxDefinition name ="NESC Model" extensions = ".sn">
+
+  <Environment>
+    <Custom name="TypeReference" bold="false" italic="false" color="Black" />
+    <Custom name="UnknownEntity" bold="false" italic="false" color="Black" />
+  </Environment>
+
+  <Properties>
+    <Property name="LineComment" value="//"/>
+  </Properties>
+
+  <Digits name ="Digits" bold ="false" italic ="false" color ="DarkBlue"/>
+
+  <RuleSets>
+    <RuleSet ignorecase = "false">
+      <Delimiters>&amp;&lt;&gt;~!%^*()-+=|\#/{}:;"' ,	.?</Delimiters>
+
+      <Span name ="LineComment" bold ="false" italic ="false" color ="Green" stopateol ="true">
+        <Begin>//</Begin>
+      </Span>
+
+
+      <Span name ="BlockComment" bold ="false" italic ="false" color ="Green" stopateol ="false">
+        <Begin>/*</Begin>
+        <End>*/</End>
+      </Span>
+
+      <Span name ="String" bold ="false" italic ="false" color ="Black" stopateol ="false" escapecharacter="\">
+        <Begin>&quot;</Begin>
+        <End>&quot;</End>
+      </Span>
+
+      <Span name = "Character" bold = "false" italic = "false" color = "Sienna" stopateol = "true" escapecharacter="\">
+        <Begin>&apos;</Begin>
+        <End>&apos;</End>
+      </Span>
+
+      <Span name = "Assertion" rule = "AssertionRuleSet" bold = "false" italic = "false" color = "Black" stopateol = "true">
+        <Begin color="Blue">assert</Begin>
+        <End color="Black">;</End>
+      </Span>
+
+      <!-- <MarkPrevious bold = "true" italic = "false" color = "MidnightBlue">(</MarkPrevious> -->
+
+      <KeyWords name = "Punctuation" bold = "false" italic = "false" color = "Red">
+        <Key word = "?" description=""/>
+        <Key word = "+" description=""/>
+        <Key word = "-" description=""/>
+        <Key word = "/" description=""/>
+        <Key word = "%" description=""/>
+        <Key word = "*" description=""/>
+        <Key word = "^" description=""/>
+        <Key word = "=" description=""/>
+        <Key word = "~" description=""/>
+        <Key word = "!" description=""/>
+        <Key word = "|" description=""/>
+        <Key word = "&amp;" description=""/>
+        <Key word = "#" description=""/>
+        <Key word = ">" description=""/>
+        <Key word = "&lt;" description=""/>
+        <Key word = "[]" description=""/>
+        <Key word ="{" description =""/>
+        <Key word ="}" description=""/>
+        <Key word="(" description=""/>
+        <Key word=")" description=""/>
+      </KeyWords>
+
+
+      <KeyWords name ="NesCKeyWords" bold="false" italic = "false" color = "Blue">
+        <Key word = "include" description=""/>
+        <Key word = "configuration" description="define a configuration"/>
+        <Key word = "implementation" description="implementing a component"/>
+        <Key word = "generic" description="define a generic component"/>
+        <Key word = "interface" description="define an interface"/>
+        <Key word = "module" description="define a module"/>
+        <Key word = "uses" description="to use an interface"/>
+        <Key word = "provides" description="to provide an interface"/>
+        <Key word= "as" description="alias of interfaces/components"/>
+        <Key word= "event" description="define an event"/>
+        <Key word="command" description="define a command"/>
+        <Key word="task" description="define a task"/>
+        <Key word="return" description="return"/>
+        <Key word="signal" description=""/>
+        <Key word="call" description=""/>
+        <Key word="post" description=""/>
+        <Key word="components" description=""/>
+        <Key word="if" description=""/>
+        <Key word="else" description=""/>
+        <Key word="for" description=""/>
+        <Key word="do" description=""/>
+        <Key word="while" description=""/>
+        <Key word="struct" description=""/>
+        <Key word="new" description=""/>
+        <Key word="define" description=""/>
+      </KeyWords>
+      
+      <KeyWords name="NesC Data Type" bold="true" italic="false" color="MidnightBlue">
+        <Key word="void" description="" />
+        <Key word="int" description="" />
+        <Key word="uint8_t" description="" />
+        <Key word="uint16_t" description="" />
+        <Key word="uint32_t" description="" />
+        <Key word="uint64_t" description="" />
+        <Key word="int8_t" description="" />
+        <Key word="int16_t" description="" />
+        <Key word="int32_t" description="" />
+        <Key word="int64_t" description="" />
+        <Key word="bool" description="" />
+        <Key word="message_t" description="" />
+        <Key word="error_t" description="" />
+        <Key word="typedef" description=""/>
+        <Key word="TMilli" description=""/>
+      </KeyWords>
+
+      <KeyWords name="NesC Constant" bold="true" italic="false" color="Blue">
+        <Key word="NULL" description="" />
+        <Key word="null" description="" />
+        <Key word="TRUE" description="" />
+        <Key word="true" description="" />
+        <Key word="FALSE" description="" />
+        <Key word="false" description="" />
+        <Key word="SUCCESS" description="" />
+        <Key word="success" description="" />
+      </KeyWords>
+
+    </RuleSet>
+
+    <RuleSet name = "AssertionRuleSet" ignorecase="false">
+
+      <Span name ="String" bold ="false" italic ="false" color ="Green" stopateol ="false" escapecharacter="\">
+        <Begin>&quot;</Begin>
+        <End>&quot;</End>
+      </Span>
+
+      <Delimiters>&amp;~!%^*()+|\#/{}:;"' ,	.?</Delimiters>
+
+      <!-- <MarkPrevious bold = "true" italic = "false" color = "MidnightBlue">(</MarkPrevious> -->
+
+      <KeyWords name = "Operators" bold="true" italic="false" color="Red">
+        <Key word = "|=" description=""/>
+        <Key word = "=" description=""/>
+        <Key word = "|" description=""/>
+        <Key word = "&amp;" description=""/>
+        <Key word = "[]" description=""/>
+        <Key word = "&lt;>" description=""/>
+        <Key word = "&lt;>[]" description=""/>
+        <Key word = "[]&lt;>" description=""/>
+        <Key word = "-" description=""/>
+        <Key word = "->" description=""/>
+        <Key word = ">" description=""/>
+        <Key word = "R" description=""/>
+        <Key word = "G" description=""/>
+        <Key word = "F" description=""/>
+        <Key word = "X" description=""/>
+        <Key word = "V" description=""/>
+        <Key word = "U" description=""/>
+      </KeyWords>
+
+      <KeyWords name ="KeyWords" bold="false" italic = "false" color = "Blue">
+
+        <Key word =  "assert" description="assert a model satisfies a propery." />
+        <Key word =  "define" description="define a proposition or a constant."/>
+        <Key word =  "true" description="true constant"/>
+        <Key word =  "false" description="false constant"/>
+        <Key word =  "init" description="special event denoting system initialization."/>
+        <Key word =  "tau" description="special event denoting an invisible event."/>
+        <Key word =  "with" description="keyword used with reachability checking: #assert P() reaches goal with min(weight);"/>
+        <Key word =  "min" description="keyword used with reachability checking: #assert P() reaches goal with min(weight);"/>
+        <Key word =  "max" description="keyword used with reachability checking: #assert P() reaches goal with max(weight);"/>
+        <Key word =  "never" description="keyword used for safety property checking;"/>
+        <Key word =  "ArrayIndexOverflow" description="keyword used for safety property checking;"/>
+        <Key word =  "NullPointerAccess" description="keyword used for safety property checking;"/>
+        <Key word =  "Terminates" description="keyword used for safety property checking;"/>
+      </KeyWords>
+
+      <KeyWords name ="Process" bold="true" italic = "false" color = "MidnightBlue">
+        <Key word =  "SensorNetwork" description="default reference for the nesC application"/>
+      </KeyWords>
+
+    </RuleSet> 
+
+	</RuleSets>
+	
+</SyntaxDefinition>
+

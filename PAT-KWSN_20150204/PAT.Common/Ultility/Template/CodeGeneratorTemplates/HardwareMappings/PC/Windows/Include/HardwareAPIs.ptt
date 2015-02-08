@@ -1,0 +1,6 @@
+#ifndef HARDWARE_API
+#define HARDWARE_API
+
+void LCD_blink(int option);
+
+#endif

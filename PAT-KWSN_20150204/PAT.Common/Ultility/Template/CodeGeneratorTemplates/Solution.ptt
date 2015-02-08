@@ -1,0 +1,21 @@
+﻿<#@ template language="C#" debug="False" hostspecific="true" #>
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "<# Write(this.Host.ResolveParameterValue("","","ProjectName"));#>", "<# Write(this.Host.ResolveParameterValue("","","ProjectName"));#>.vcxproj", "{88563844-B8F4-4089-B447-9D9E7F422938}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88563844-B8F4-4089-B447-9D9E7F422938}.Debug|Win32.ActiveCfg = Debug|Win32
+		{88563844-B8F4-4089-B447-9D9E7F422938}.Debug|Win32.Build.0 = Debug|Win32
+		{88563844-B8F4-4089-B447-9D9E7F422938}.Release|Win32.ActiveCfg = Release|Win32
+		{88563844-B8F4-4089-B447-9D9E7F422938}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

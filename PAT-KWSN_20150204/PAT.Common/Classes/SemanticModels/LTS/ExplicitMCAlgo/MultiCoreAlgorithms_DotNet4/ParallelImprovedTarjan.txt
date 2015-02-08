@@ -1,0 +1,55 @@
+ParallelImprovedTarjan(i){
+	number = 0
+	add permutation(initialStates)[i] to callStack[i]
+	while (callStack[i].Count > 0){
+		if (globalStop) return
+		v = callStack[i].Peek()
+		if (v.number[i] = NOT_VISITED){
+			v.number[i] = number
+			number = number + 1
+			currentStack.Push(v)
+			if (v is accepting){
+				goalStack.Push(v)
+			}
+			for (all w in successors(v)){
+				if (w in currentStack[i]){
+					v.lowlink[i] = Min(v.lowlink[i], w.number[i])
+					if (goalStack.Count > 0 & v.lowlink[i] <= goalStack.Peek().number[i]){
+						report counterexample
+						return
+					}
+				}
+			}
+		}
+		complete = true;
+		for (all w in permutation(successors(v))[i]){
+			if (w.number[i] = NOT_VISITED & w.globalSCCFound = false){
+				callStack[i].Push(w)
+				complete = false
+				break
+			}
+		}
+		if (complete){
+			if (v is deadlock & v is accepting){
+				report counterexample
+				return
+			}
+			if (w.number[i] = v.lowlink[i]){
+				while(v != currentStack.Peek()){
+					tmp = currentStack.Pop()
+					tmp.number[i] = SCC_FOUND
+					tmp.globalSCCFound = true
+				}
+				currentStack.Pop()
+				tmp.number[i] = SCC_FOUND
+				tmp.globalSCCFound = true
+				callStack.Pop()
+			}
+			else{
+				pop = callStack.Pop()
+				top = callStack.Peek()
+				top.lowlink[i] = Min(top.lowlink[i], pop.lowlink[i])
+			}
+		}
+	}
+}

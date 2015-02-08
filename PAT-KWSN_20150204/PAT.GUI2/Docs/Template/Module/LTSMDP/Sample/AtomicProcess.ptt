@@ -1,0 +1,114 @@
+﻿<#@ template language="C#" debug="False" hostspecific="true" #>
+using System.Collections.Generic;
+using PAT.Common.Classes.Expressions.ExpressionClass;
+using PAT.Common.Classes.Ultility;
+using <# Write(this.Host.ResolveParameterValue("","","AssertionsNamespace")); #>;
+
+namespace <# Write(this.Host.ResolveParameterValue("","","LTSNamespace")); #>
+{
+    public sealed class AtomicProcess : Process
+    {
+        public Process Process;
+        public bool Started;
+
+        public AtomicProcess(Process process, bool started)
+        {
+            if (process is AtomicProcess)
+            {
+                Process = (process as AtomicProcess).Process;
+            }
+            else
+            {
+                Process = process;
+            }
+
+            Started = started;
+            if(started)
+            {
+                ProcessID = DataStore.DataManager.InitializeProcessID(Constants.ATOMIC_STARTED + Process.ProcessID);    
+            }
+            else
+            {
+                ProcessID = DataStore.DataManager.InitializeProcessID(Constants.ATOMIC_NOTSTARTED + Process.ProcessID);    
+            }
+            
+        }
+
+        public override List<Configuration> MoveOneStep(Configuration eStep)
+        {
+            List<Configuration> next = Process.MoveOneStep(eStep);
+
+            foreach (Configuration configuration in next)
+            {
+                configuration.Process = new AtomicProcess(configuration.Process, true);
+                configuration.IsAtomic = Started;
+            }
+
+            return next;
+        }
+
+        public override Process ClearConstant(Dictionary<string, Expression> constMapping)
+        {
+            return new AtomicProcess(Process.ClearConstant(constMapping), Started);
+        }
+
+        public override List<ConfigurationWithChannelData> SyncOutput(Configuration eStep)
+        {
+            List<ConfigurationWithChannelData> steps = Process.SyncOutput(eStep);
+            foreach (ConfigurationWithChannelData step in steps)
+            {
+                step.Process = new AtomicProcess(step.Process, true);
+                step.IsAtomic = Started;
+            }
+
+            return steps;
+        }
+
+        public override List<Configuration> SyncInput(ConfigurationWithChannelData eStep)
+        {
+            List<Configuration> returnlist = Process.SyncInput(eStep);
+            for (int i = 0; i < returnlist.Count; i++)
+            {
+                returnlist[i].Process = new AtomicProcess(returnlist[i].Process, true);
+                returnlist[i].IsAtomic = Started;
+            }
+
+            return returnlist;
+        }
+
+        public override string ToString()
+        {
+            return "atomic{" + Process + "}";
+        }
+
+        public override HashSet<string> GetAlphabets(Dictionary<string, string> visitedDefinitionRefs)
+        {
+            return Process.GetAlphabets(visitedDefinitionRefs);
+        }
+
+        public override List<string> GetGlobalVariables()
+        {
+            return Process.GetGlobalVariables();
+        }
+
+        public override List<string> GetChannels()
+        {
+            return Process.GetChannels();
+        }
+
+        public override bool MustBeAbstracted()
+        {
+            return Process.MustBeAbstracted();
+        }
+
+        public override bool IsProbabilistic()
+        {
+            return Process.IsProbabilistic();
+        }
+
+        public override Process GetTopLevelConcurrency(List<string> visitedDef)
+        {
+            return Process.GetTopLevelConcurrency(visitedDef);
+        }
+    }
+}

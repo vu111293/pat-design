@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<SyntaxDefinition name ="Security Model" extensions = ".sec">
+
+  <Environment>
+    <Custom name="TypeReference" bold="false" italic="false" color="Black" />
+    <Custom name="UnknownEntity" bold="false" italic="false" color="Black" />
+  </Environment>
+
+  <Properties>
+    <Property name="LineComment" value="//"/>
+  </Properties>
+
+  <Digits name ="Digits" bold ="false" italic ="false" color ="DarkBlue"/>
+
+  <RuleSets>
+    <RuleSet ignorecase = "false">
+      <Delimiters>&amp;&lt;&gt;~!%^*()-+=|\#/{}:;"' ,	.?</Delimiters>
+
+      <Span name ="LineComment" bold ="false" italic ="false" color ="Green" stopateol ="true">
+        <Begin>//</Begin>
+      </Span>
+
+
+      <Span name ="BlockComment" bold ="false" italic ="false" color ="Green" stopateol ="false">
+        <Begin>/*</Begin>
+        <End>*/</End>
+      </Span>
+
+      <Span name ="String" bold ="false" italic ="false" color ="Green" stopateol ="false" escapecharacter="\">
+        <Begin>&quot;</Begin>
+        <End>&quot;</End>
+      </Span>
+
+      <Span name = "Character" bold = "false" italic = "false" color = "Sienna" stopateol = "true" escapecharacter="\">
+        <Begin>&apos;</Begin>
+        <End>&apos;</End>
+      </Span>
+
+      <Span name = "Assertion" rule = "AssertionRuleSet" bold = "false" italic = "false" color = "Black" stopateol = "false">
+        <Begin color="Blue">#assert</Begin>
+        <End color="Black">;</End>
+      </Span>
+
+      <MarkPrevious bold = "true" italic = "false" color = "MidnightBlue">(</MarkPrevious>
+
+      <KeyWords name = "Punctuation" bold = "false" italic = "false" color = "Red">
+        <Key word = "?" description=""/>
+        <Key word = "+" description=""/>
+        <Key word = "-" description=""/>
+        <Key word = "/" description=""/>
+        <Key word = "%" description=""/>
+        <Key word = "*" description=""/>
+        <Key word = "^" description=""/>
+        <Key word = "=" description=""/>
+        <Key word = "~" description=""/>
+        <Key word = "!" description=""/>
+        <Key word = "|" description=""/>
+        <Key word = "&amp;" description=""/>
+        <Key word = "#" description=""/>
+        <Key word = ">" description=""/>
+        <Key word = "&lt;" description=""/>
+        <Key word = "[" description=""/>
+        <Key word = "]" description=""/>
+      </KeyWords>
+
+
+      <KeyWords name ="SECKeyWords" bold="false" italic = "false" color = "Blue">
+        <Key word =  "import" description=""/>
+        <Key word =  "Variables" description="Variable declare used in protocol."/>
+        <Key word =  "Initial" description="Initial description of knowledge."/>
+        <Key word =  "knows" description="agent knows knowledge."/>
+        <Key word =  "Protocol_description" description="the description of the protocol."/>
+        <Key word =  "System" description="Actual system description."/>
+        <Key word =  "Initiator" description="define the initiator of the protocol."/>
+        <Key word =  "Responder" description="define the responder of the protocol."/>
+        <Key word =  "Intruder" description="define the intruder of the protocol."/>
+        <Key word =  "Intruder_knowledge" description="define the intruder_knowledge."/>
+        <Key word =  "Verification" description="Verification part of the protocol"/>
+        <Key word =  "Data_secrecy" description="Declare the secrecy properties want to check"/>
+        <Key word =  "Agent_authentication" description="Declare the authentication properties want to check"/>
+        <Key word =  "is authenticated with" description="authentication words"/>
+        <Key word =  "using" description="authentication words"/>
+        <Key word =  "Agents" description="define the agents name"/>
+        <Key word =  "Servers" description="define the server name"/>
+        <Key word =  "Nonces" description="define the nonces"/>
+        <Key word =  "Public_keys" description="Define the public keys in the protocol"/>
+        <Key word =  "of" description="of someone."/>
+        <Key word =  "is_authenticated_with" description="is authenticated with."/>
+        <Key word =  "Timestamps" description="Define the timestamps."/>
+        <Key word =  "Intruder_ability" description="section defines the ability of intruder."/>
+        <Key word =  "Transmit" description="Intruder has the transmit ability"/>
+        <Key word =  "Inject" description="Intruder has the inject ability"/>
+        <Key word =  "Deflect" description="Intruder has the deflect ability"/>
+        <Key word =  "Eavesdrop" description="Intruder has the eavesdrop ability"/>
+        <Key word =  "Jam" description="Intruder has the jam ability"/>
+        <Key word =  "Time_allow" description="The time allow for the agent accept a message"/>
+        <Key word =  "Repeat" description="The number of repeat times in transaction."/>
+        <Key word =  "Server" description="The server of the protocol;"/>
+        <Key word =  "Server_keys" />
+        <Key word =  "Servers" />
+        <Key word =  "Constants" description="Define the constant values;"/>
+        <Key word =  "within" />
+        <Key word =  "no_agent" />
+        <Key word =  "Fairness" />
+        <Key word =  "if" />
+        <Key word =  "then" />
+        <Key word =  "Non_repudiation" />
+        <Key word =  "Privacy" />
+        <Key word =  "[anonymous]" />
+        <Key word =  "[untappable]" />
+        <Key word =  "Signature_keys" />
+        <Key word =  "Intruder_prepare" />
+        <Key word =  "for" />
+        <Key word =  "Receipt_freeness" />
+        <Key word =  "Coercion_resistance" />
+        <Key word =  "Function" />
+        <Key word =  "Function_declare" />
+        <Key word =  "NoIntruder" />
+        <Key word =  "anonymous" />
+        <Key word =  "untappable" />
+
+      </KeyWords>
+
+      <KeyWords name ="CSP Process" bold="true" italic = "false" color = "MidnightBlue">
+        <Key word =  "Skip" description="Skip process terminates." />
+        <Key word =  "Stop" description="Stop process deadlocks." />
+        <Key word =  "Wait" />
+      </KeyWords>
+    </RuleSet>
+
+    <RuleSet name = "AssertionRuleSet" ignorecase="false">
+
+      <Delimiters>&amp;~!%^*()+|\#/{}:;"' ,	.?</Delimiters>
+
+      <MarkPrevious bold = "true" italic = "false" color = "MidnightBlue">(</MarkPrevious>
+
+      <KeyWords name = "Operators" bold="true" italic="false" color="Red">
+        <Key word = "|=" description=""/>
+        <Key word = "=" description=""/>
+        <Key word = "|" description=""/>
+        <Key word = "&amp;" description=""/>
+        <Key word = "[]" description=""/>
+        <Key word = "&lt;>" description=""/>
+        <Key word = "&lt;>[]" description=""/>
+        <Key word = "[]&lt;>" description=""/>
+        <Key word = "-" description=""/>
+        <Key word = "->" description=""/>
+        <Key word = ">" description=""/>
+        <Key word = "R" description=""/>
+        <Key word = "G" description=""/>
+        <Key word = "F" description=""/>
+        <Key word = "X" description=""/>
+        <Key word = "V" description=""/>
+        <Key word = "U" description=""/>
+      </KeyWords>
+
+      <KeyWords name ="KeyWords" bold="false" italic = "false" color = "Blue">
+
+        <Key word =  "assert" description="assert a model satisfies a propery." />
+        <Key word =  "define" description="define a proposition or a constant."/>
+        <Key word =  "deadlockfree" description="Deadlockfree checking: #assert P() deadlockfree;"/>
+        <Key word =  "divergencefree" description="Divergencefree checking: #assert P() divergencefree;"/>
+        <Key word =  "divergencefree&lt;T>" description="Timed divergencefree checking: #assert P() divergencefree&lt;T>;"/>
+        <Key word =  "deterministic" description="Deterministic checking: #assert P() deterministic; If a process is deterministic, then for any state, there is no two out-going transitions leading to different states but with the same event."/>
+        <Key word =  "nonterminating" description="Nonterminating checking: #assert P() nonterminating;"/>
+        <Key word =  "reaches" description="Reachability checking: #assert P() reaches goal;"/>
+        <Key word =  "refines" description="Refinement checking: #assert P() refines Q();"/>
+        <Key word =  "refines&lt;F>" description="Stable failures refinement checking: #assert P() refines&lt;F> Q();"/>
+        <Key word =  "refines&lt;FD>" description="Failures and divergence refinement checking: #assert P() refines&lt;F> Q();"/>
+        <Key word =  "refines&lt;T>" />
+        <Key word = "&lt;F>" description=""/>
+        <Key word = "&lt;FD>" description=""/>
+        <Key word = "&lt;T>" />
+        <Key word =  "true" description="true constant"/>
+        <Key word =  "false" description="false constant"/>
+        <Key word =  "init" description="special event denoting system initialization."/>
+        <Key word =  "tau" description="special event denoting an invisible event."/>
+        <Key word =  "with" description="keyword used with reachability checking: #assert P() reaches goal with min(weight);"/>
+        <Key word =  "min" description="keyword used with reachability checking: #assert P() reaches goal with min(weight);"/>
+        <Key word =  "max" description="keyword used with reachability checking: #assert P() reaches goal with max(weight);"/>
+      </KeyWords>
+
+    </RuleSet>
+
+  </RuleSets>
+
+</SyntaxDefinition>
+

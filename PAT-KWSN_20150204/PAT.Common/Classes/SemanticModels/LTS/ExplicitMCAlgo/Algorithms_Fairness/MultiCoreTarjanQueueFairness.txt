@@ -1,0 +1,96 @@
+MultiCoreTarjanQueueFairness()
+{
+	for (all i)
+	{
+		globalSCCQueue[i] = Empty
+	}
+	(LocalQueueFairTarjan(0)||LocalFairnessChecking(0)) || (LocalQueueFairTarjan(1)||LocalFairnessChecking(1)) || ...
+}
+LocalQueueFairTarjan(i){
+	number = 0
+	callStack.Push(initialState)
+	while (callStack.Count > 0)
+	{
+		v = callStack[i].Peek()
+		if (v.Number = NOT_VISITED){
+			v.Number = number
+			number = number + 1
+			currentStack.Push(v)
+			for (all w in successors(v))
+			{
+				if (w in currentStack)
+				{
+					v.Lowlink = Min(v.Lowlink, w.Number)
+				}
+			}
+		}
+		unvisitedSuccessors = Empty
+		for (all w in successors(v))
+		{
+			if (w.Number = NOT_VISITED & !w.isGlobalSCCFound)
+			{
+				unvisitedSuccessors.Add(w)
+			}
+		}
+		if (unvisitedSuccessors not Empty)
+		{
+			w = random(unvisitedSuccessors)
+			callStack.Push(w)
+		}
+		else
+		{
+			if (w.Number = v.Lowlink)
+			{
+				SCC = {}
+				selfLoop = False
+				for (all w in successors(v))
+				{
+					if (w == v)
+					{
+						selfLoop = true
+					}
+				}
+				isBuchiFair = False;
+				do
+				{
+					tmp = currentStack.Pop()
+					tmp.Number = SCC_FOUND
+					tmp.globalSCCFound = True
+					if (!isBuchiFair && tmp is accepting)
+					{
+						isBuchiFair = True
+					}
+					SCC = SCC U {tmp}
+				} while(v != tmp)
+				if (isBuchiFair && (selfLoop || v.isDeadLock || SCC.Count > 1))
+				{
+					globalSCCQueue[i].Enqueue(SCC)
+				}
+				callStack.Pop()
+			}
+			else
+			{
+				pop = callStack.Pop()
+				top = callStack.Peek()
+				top.Lowlink = Min(top.Lowlink, pop.Lowlink)
+			}
+		}
+	}
+}
+
+LocalFairnessChecking(i)
+{
+	while (!isGlobalStop)
+	{
+		while (globalSCCQueue[i].Count > 0){
+			SCC = globalSCCQueue[i].Dequeue();
+			fairSCC = FairnessChecking(SCC)
+			if(fairSCC ! null)
+			{
+				report couterexample
+				globalStop = true
+				return
+			}
+		}
+	}
+}

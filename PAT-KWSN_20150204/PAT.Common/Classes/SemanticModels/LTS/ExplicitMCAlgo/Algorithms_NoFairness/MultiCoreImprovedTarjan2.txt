@@ -1,0 +1,83 @@
+MultiCoreImprovedTarjan2()
+{
+	LocalImprovedTarjan2(0)||LocalImprovedTarjan2(1)...
+}
+LocalImprovedTarjan2(i)
+{
+	number = 0
+	callStack.Push(initialState)
+	while (callStack.Count > 0)
+	{
+		if (isGlobalStop) return
+		v = callStack.Peek()
+		if (v.Number = NOT_VISITED)
+		{
+			v.Number = number
+			number = number + 1
+			currentStack.Push(v)
+			if (v is accepting)
+			{
+				goalStack.Push(v)
+			}
+			for (all w in successors(v))
+			{
+				if (w in currentStack)
+				{
+					v.Lowlink = Min(v.Lowlink, w.Number)
+					if (goalStack.Count > 0 & v.Lowlink <= goalStack.Peek().Number)
+					{
+						report counterexample
+						isGlobalStop = True
+						return
+					}
+				}
+			}
+		}
+		unvisitedSuccessors = Empty
+		for (all w in successors(v))
+		{
+			if (w.Number = NOT_VISITED & !w.isGlobalSCCFound)
+			{
+				unvisitedSuccessors.Add(w)
+			}
+		}
+		if (unvisitedSuccessors not Empty)
+		{
+			w = random(unvisitedSuccessors)
+			callStack.Push(w)
+		}
+		else
+		{
+			v.isGlobalSCCFound = True
+			if (v is deadlock & v is accepting)
+			{
+				report counterexample
+				isGlobalStop = True
+				return
+			}
+			if (w.Number = v.Lowlink)
+			{
+				do
+				{
+					tmp = currentStack.Pop()
+					tmp.Number = SCC_FOUND
+				} while(v != tmp)
+				callStack.Pop()
+			}
+			else
+			{
+				pop = callStack.Pop()
+				top = callStack.Peek()
+				top.Lowlink[i] = Min(top.Lowlink[i], pop.Lowlink[i])
+			}
+		}
+	}
+}
+
+---------------------------------
+Choose successors in DFS:
+1. Successors to explore: (not numbered & not global found) Not in localDFSData & not in globalFoundSCCs
+2. Successors for early cycle detection: (incurrent stack) In localDFSData & in current stack
+---------------------------------
+Fresh successor heuristic
+1. 

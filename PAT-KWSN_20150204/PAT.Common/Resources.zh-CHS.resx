@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ModelCheckingForm_CheckBox_POR_CheckedChanged_Partial_Order_Reduction_Selected" xml:space="preserve">
+    <value>使用偏序归约</value>
+  </data>
+  <data name="Streett_Automata_Generated_with__0__Nodes__1__Edges__checked_in__2_s__" xml:space="preserve">
+    <value>Streett自动机有{0}个结点和{1}条边，检验它花费了{2}秒 </value>
+  </data>
+  <data name="Simulation_Cancelled" xml:space="preserve">
+    <value>模拟取消</value>
+  </data>
+  <data name="Select_an_assertion_to_start_with" xml:space="preserve">
+    <value>选择一个断言</value>
+  </data>
+  <data name="Trace_Play_Stopped" xml:space="preserve">
+    <value>取消重现轨迹</value>
+  </data>
+  <data name="Please_stop_verification_or_parsing_before_the_simulation_" xml:space="preserve">
+    <value>请在模拟之前停止验证或解析 </value>
+  </data>
+  <data name="The_static_method_call__0__must_return_an_integer_value_" xml:space="preserve">
+    <value>静态方法{0}必须返回整数值 </value>
+  </data>
+  <data name="The_input_LTL_is_not_correct__" xml:space="preserve">
+    <value>LTL公式有误 </value>
+  </data>
+  <data name="Graph_Generated___0__Nodes___1__Edges" xml:space="preserve">
+    <value>生成图有{0}个结点{1}条边</value>
+  </data>
+  <data name="Normal_Mode_Selected" xml:space="preserve">
+    <value>使用标准模式</value>
+  </data>
+  <data name="Can_NOT_find_the_method_" xml:space="preserve">
+    <value>找不到这个方法 </value>
+  </data>
+  <data name="The_static_method_call__0__must_return_a_boolean_value_" xml:space="preserve">
+    <value>静态方法{0}必须返回布尔值 </value>
+  </data>
+  <data name="Result_Generation_Cancelled" xml:space="preserve">
+    <value>取消生成结果</value>
+  </data>
+  <data name="ModelCheckingForm_CheckBox_Parallel_CheckedChanged_Parallel_Verification_UnSelected" xml:space="preserve">
+    <value>取消使用并行验证</value>
+  </data>
+  <data name="Save_File" xml:space="preserve">
+    <value>保存文件</value>
+  </data>
+  <data name="The_method_call__0__must_return_an_integer_value_" xml:space="preserve">
+    <value>{0}方法必须返回整数值 </value>
+  </data>
+  <data name="Email_can_not_be_sent__please_manual_email_the_exception_to_PAT_team_" xml:space="preserve">
+    <value>邮件发送失败，请选择其它方式发送 </value>
+  </data>
+  <data name="Verification_has_been_running_for__0__s" xml:space="preserve">
+    <value>验证程序已经运行{0}秒</value>
+  </data>
+  <data name="Variables___0___can_not_be_used_in_this_expression_" xml:space="preserve">
+    <value>{0}变量不能用在这个表达式中 </value>
+  </data>
+  <data name="Büchi_Automata_Generated_with__0__Nodes__1__Edges__checked_in__2__s__" xml:space="preserve">
+    <value>Büchii自动机有{0}个结点和{1}条边，检验它花费了{2}秒 </value>
+  </data>
+  <data name="Can_NOT_find_the_method__0__with__1__parameters_in_class__2__" xml:space="preserve">
+    <value>在{2}类里找不到带有{1}参数的{0}方法 </value>
+  </data>
+  <data name="Verification_Completed" xml:space="preserve">
+    <value>完成验证</value>
+  </data>
+  <data name="_2__Email_us_your_model_and_seek_for_help_" xml:space="preserve">
+    <value>2. 发送模型</value>
+  </data>
+  <data name="Rabin_Automata_Generated_with__0__Nodes__1__Edges__checked_in__2_s__" xml:space="preserve">
+    <value>Rabin自动机有{0}个结点和{1}条边，检验它花费了{2}秒 </value>
+  </data>
+  <data name="Only_a_sequential_program_or_C__method_calls_can_be_associated_with_an_event_" xml:space="preserve">
+    <value>仅顺序程序和C#方法调用可以同事件联合作为一个原子操作 </value>
+  </data>
+  <data name="Runtime_Exception_Happened" xml:space="preserve">
+    <value>发生运行时错误</value>
+  </data>
+  <data name="Total_transitions_visited_before_the_exception" xml:space="preserve">
+    <value>异常发生之前访问过的转换总数</value>
+  </data>
+  <data name="ModelCheckingForm_CheckBox_POR_CheckedChanged_Partial_Order_Reduction_UnSelected" xml:space="preserve">
+    <value>取消使用偏序归约</value>
+  </data>
+  <data name="This_error_suggests_your_model_is_ too_big_to_be_verified." xml:space="preserve">
+    <value>模型可能产生过大的状态空间导致无法验证</value>
+  </data>
+  <data name="Verbose_Mode_Selected" xml:space="preserve">
+    <value>选择显示验证细节模式</value>
+  </data>
+  <data name="Shortest_Witness_Trace_Selected" xml:space="preserve">
+    <value>选择最短见证迹</value>
+  </data>
+  <data name="Please_select_an_assertion_first" xml:space="preserve">
+    <value>请先选择一个断言</value>
+  </data>
+  <data name="The_C__library__0__can_not_be_found_" xml:space="preserve">
+    <value>找不到C#库 </value>
+  </data>
+  <data name="ModelCheckingForm_CheckBox_Parallel_CheckedChanged_Parallel_Verification_Selected" xml:space="preserve">
+    <value>使用并行验证</value>
+  </data>
+  <data name="The_formula_is_a_safety_property__checked_in__0__s__" xml:space="preserve">
+    <value>检验这个安全性性质花费了{0}秒 </value>
+  </data>
+  <data name="The_simulation_is_forced_to_stop_due_to_the_huge_space_size" xml:space="preserve">
+    <value>状态空间太大导致模拟停止</value>
+  </data>
+  <data name="_1__Check_your_input_model_for_the_possiblity_of_errors_" xml:space="preserve">
+    <value>1. 请检查模型中可能出现的错误。</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="The_method_call__0__must_return_a_boolean_value_" xml:space="preserve">
+    <value>{0}方法必须返回布尔值 </value>
+  </data>
+  <data name="_1__Click_the_Email_button_to_report_the_error_to_us_" xml:space="preserve">
+    <value>1. 点击“电邮”发送错误报告。</value>
+  </data>
+  <data name="Please_wait_for_the_simulation_or_parsing_finished_before_verification" xml:space="preserve">
+    <value>请等待模拟或解析完成</value>
+  </data>
+  <data name="You_have_following_options_" xml:space="preserve">
+    <value>你有如下选择</value>
+  </data>
+  <data name="The_variable__0__must_be_an_integer_variable_" xml:space="preserve">
+    <value>{0}必须是整型变量 </value>
+  </data>
+  <data name="Email_is_sent_successfully_" xml:space="preserve">
+    <value>邮件发送成功 </value>
+  </data>
+  <data name="ModelCheckingForm_StartVerification_Verification_Starts" xml:space="preserve">
+    <value>验证开始</value>
+  </data>
+  <data name="Apply_Zeno_Check_UnSelected" xml:space="preserve">
+    <value>取消使用Zeno Check</value>
+  </data>
+  <data name="At_same_time__you_can_submit_your_model_to_us_by_using_model_submit_button_in_the_PAT_editor_" xml:space="preserve">
+    <value>同时你可以点击“提交”发送模型 </value>
+  </data>
+  <data name="The_variable__0__must_be_a_boolean_variable_" xml:space="preserve">
+    <value>{0}必须是布尔变量 </value>
+  </data>
+  <data name="The_expression__0__must_be_an_integer_expression_" xml:space="preserve">
+    <value>{0}必须是整数表达式 </value>
+  </data>
+  <data name="Verification_Cancelled" xml:space="preserve">
+    <value>取消验证</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="The_expression_should_return_an_integer_value_" xml:space="preserve">
+    <value>表达式应该返回一个整数值 </value>
+  </data>
+  <data name="Source_State" xml:space="preserve">
+    <value>源状态</value>
+  </data>
+  <data name="Apply_Zeno_Check_Selected" xml:space="preserve">
+    <value>使用Zeno Check</value>
+  </data>
+  <data name="The_expression__0__must_be_a_boolean_expression_" xml:space="preserve">
+    <value>{0}必须是布尔表达式 </value>
+  </data>
+  <data name="Exception_happened_during_the_verification" xml:space="preserve">
+    <value>验证过程中发生异常</value>
+  </data>
+  <data name="Target_State" xml:space="preserve">
+    <value>目标状态</value>
+  </data>
+  <data name="Simulation_Starting" xml:space="preserve">
+    <value>开始模拟</value>
+  </data>
+  <data name="Trace_Play_Finished" xml:space="preserve">
+    <value>轨迹重现完成</value>
+  </data>
+  <data name="The_execution_of_the_step_will_destroy_the_current_trace__Do_you_want_to_continue_" xml:space="preserve">
+    <value>执行这一步会破坏当前轨迹。是否继续？ </value>
+  </data>
+  <data name="Error_Happened" xml:space="preserve">
+    <value>发生错误</value>
+  </data>
+  <data name="Ready" xml:space="preserve">
+    <value>准备好</value>
+  </data>
+  <data name="Can_NOT_find_the_method__0__with__1__parameters_in_the_imported_C__libraries_" xml:space="preserve">
+    <value>在导入的C#库里找不到带有{1}参数的{0}方法 </value>
+  </data>
+  <data name="No_duplicated_state_names_are_allowed_" xml:space="preserve">
+    <value>不允许同名状态</value>
+  </data>
+  <data name="Shortest_Witness_Trace_UnSelected" xml:space="preserve">
+    <value>取消选择最短见证迹</value>
+  </data>
+  <data name="_2__Click_the_Continue_button_to_ingore_the_error_" xml:space="preserve">
+    <value>2. 点击"继续"忽略错误。</value>
+  </data>
+  <data name="_3__Click_the_Stop_button_to_exit_the_application_" xml:space="preserve">
+    <value>3. 点击“停止”退出程序</value>
+  </data>
+  <data name="Trace_Play_Starts___" xml:space="preserve">
+    <value>开始重现轨迹 </value>
+  </data>
+  <data name="Generating_Result" xml:space="preserve">
+    <value>正在生成结果</value>
+  </data>
+  <data name="Please_select_a_row_in_trace_list_as_the_starting_point_" xml:space="preserve">
+    <value>请在轨迹列表中选择一行作为起点 </value>
+  </data>
+  <data name="Please_wait_for_the_verification_to_stop_first__Otherwise_it_may_cause_exceptional_behaviors" xml:space="preserve">
+    <value>请耐心等待验证停止, 否则可能发生异常</value>
+  </data>
+</root>

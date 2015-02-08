@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+
+<SyntaxDefinition name ="ORC Model" extensions = ".orc">
+
+  <Environment>
+    <Custom name="TypeReference" bold="false" italic="false" color="Black" />
+    <Custom name="UnknownEntity" bold="false" italic="false" color="Black" />
+  </Environment>
+
+  <Properties>
+    <Property name="LineComment" value="--"/>
+  </Properties>
+
+  <Digits name ="Digits" bold ="false" italic ="false" color ="DarkBlue"/>
+
+  <RuleSets>
+    <RuleSet ignorecase = "false">
+      <Delimiters>&amp;&lt;&gt;~!%^*()-+=|\#/{}:;"' ,	.?</Delimiters>
+
+      <Span name ="LineComment" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>--</Begin>
+      </Span>
+
+
+      <Span name ="BlockComment" bold ="false" italic ="false" color ="Gray" stopateol ="false">
+        <Begin>{-</Begin>
+        <End>-}</End>
+      </Span>
+
+      <Span name ="String" bold ="false" italic ="false" color ="Green" stopateol ="false" escapecharacter="\">
+        <Begin>&quot;</Begin>
+        <End>&quot;</End>
+      </Span>
+
+      <Span name = "Character" bold = "false" italic = "false" color = "Black" stopateol = "true" escapecharacter="\">
+        <Begin>&apos;</Begin>
+        <End>&apos;</End>
+      </Span>
+
+      <Span name = "ExternalSiteHeader" rule = "ExternalSiteHeaderRuleSet" bold = "false" italic = "false" color = "Black" stopateol = "false">
+        <Begin color="Black" bold="true">ExternalSite</Begin>
+        <End color="Black">=</End>
+      </Span>
+
+      <Span name = "Assertion" rule = "AssertionRuleSet" bold = "false" italic = "false" color = "Black" stopateol = "false">
+        <Begin color="Blue">#assert</Begin>
+        <End color="Black">;</End>
+      </Span>
+     
+      <!--MarkPrevious bold = "true" italic = "false" color = "MidnightBlue">(</MarkPrevious-->
+
+      <KeyWords name = "Punctuation" bold = "false" italic = "false" color = "Red">
+        
+        <Key word = "+" description=""/>
+        <Key word = "-" description=""/>
+        <Key word = "/" description=""/>
+        <Key word = "%" description=""/>
+        <Key word = "*" description=""/>        
+        <Key word = "=" description=""/>
+        <Key word = "~" description=""/>
+        <Key word = "!" description=""/>
+        <Key word = "|" description=""/>
+        <Key word = "&amp;" description=""/>        
+        <Key word = ">" description=""/>
+        <Key word = "&lt;" description=""/>      
+        <Key word = "[" description=""/>
+        <Key word = "]" description=""/>
+        <!--Key word = "[]" description=""/>
+        <Key word = "?" description=""/>
+        <Key word = "^" description=""/>
+        <Key word = "#" description=""/-->
+      </KeyWords>
+      <KeyWords name = "Hex" bold = "false" italic = "false" color = "Blue">
+        <Key word = "#" description=""/>
+      </KeyWords>
+      <KeyWords name ="CustomizedClassKeywords" bold="false" italic = "false" color = "Sienna">
+        <Key word =  "Rtimer" description="Rtimer site" />
+        <Key word =  "Ref" description="Ref Site" />
+        <Key word =  "SyncChannel" description="SynChannel Site" />
+        <Key word =  "Semaphore" description="Semaphore Site" />
+        <Key word =  "Counter" description="Counter Site" />
+        <Key word =  "Buffer" description="Buffer Site" />
+        <Key word =  "Array" description="Array Site" />
+        <Key word =  "$GUpdate" description="Gupdate Site" />
+      </KeyWords>
+
+      <KeyWords name ="CSPKeyWords" bold="false" italic = "false" color = "Blue">
+        <Key word =  "stop" description="null site" />
+        <Key word =  "def" description="Orc function definition" />
+        <Key word =  "if" description="conditional choice: if (cond) then P else Q "/>
+        <Key word =  "then" description="conditional choice: if (cond) then P else Q "/>
+        <Key word =  "else" description="conditional choice: if (cond) then P else Q "/>
+        <Key word =  "let" description="let site"/>
+        <Key word =  "define" description="define a proposition or a constant."/>
+        <Key word =  "true" description="true constant"/>
+        <Key word =  "false" description="false constant"/>
+        <Key word =  "globalvar" description="global variable declaration"/>
+        <Key word =  "systemvar" description="system variable declaration"/>
+        <Key word =  "haltAllow" description="system variable declaration"/>
+        <Key word =  "val" description="value declaration"/>
+        <Key word =  "false" description="false constant"/>
+        <Key word =  "null" description="nil value"/>
+      </KeyWords>
+
+      <KeyWords name ="CSPKeyWords1" bold="true" italic = "false" color = "Black">     
+        <Key word =  "ExternalSite" description="external site declaration"/>
+        <Key word =  "EndSite" description="end of external site"/>
+      </KeyWords>
+    </RuleSet>
+
+    <RuleSet name = "ExternalSiteHeaderRuleSet" ignorecase="false">
+      <Delimiters>&amp;~!%^*()+|\#/{}:;"' ,	.?</Delimiters>
+      
+      <KeyWords name = "Operators" bold="false" italic="false" color="Blue">
+        <Key word = "inf" description=""/>       
+      </KeyWords>
+    </RuleSet>
+
+    <RuleSet name = "AssertionRuleSet" ignorecase="false">
+
+      <Delimiters>&amp;~!%^*()+|\#/{}:;"' ,	.?</Delimiters>
+
+      <!--MarkPrevious bold = "true" italic = "false" color = "MidnightBlue">(</MarkPrevious-->
+
+      <KeyWords name = "Operators" bold="false" italic="false" color="Red">
+        <Key word = "|=" description=""/>
+        <Key word = "=" description=""/>
+        <Key word = "|" description=""/>
+        <Key word = "&amp;" description=""/>
+        <Key word = "[]" description=""/>
+        <Key word = "!" description=""/>
+        <Key word = "&lt;>" description=""/>
+        <Key word = "&lt;>[]" description=""/>
+        <Key word = "[]&lt;>" description=""/>
+        <Key word = "-" description=""/>
+        <Key word = "->" description=""/>
+        <Key word = ">" description=""/>
+        <Key word = "R" description=""/>
+        <Key word = "G" description=""/>
+        <Key word = "F" description=""/>
+        <Key word = "X" description=""/>
+        <Key word = "V" description=""/>
+        <Key word = "U" description=""/>
+        <Key word = "#" description=""/>
+      </KeyWords>
+
+      <KeyWords name ="KeyWords" bold="false" italic = "false" color = "Blue">
+        <Key word =  "assert" description="assert a model satisfies a propery." />
+        <Key word =  "deadlockfree" description="Deadlockfree checking: #assert System deadlockfree;"/>
+        <Key word =  "reaches" description="Reachability checking: #assert System reaches goal;"/>
+        <Key word =  "nrsdeadlockfree" description="NonResponse Site Deadlockfree checking: #assert System nrsdeadlockfree;"/>
+        <Key word =  "nrscyclefree" description="NonResponse Site Cyclefree checking: #assert System nrscyclefree;"/>
+        <!--Key word =  "refines" description="Refinement checking: #assert P() refines Q();"/>
+        <Key word =  "init" description="special event denoting system initialization."/>
+        <Key word =  "tau" description="special event denoting an invisible event."/>
+        <Key word =  "with" description="keyword used with reachability checking: #assert P() reaches goal with min(weight);"/>
+        <Key word =  "min" description="keyword used with reachability checking: #assert P() reaches goal with min(weight);"/>
+        <Key word =  "max" description="keyword used with reachability checking: #assert P() reaches goal with max(weight);"/>
+        <Key word =  "divergencefree" description="Divergencefree checking: #assert P() deadlockfree;"/>
+        <Key word =  "deterministic" description="Deterministic checking: #assert P() deterministic; If a process is deterministic, then for any state, there is no two out-going transitions leading to different states but with the same event."/>
+        <Key word =  "nonterminating" description="Nonterminating checking: #assert P() nonterminating;"/>
+        <Key word =  "refines&lt;F>" description="Stable failures refinement checking: #assert P() refines&lt;F> Q();"/>
+        <Key word =  "refines&lt;FD>" description="Failures and divergence refinement checking: #assert P() refines&lt;F> Q();"/>
+        <Key word = "&lt;F>" description=""/>
+        <Key word = "&lt;FD>" description=""/-->
+      </KeyWords>
+
+    </RuleSet>
+
+  </RuleSets>
+
+</SyntaxDefinition>
+

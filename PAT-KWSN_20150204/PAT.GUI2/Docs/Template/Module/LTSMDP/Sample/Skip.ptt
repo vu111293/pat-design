@@ -1,0 +1,34 @@
+<#@ template language="C#" debug="False" hostspecific="true" #>
+using System.Collections.Generic;
+using PAT.Common.Classes.Expressions.ExpressionClass;
+using PAT.Common.Classes.Ultility;
+using <# Write(this.Host.ResolveParameterValue("","","AssertionsNamespace")); #>;
+
+namespace <# Write(this.Host.ResolveParameterValue("","","LTSNamespace")); #>
+{
+    public sealed class Skip : Process
+    {       
+        public Skip() 
+        {
+            ProcessID = Constants.SKIP;
+        }
+
+        public override List<Configuration> MoveOneStep(Configuration eStep)
+        {
+            List<Configuration> list = new List<Configuration>(1);
+
+            list.Add(new Configuration(new Stop(), Constants.TERMINATION, null, eStep.GlobalEnv, false, 1, -1));
+            return list;
+        }
+    
+        public override string ToString()
+        {
+            return "Skip";
+        }
+
+        public override Process ClearConstant(Dictionary<string, Expression> constMapping)
+        {
+            return this;
+        }
+    }
+}

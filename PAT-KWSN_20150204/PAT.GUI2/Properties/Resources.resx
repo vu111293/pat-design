@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Loading_error" xml:space="preserve">
+    <value>Loading error</value>
+  </data>
+  <data name="Shortest_Witness_Trace_UnSelected" xml:space="preserve">
+    <value>Shortest Witness Trace UnSelected</value>
+  </data>
+  <data name="Exception_happened_during_the_Contracts_compilation__" xml:space="preserve">
+    <value>Exception happened during the Contracts compilation: </value>
+  </data>
+  <data name="File_format_is_not_supported_by_PAT_" xml:space="preserve">
+    <value>File format is not supported by PAT!</value>
+  </data>
+  <data name="Error__file_format_is_not_supported_" xml:space="preserve">
+    <value>Error: file format is not supported!</value>
+  </data>
+  <data name="Generate_Counterexample_Selected" xml:space="preserve">
+    <value>Generate Counterexample Selected</value>
+  </data>
+  <data name="Please_make_sure_that_the_format_is_correct_" xml:space="preserve">
+    <value>Please make sure that the format is correct!</value>
+  </data>
+  <data name="_running_on_" xml:space="preserve">
+    <value> running on </value>
+  </data>
+  <data name="Verification_has_been_running_for_" xml:space="preserve">
+    <value>Verification has been running for {0}s</value>
+  </data>
+  <data name="UML_Model_Translated" xml:space="preserve">
+    <value>UML Model Translated</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CheckGrammarHS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkgrammarHS.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="No_duplicated_process_names_are_allowed" xml:space="preserve">
+    <value>No duplicated process names are allowed</value>
+  </data>
+  <data name="Verification_Cancelled" xml:space="preserve">
+    <value>Verification Cancelled</value>
+  </data>
+  <data name="EnvelopeHS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EnvelopeHS.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Verification" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAW1JREFUOE+lkztL
+        A1EQheOvsDKdpSlNp5amNW1aLQ1WphDWLlqYxiIpQwJCIIJCBEHFwAqCIfjAwt8yUxxnZp3r3kgas7AP
+        7t759pwzs0sP6TsKixwK8EOfJ69fSE67KG3sRaeu6bvZ/YX8wsFR24rouQF+ScDTE/BbC/xxDv7s2Dvd
+        k/+gAfT0Yh7vgtO6QA4FcjwX4nUGUGlK59sq+K4GhVC6Dw6Qpig5y/b8KHE7BlB/dLUJHlUEsgO+r4HG
+        stmUiJ1JEvJwO1pjDdCL+b4sg663DEIBInae6lGYnonWxIBBCTQsZ7DRdgYRO/luqBKeqp2WrUcAvlgF
+        D9ZCAd1UomKKgm3+BVB/BSSQ2f5bcJIJP8pd7HiwkQILsbsM6hWhSiLZnknojkIaFnyw4G1UCPd+ldBw
+        XbqTBevdYemOfiBqY36QDNIvmh2SYFkgLN0hU1IN0xgNko9mGGW1IxAP1pXMHeWFfyaX85/7N0e+uORw
+        4yBwAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="Output" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\output.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Parsing_error__" xml:space="preserve">
+    <value>Parsing error: </value>
+  </data>
+  <data name="getAllTraces" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAAVxJREFUOE+l02lOAkEQhmG9kEfwOB7KUxhjotGoUUM07iLiioDsu2yCiL5+BdMiNv4B
+        kg6TyfTTX9XUzANzM/0MWFhcYpo1ONwBNxV4qEG8Aekm5NtQ7kC9C80P6PShp9X/Gi47cAwIlyBahUch
+        iTpkWgEioP4OrV6AfP4DnBUgXIZbQ16FWBIhBSWpWJIA6SrFsoJ7CY7zcF4cIU9CkkIsSfENqkrSEGKb
+        JwKhHBhyIeQ6SBJTKYZkfyG2ua2eeAn20hDKDk8wJCLkTv2wJHbPIXbdUD88YDs1ijeGqCcutvuvqRwP
+        2EwOH9zPjDZYErfJyrHrnJpaUk88wD24oyQOOVFP7H5EM3Kvcp6FpNQTQyYC6wnYeoHdP+VcakbcoA0Q
+        DZoHrD7DWhw2VMoAUVPt9EO9nVOVcuUQNTUuxANWYvCDBEkMONCbOTJEg2ZIVOXYoHnATB+TfRTTrm/F
+        csMVlPIPFgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="Generate_Counterexample_UnSelected" xml:space="preserve">
+    <value>Generate Counterexample UnSelected</value>
+  </data>
+  <data name="Result_Generation_Cancelled" xml:space="preserve">
+    <value>Result Generation Cancelled</value>
+  </data>
+  <data name="C__library_code_is_saved_successfully_" xml:space="preserve">
+    <value>C# library code is saved successfully!</value>
+  </data>
+  <data name="Promela_Model_Translated" xml:space="preserve">
+    <value>Promela Model Translated</value>
+  </data>
+  <data name="find" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\find.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="csharp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\csharp.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Generating_Result___" xml:space="preserve">
+    <value>Generating Result...</value>
+  </data>
+  <data name="Clear" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAMpJREFUOE/Nkq0N
+        wzAUhDNSxyjsCB7BsPDBQMNAw0KP4BE8gmGgYdn1XRpHleIolqpKfdJJAb4v936G4a8rxAz3SHA+wroA
+        URkJ6Apdzaj1BFLKsGMHpGUuRUkKiQphksMUbXNBnlWZFMCKbwN6zDIF3IzsAb1mcR6Xq1m0tfGVmRSu
+        igOqVXRinz0zdvPPNYIPCXk10UxYWYGnZkJkimAbIaZlTZw2AV1mAnhlXI0dPZjmrbgAdgM7OgBjBZvu
+        Tr8dp3ymrqv+7aMXgol/oriMNRAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="comment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comment.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAWtJREFUOE+tUyFy
+        wzAQzBP6hDzBMFAwUDBQMFAwUDDQMFAwUDBQMNCwULBQsOy6e3ZsxU1L2pvZyYyl3bvdUzab/6h0q6JI
+        E65VYgQuRfp+wrlICMBpEE/4QebeJOYsuCy/Vv0UsYcs7pAU3wXO9UcBkmutYmyWrnMQagQiRuYEHPFV
+        Pcjlo0pnE2wUsTYuE9AvBTwO1tWSh3cI7JP6fxZAWCqAg7bW5DwU2Zoo7rgSYNIU4MGjXpHzvcjbDgIu
+        i933i4UeK8o3wSoh4qDOC0hbA4Nnjs3OM5lnrQDDSwkCQIxcZ5WAjYx7L2rNYzrtDLKF6LMAHka6LmR7
+        8LjYwHnYCw0ZAiYsFviy2s4k45FIZ4ww+aFUcaeAruxMclwJYMR4wTuYxqYAyf7USwGZ+/ehxzcS4/i7
+        ayeAP/UNz1sG1hkEmhU5D5LvXJtVogKbMDudciwN6MiAkj6QGUiaYSngmV1HYMJW4C//6C8kQju8jGpD
+        yAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="Invalid_name_" xml:space="preserve">
+    <value>Invalid name!</value>
+  </data>
+  <data name="Invalid_email_address_" xml:space="preserve">
+    <value>Invalid email address.</value>
+  </data>
+  <data name="Specification_is_parsed_in__0_s" xml:space="preserve">
+    <value>Specification is parsed in {0}s</value>
+  </data>
+  <data name="Apply_Zeno_Check_Selected" xml:space="preserve">
+    <value>Apply Zeno Check Selected</value>
+  </data>
+  <data name="find_next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\find_next.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BDD_UnSelected" xml:space="preserve">
+    <value>BDD UnSelected</value>
+  </data>
+  <data name="Please_load_a_model_first_" xml:space="preserve">
+    <value>Please load a model first!</value>
+  </data>
+  <data name="Please_stop_verification_or_simulation_before_parsing_the_model_" xml:space="preserve">
+    <value>Please stop verification or simulation before parsing the model!</value>
+  </data>
+  <data name="Verification_Completed" xml:space="preserve">
+    <value>Verification Completed</value>
+  </data>
+  <data name="BDD_Selected" xml:space="preserve">
+    <value>BDD Selected</value>
+  </data>
+  <data name="Email_is_sent_successfully_" xml:space="preserve">
+    <value>Email is sent successfully.</value>
+  </data>
+  <data name="Partial_Order_Reduction_Selected" xml:space="preserve">
+    <value>Partial Order Reduction Selected</value>
+  </data>
+  <data name="Verbose_Mode_Selected" xml:space="preserve">
+    <value>Verbose Mode Selected</value>
+  </data>
+  <data name="_04378" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\04378.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paste.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="An_error_occurred_while_compiling_the_C__code__" xml:space="preserve">
+    <value>An error occurred while compiling the C# code: </value>
+  </data>
+  <data name="Save_Output_File" xml:space="preserve">
+    <value>Save Output File</value>
+  </data>
+  <data name="Double_click_to_open_the_folder_of_" xml:space="preserve">
+    <value>Double click to open the folder of </value>
+  </data>
+  <data name="Runtime_Exception_Happened" xml:space="preserve">
+    <value>Runtime Exception Happened</value>
+  </data>
+  <data name="copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\copy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grammar_Checked" xml:space="preserve">
+    <value>Grammar Checked</value>
+  </data>
+  <data name="At_least_one_process_is_needed_in_the_model_" xml:space="preserve">
+    <value>At least one process is needed in the model.</value>
+  </data>
+  <data name="replace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\replace.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exception_happened_during_saving__" xml:space="preserve">
+    <value>Exception happened during saving: </value>
+  </data>
+  <data name="Exception_happened__" xml:space="preserve">
+    <value>Exception happened: </value>
+  </data>
+  <data name="Please_input_a_valid_output_file_" xml:space="preserve">
+    <value>Please input a valid output file!</value>
+  </data>
+  <data name="save_as" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_as.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="redo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\redo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="submit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\submit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Partial_Order_Reduction_UnSelected" xml:space="preserve">
+    <value>Partial Order Reduction UnSelected</value>
+  </data>
+  <data name="Parallel_Verification_Selected" xml:space="preserve">
+    <value>Parallel Verification Selected</value>
+  </data>
+  <data name="options" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\options.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Parallel_Verification_UnSelected" xml:space="preserve">
+    <value>Parallel Verification UnSelected</value>
+  </data>
+  <data name="Sending_Email_failed_" xml:space="preserve">
+    <value>Sending Email failed.</value>
+  </data>
+  <data name="Saving_error" xml:space="preserve">
+    <value>Saving error</value>
+  </data>
+  <data name="selection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\selection.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Error_happned_in_loading_module_" xml:space="preserve">
+    <value>Error happned in loading module </value>
+  </data>
+  <data name="Web" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Web.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="printer" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAi1JREFUOE+1k/9P
+        UlEYxv2nWK2tVlttGmpltrCcEQ1XUjSMaUHJNLIpNcnCragplBvUoC/okJhZLG92ySUpU8RNICdIhAio
+        EF+e7r1UZMDW1jrb+8t7z/N83vucc8rK/sdyeYIwvpopWYbRaZTk0uIx0o0/V/JbGt7lVTwxT6CKKylt
+        oLd8xGYihS/hKGz2WaaeWUnoTATsMz7UCztx9Ex7cYN3jkUQU4tb4DR5LZaAcyEAg4VE5YlLMFmJQoNQ
+        JA61gUA6k4XPH9pCN9s+gZz2oq5Jjlq+DDfUz3Fba86bOGY9jHiUdDF0mvqT7A/F4fKEcE9nZf5d1jOI
+        B4ZxVJ2U5gyc8z70akegMX3AXb0ND1+8R6/GgvZbeog61OA2K3CA2lxR34JjZ69B2T8EsVyN/Q0XcwY3
+        B14iGk8UpE43UukMNqhA6QyC4Q0srcQg7dagsbWHmuDHScj7jDC9nsJTqx0a4xjuaIfRqXoMSXc/hG0q
+        8C4owGnqwEGeFOXHxThH9eoEV7G7VpiboE2pK0qnm9H1JLz+NUzOBfHWEcAQsQSuqAuVDa1gVZzKGUgU
+        jwoMqAzxNZbC3Od1jDvDYPdth+7NCpP8Yf4V7KoR5A1arg8gmQIoGMLxLJYjWSwEMphwb2J4MoZB2yqU
+        LBZUIxHGYB9HlBfTE4jl9+GmBPTHv6lfo//+GGoaZajmXQabumXl1HHt5TRjz5Hz2HlIgB3Vp7GNzWeo
+        RcX/+pq/AwHYL0leVl8fAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="_new" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAALlJREFUOE+tkzEO
+        wjAMRXskjsExOFKPkJExI6PHjh47emTMyGb8C4EoTRyQ+iUrXf6z8+tM01GKJLov1nhjDfFVbi+YewpX
+        0tP54kMicRcwG4AW9iEYtac5xM2cq3mV4AAABiSD2gALqaf0UE0pjQDU9r/Nch8BLKiW0B1mkQEASdfK
+        owPA6whgIe0A6dudV/EzQMKlPt1tdHQn/gdQBMcAmJmWHwH5f/dOLFNzD+ptKzev/j7qAW+cJyys9AMc
+        5VQ2AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="Apply_Zeno_Check_UnSelected" xml:space="preserve">
+    <value>Apply Zeno Check UnSelected</value>
+  </data>
+  <data name="Please_input_a_model_first_" xml:space="preserve">
+    <value>Please input a model first!</value>
+  </data>
+  <data name="Shortest_Witness_Trace_Selected" xml:space="preserve">
+    <value>Shortest Witness Trace Selected</value>
+  </data>
+  <data name="Document__0__unsaved__Do_you_want_to_save_it_before_close_" xml:space="preserve">
+    <value>Document {0} unsaved. Do you want to save it before close?</value>
+  </data>
+  <data name="Checking_file_" xml:space="preserve">
+    <value>Checking file:</value>
+  </data>
+  <data name="Verification_Starts___" xml:space="preserve">
+    <value>Verification Starts...</value>
+  </data>
+  <data name="cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cut.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exception_happened_during_the_compilation__" xml:space="preserve">
+    <value>Exception happened during the compilation: </value>
+  </data>
+  <data name="SaveAllHS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaveAllHS.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="csharpLib" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\csharpLib.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\undo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="This_file_is_read_only__Do_you_want_to_overwrite_it_" xml:space="preserve">
+    <value>This file is read only. Do you want to overwrite it?</value>
+  </data>
+  <data name="Please_wait_for_the_verification_to_stop_first__Otherwise_it_may_cause_exceptional_behaviors_" xml:space="preserve">
+    <value>Please wait for the verification to stop first! Otherwise it may cause exceptional behaviors.</value>
+  </data>
+  <data name="open_spec" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAlpJREFUOE+tk21I
+        k1EYhif0oyA0sqIQCix/+GcQFFH9CCmiUBTLLEjShJofVBgL2fxoU9Pp5ubUlS5rU9f8rCyjsA+pUCRC
+        TR1ppmVFUSlmhq78unrnQF1KGHTg/nEOz30993PO+7qJFrmUeiv2n+Mij+XLRLLYULdF2pxlEVIDcw0p
+        AsyxD5fmI/rQ94pqi26eOlsfuZj+7BgSm01QdA4ih7m73Yx9qGpavwatjPebqCzOprPt8YKQgzFagqL0
+        BEjyEFWVaBkdLHMxT34uYNwWR9nVTEoL0zHlp2DMSeaSRk6eKt4VWm5WM/rVPNN5SjDTLQebZEHNA1wr
+        UvHjk3E6tsNcV62e1r3KLGqtKm6WplNpSsVqVFJsOM8VfSKFWjkGtcyZptSYzvC7XByx3zQoqCnTMvlG
+        CX1prnornPUmQJcUXsbSVhGK5bIOkcmQyveeTHiv4VZ5Nk33Nc6iuSO8CIfmECYa/bE/8ON1iRipJNh5
+        F0V6Bd86lfQ1JlFj1TDVq4COKCegLVIwHmGiKRB7/V6G7+5koHozymgfYRy5E1CgTWKgXcZ1i5qWp0KS
+        rjgBcAJawph6FszYk/2M1O1isGYLX8p9ab6wgqP+3rMvYciS01GfzA1LFvQkQ6sQ9/khxhoCGHnox1Dt
+        NvorxXw0b8Km8UQh2cip6GOzgNyMeKqKM7HdjqFZJ5pRk2YJ9aql3EnxoCJxNaZ4Ly6e3UDY3O6OEXRp
+        59ApTpIhiyDh9GHORAZyPHQPB/ZtZ/cOMVvFPvh6e7F+3SrWrHRnraf7Xz/xf/rJ/kvxb84I3U1y+9/W
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="link" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\link.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProjectBrowser.Toolbar.Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProjectBrowser.Toolbar.Refresh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus_circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus_circle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_column_" xml:space="preserve">
+    <value> column </value>
+  </data>
+  <data name="Parsing_error_at_line_" xml:space="preserve">
+    <value>Parsing error at line </value>
+  </data>
+  <data name="uncomment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\uncomment.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="templates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\templates.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Open_Error_" xml:space="preserve">
+    <value>Open Error:</value>
+  </data>
+  <data name="Normal_Mode_Selected" xml:space="preserve">
+    <value>Normal Mode Selected</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Open_Error__the_selected_file_is_not_found_" xml:space="preserve">
+    <value>Open Error: the selected file is not found!</value>
+  </data>
+  <data name="The_Promela_model_is_empty_" xml:space="preserve">
+    <value>The Promela model is empty!</value>
+  </data>
+  <data name="Document_" xml:space="preserve">
+    <value>Document </value>
+  </data>
+  <data name="Line_number" xml:space="preserve">
+    <value>Line number</value>
+  </data>
+  <data name="Are_you_sure_you_want_to_delete_the_selected_process_" xml:space="preserve">
+    <value>Are you sure you want to delete the selected process?</value>
+  </data>
+  <data name="Duplicate_Process_Name" xml:space="preserve">
+    <value>Duplicate Process Name</value>
+  </data>
+  <data name="Verifying_Assertion__" xml:space="preserve">
+    <value>Verifying Assertion: </value>
+  </data>
+  <data name="Error_happened_in_opening_" xml:space="preserve">
+    <value>Error happened in opening </value>
+  </data>
+  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nail.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="C__library_is_built_successfully__You_can_use_them_now_in_your_models_" xml:space="preserve">
+    <value>C# library is built successfully! You can use them now in your models.</value>
+  </data>
+  <data name="Please_select_some_input_files_" xml:space="preserve">
+    <value>Please select some input files!</value>
+  </data>
+  <data name="PadIcons.ClassBrowser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PadIcons.ClassBrowser.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+	<data name="Registered_Version">
+		<value xml:space="preserve">Registered Version</value>
+	</data>
+	<data name="Version_Expired">
+		<value xml:space="preserve">Version Expired</value>
+	</data>
+  <data name="Add_token" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add token.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete_token" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete token.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

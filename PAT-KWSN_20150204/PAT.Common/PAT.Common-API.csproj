@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D7BA9A8-C774-4480-858A-92A04FBB8466}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PAT.Common</RootNamespace>
+    <AssemblyName>PAT.Common</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CONTRACTS_FULL;Statistics</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsCustomRewriterAssembly>
+    </CodeContractsCustomRewriterAssembly>
+    <CodeContractsCustomRewriterClass>
+    </CodeContractsCustomRewriterClass>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>False</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsBuildReferenceAssembly>False</CodeContractsBuildReferenceAssembly>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsLibPaths>
+    </CodeContractsLibPaths>
+    <CodeContractsPlatformPath>
+    </CodeContractsPlatformPath>
+    <CodeContractsExtraAnalysisOptions>
+    </CodeContractsExtraAnalysisOptions>
+    <CodeContractsBaseLineFile>
+    </CodeContractsBaseLineFile>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>False</CodeContractsShowSquigglies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>Statistics</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsCustomRewriterAssembly>
+    </CodeContractsCustomRewriterAssembly>
+    <CodeContractsCustomRewriterClass>
+    </CodeContractsCustomRewriterClass>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>False</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsBuildReferenceAssembly>False</CodeContractsBuildReferenceAssembly>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsLibPaths>
+    </CodeContractsLibPaths>
+    <CodeContractsPlatformPath>
+    </CodeContractsPlatformPath>
+    <CodeContractsExtraAnalysisOptions>
+    </CodeContractsExtraAnalysisOptions>
+    <CodeContractsBaseLineFile>
+    </CodeContractsBaseLineFile>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>False</CodeContractsShowSquigglies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.1.0.39723, Culture=neutral, PublicKeyToken=3a9cab8f8d22bfb7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Msagl.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Msagl.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Msagl.GraphViewerGdi, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Msagl.GraphViewerGdi.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\BA\BuchiAutomata.cs" />
+    <Compile Include="Classes\BA\LTL2BA.cs" />
+    <Compile Include="Classes\DataStructure\Set.cs" />
+    <Compile Include="Classes\DataStructure\StringDictionary.cs" />
+    <Compile Include="Classes\DataStructure\StringHashTable.cs" />
+    <Compile Include="Classes\Expressions\Valuation.cs" />
+    <Compile Include="Classes\Expressions\EvaluatorDenotational.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\Assignment.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\BoolConstant.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\StaticMethodCall.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\Expression.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\If.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\IntConstant.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\PrimitiveApplication.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\PropertyAssignment.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\Record.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\RecordValue.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\RuntimeException.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\Sequence.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\Variable.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\While.cs" />
+    <Compile Include="Classes\BA\LTL2BA\alternating.cs" />
+    <Compile Include="Classes\BA\LTL2BA\BAClasses.cs" />
+    <Compile Include="Classes\BA\LTL2BA\buchi.cs" />
+    <Compile Include="Classes\BA\LTL2BA\cache.cs" />
+    <Compile Include="Classes\BA\LTL2BA\generalized.cs" />
+    <Compile Include="Classes\BA\LTL2BA\lex.cs" />
+    <Compile Include="Classes\BA\LTL2BA\main.cs" />
+    <Compile Include="Classes\BA\LTL2BA\mem.cs" />
+    <Compile Include="Classes\BA\LTL2BA\parse.cs" />
+    <Compile Include="Classes\BA\LTL2BA\rewrt.cs" />
+    <Compile Include="Classes\BA\LTL2BA\set.cs" />
+    <Compile Include="Classes\BA\LTL2BA\trans.cs" />
+    <Compile Include="Classes\BA\Proposition.cs" />
+    <None Include="Classes\BA\State.cs" />
+    <Compile Include="Classes\BA\Transition.cs" />
+    <Compile Include="ImageConstantLibrary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImageConstantLibrary.designer.cs">
+      <DependentUpon>ImageConstantLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleFacadeBase.cs" />
+    <Compile Include="ParsingException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\LTS\SpecificationBase.cs" />
+    <Compile Include="Classes\Ultility\Constants.cs" />
+    <Compile Include="Ultility\Ultility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImageConstantLibrary.resx">
+      <DependentUpon>ImageConstantLibrary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.zh-CHS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.zh-CHT.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\AssertionBDD\AssertionDeadLock.cs" />
+    <Compile Include="Classes\AssertionBDD\BDD\CUDD.cs" />
+    <Compile Include="Classes\AssertionBDD\BDD\CUDDNode.cs" />
+    <Compile Include="Classes\AssertionBDD\BDD\CUDDVars.cs" />
+    <Compile Include="Classes\AssertionBDD\BDD\Model.cs" />
+    <Compile Include="Classes\AssertionBDD\BDD\PlatformInvoke.cs" />
+    <Compile Include="Classes\AssertionBDD\BDD\VariableList.cs" />
+    <Compile Include="Classes\AssertionBDD\AssertionReachability.cs" />
+    <Compile Include="Classes\AssertionBDD\AssertionBase.cs" />
+    <Compile Include="Classes\Assertion\AssertionBase.cs" />
+    <Compile Include="Classes\Assertion\AssertionDeadLock.cs" />
+    <Compile Include="Classes\Assertion\AssertionLTLwithFairness.cs" />
+    <Compile Include="Classes\Assertion\AssertionLTLSafety.cs" />
+    <Compile Include="Classes\Assertion\AssertionReachability.cs" />
+    <Compile Include="Classes\Assertion\AssertionRefinement.cs" />
+    <Compile Include="Classes\Assertion\AssertionRefinementF.cs" />
+    <Compile Include="Classes\Assertion\AssertionRefinementFD.cs" />
+    <Compile Include="Classes\Assertion\AssertionReachabilityWith.cs" />
+    <Compile Include="Classes\Assertion\AssertionLTL-SafetyNegate.cs" />
+    <Compile Include="Classes\Assertion\AssertionDeterminism.cs" />
+    <Compile Include="Classes\Assertion\AssertionLTL.cs" />
+    <Compile Include="Classes\Assertion\LTS.cs" />
+    <Compile Include="Classes\Assertion\NormalizedState.cs" />
+    <Compile Include="Classes\Assertion\Parallel\FairThread.cs" />
+    <Compile Include="Classes\Assertion\Parallel\TarjanThread.cs" />
+    <Compile Include="Classes\Assertion\Parallel\ThreadPool.cs" />
+    <Compile Include="Classes\Assertion\AssertionDivergence.cs" />
+    <Compile Include="Classes\BA\LivenessChecking.cs" />
+    <Compile Include="Classes\Assertion\VerificationOutput.cs" />
+    <Compile Include="Classes\DataStructure\AutomataBDD.cs" />
+    <Compile Include="Classes\DataStructure\FullDBMCompact.cs" />
+    <Compile Include="Classes\DataStructure\DBMConstraint.cs" />
+    <Compile Include="Classes\DataStructure\FullDBM.cs" />
+    <Compile Include="Classes\DataStructure\MDP.cs" />
+    <Compile Include="Classes\DataStructure\StringDictionaryWithKey.cs" />
+    <Compile Include="Classes\DataStructure\DBM.cs" />
+    <Compile Include="Classes\DataStructure\Intervals.cs" />
+    <None Include="Classes\LTS\CountedProcess.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\ClassMethodCall.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\ClassMethodCallInstance.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\NewObjectCreation.cs" />
+    <Compile Include="Classes\LTL2DRA\StutteredNBA2DAUnion.cs" />
+    <Compile Include="Classes\LTL2DRA\LTL2DRA.cs" />
+    <Compile Include="Classes\LTL2DRA\APElement.cs" />
+    <Compile Include="Classes\LTL2DRA\APMonom.cs" />
+    <Compile Include="Classes\LTL2DRA\APMonom2APElements.cs" />
+    <Compile Include="Classes\LTL2DRA\APSet.cs" />
+    <Compile Include="Classes\LTL2DRA\BA2DRAConverter.cs" />
+    <Compile Include="Classes\LTL2DRA\common\BitSet.cs" />
+    <Compile Include="Classes\LTL2DRA\common\BitSetIterator.cs" />
+    <Compile Include="Classes\LTL2DRA\common\HashFunction.cs" />
+    <Compile Include="Classes\LTL2DRA\common\SimpleBitSet.cs" />
+    <Compile Include="Classes\LTL2DRA\DA.cs" />
+    <Compile Include="Classes\LTL2DRA\DAUnionAlgorithm.cs" />
+    <Compile Include="Classes\LTL2DRA\DA_State.cs" />
+    <Compile Include="Classes\LTL2DRA\DBA2DRA.cs" />
+    <Compile Include="Classes\LTL2DRA\DRA.cs" />
+    <Compile Include="Classes\LTL2DRA\DRAOptimizations.cs" />
+    <Compile Include="Classes\LTL2DRA\EdgeContainerExplicit_APElement.cs" />
+    <Compile Include="Classes\LTL2DRA\exception\IllegalArgumentException.cs" />
+    <Compile Include="Classes\LTL2DRA\GraphAlgorithm.cs" />
+    <Compile Include="Classes\LTL2DRA\LTL2DSTAR_Options.cs" />
+    <Compile Include="Classes\LTL2DRA\LTL2DSTAR_Scheduler.cs" />
+    <Compile Include="Classes\LTL2DRA\LTL2NBA.cs" />
+    <Compile Include="Classes\LTL2DRA\LTLFormula.cs" />
+    <Compile Include="Classes\LTL2DRA\LTLPrefixParser.cs" />
+    <Compile Include="Classes\LTL2DRA\LTLSafetyAutomata.cs" />
+    <Compile Include="Classes\LTL2DRA\NBA.cs" />
+    <Compile Include="Classes\LTL2DRA\NBA2DA.cs" />
+    <Compile Include="Classes\LTL2DRA\NBA2DRA.cs" />
+    <Compile Include="Classes\LTL2DRA\NBAAnalysis.cs" />
+    <Compile Include="Classes\LTL2DRA\NBAStutterClosure.cs" />
+    <Compile Include="Classes\LTL2DRA\NBA_State.cs" />
+    <Compile Include="Classes\LTL2DRA\Options_Safra.cs" />
+    <Compile Include="Classes\LTL2DRA\parsers\NBABuilder.cs" />
+    <Compile Include="Classes\LTL2DRA\RabinAcceptance.cs" />
+    <Compile Include="Classes\LTL2DRA\SafraAlgorithm.cs" />
+    <Compile Include="Classes\LTL2DRA\SafraTree.cs" />
+    <Compile Include="Classes\LTL2DRA\SafraTreeNode.cs" />
+    <Compile Include="Classes\LTL2DRA\SafraTreeTemplate.cs" />
+    <Compile Include="Classes\LTL2DRA\SafraTreeVisitor.cs" />
+    <Compile Include="Classes\LTL2DRA\SafraTreeWalker.cs" />
+    <Compile Include="Classes\LTL2DRA\StateMapper.cs" />
+    <Compile Include="Classes\LTL2DRA\StateMapperFuzzy.cs" />
+    <Compile Include="Classes\LTL2DRA\StutteredNBA2DA.cs" />
+    <Compile Include="Classes\LTL2DRA\StutterSensitivenessInformation.cs" />
+    <Compile Include="Classes\LTL2DRA\Ultility.cs" />
+    <Compile Include="Classes\LTS\ConfigurationBase.cs" />
+    <Compile Include="Classes\DataStructure\Automata.cs" />
+    <Compile Include="Classes\LTS\Event.cs" />
+    <Compile Include="Classes\LTS\EventCollection.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\LetDefinition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\LTS\ChannelQueue.cs" />
+    <Compile Include="Classes\LTS\ParallelDefinition.cs" />
+    <Compile Include="Classes\Ultility\Ultility.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Ultility\ConfigSettings.cs" />
+    <Compile Include="Ultility\ParsingUltility.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

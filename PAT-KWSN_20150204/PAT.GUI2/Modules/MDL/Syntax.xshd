@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+
+<SyntaxDefinition name ="MDL Model" extensions = ".mdl">
+
+  <Environment>
+    <Custom name="TypeReference" bold="false" italic="false" color="Black" />
+    <Custom name="UnknownEntity" bold="false" italic="false" color="Black" />
+  </Environment>
+
+  <Properties>
+    <Property name="LineComment" value="//"/>
+  </Properties>
+
+  <Digits name ="Digits" bold ="false" italic ="false" color ="DarkBlue"/>
+
+  <RuleSets>
+    <RuleSet ignorecase = "false">
+      <Delimiters>&amp;&lt;&gt;~!%^*()-+=|\#/{}[]:;"' ,	.?</Delimiters>
+
+      <Span name ="LineComment" bold ="false" italic ="false" color ="Green" stopateol ="true">
+        <Begin>#</Begin>
+      </Span>
+
+      <Span name ="SharpLineComment" bold ="false" italic ="false" color ="Green" stopateol ="true">
+        <Begin>//</Begin>
+      </Span>
+
+      <Span name ="BlockComment" bold ="false" italic ="false" color ="Green" stopateol ="false">
+        <Begin>/*</Begin>
+        <End>*/</End>
+      </Span>
+
+      <Span name ="String" bold ="false" italic ="false" color ="Green" stopateol ="false" escapecharacter="\">
+        <Begin>&quot;</Begin>
+        <End>&quot;</End>
+      </Span>
+
+      <Span name = "Character" bold = "false" italic = "false" color = "Sienna" stopateol = "true" escapecharacter="\">
+        <Begin>&apos;</Begin>
+        <End>&apos;</End>
+      </Span>
+
+      <Span name = "Assertion" rule = "AssertionRuleSet" bold = "false" italic = "false" color = "Black" stopateol = "false">
+        <Begin color="Blue">assert</Begin>
+        <End color="Black">;</End>
+      </Span>
+
+      <Span name ="instance" bold ="false" italic ="false" color ="Gray" stopateol ="false">
+        <Begin>instance</Begin>
+        <End>}</End>
+      </Span>
+
+      <Span name ="target" bold ="false" italic ="false" color ="Gray" stopateol ="false">
+        <Begin>target</Begin>
+        <End>}</End>
+      </Span>
+
+      <Span name ="subviewS" bold ="false" italic ="false" color ="Gray" stopateol ="false">
+        <Begin>subviewS</Begin>
+        <End>}</End>
+      </Span>
+
+      <Span name ="slide" bold ="false" italic ="false" color ="Gray" stopateol ="false">
+        <Begin>slide</Begin>
+        <End>}</End>
+      </Span>
+
+      <!--<Span name ="isLibrary" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>isLibrary</Begin>
+      </Span>
+
+      <Span name ="firstTarget" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>firstTarget</Begin>
+      </Span>
+
+      <Span name ="debug" bold ="false" italic ="false" color ="Gray" stopateol ="false">
+        <Begin>debug</Begin>
+        <End>}</End>
+      </Span>
+
+      <Span name ="sfVersion" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>sfVersion</Begin>
+      </Span>
+
+      <Span name ="sfDemoChecksum" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>sfDemoChecksum</Begin>
+      </Span>
+
+      <Span name ="windowPosition" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>windowPosition</Begin>
+      </Span>
+
+      <Span name ="viewLimits" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>viewLimits</Begin>
+      </Span>
+      
+      <Span name ="zoomFactor" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>zoomFactor</Begin>
+      </Span>
+
+      <Span name ="transitionColor" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>transitionColor</Begin>
+      </Span>
+
+      <Span name ="transitionLabelColor" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>transitionLabelColor</Begin>
+      </Span>
+
+      <Span name ="junctionColor" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>junctionColor</Begin>
+      </Span>
+
+      <Span name ="chartColor" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>chartColor</Begin>
+      </Span>
+
+      <Span name ="screen" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>screen</Begin>
+      </Span>
+
+      <Span name ="viewObj" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>viewObj</Begin>
+      </Span>
+
+      <Span name ="visible" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>visible</Begin>
+      </Span>
+
+      <Span name ="subviewS" bold ="false" italic ="false" color ="Gray" stopateol ="false">
+        <Begin>subviewS</Begin>
+        <End>}</End>
+      </Span>
+
+      <Span name ="ssIdHighWaterMark" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>ssIdHighWaterMark</Begin>
+      </Span>
+
+      <Span name ="updateMethod" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>updateMethod</Begin>
+      </Span>
+
+      <Span name ="sampleTime" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>sampleTime</Begin>
+      </Span>
+
+      <Span name ="chartFileNumber" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>chartFileNumber</Begin>
+      </Span>
+
+      <Span name ="position" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>position</Begin>
+      </Span>
+
+      <Span name ="fontSize" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>fontSize</Begin>
+      </Span>
+
+      <Span name ="arrowSize" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>arrowSize</Begin>
+      </Span>
+
+      <Span name ="subviewer" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>subviewer</Begin>
+      </Span>
+
+      <Span name ="ssIdNumber" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin>ssIdNumber</Begin>
+      </Span>-->
+<!--
+      <Span name ="" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin></Begin>
+      </Span>
+
+      <Span name ="" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin></Begin>
+      </Span>
+
+      <Span name ="" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin></Begin>
+      </Span>
+
+      <Span name ="" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin></Begin>
+      </Span>
+
+      <Span name ="" bold ="false" italic ="false" color ="Gray" stopateol ="true">
+        <Begin></Begin>
+      </Span>-->
+
+      <MarkPrevious bold = "true" italic = "false" color = "MidnightBlue">(</MarkPrevious>
+
+      <KeyWords name = "Punctuation" bold = "false" italic = "false" color = "Red">
+        <Key word = "?" description=""/>
+        <Key word = "+" description=""/>
+        <Key word = "-" description=""/>
+        <Key word = "/" description=""/>
+        <Key word = "%" description=""/>
+        <Key word = "*" description=""/>
+        <Key word = "^" description=""/>
+        <Key word = "=" description=""/>
+        <Key word = "~" description=""/>
+        <Key word = "!" description=""/>
+        <Key word = "|" description=""/>
+        <Key word = "&amp;" description=""/>
+        <Key word = "#" description=""/>
+        <Key word = ">" description=""/>
+        <Key word = "&lt;" description=""/>
+        <Key word = "[" description=""/>
+        <Key word = "]" description=""/>
+        <Key word = "{" description=""/>
+        <Key word = "}" description=""/>
+      </KeyWords>
+
+
+      <KeyWords name ="MDL Block" bold="true" italic = "false" color = "Blue">
+        <Key word =  "Stateflow" description=""/>
+        <Key word =  "machine" description=""/>
+        <Key word =  "chart" description=""/>
+        <Key word =  "state" description=""/>
+        <Key word =  "junction" description=""/>
+        <Key word =  "transition" description=""/>
+        <Key word =  "event" description=""/>
+        <Key word =  "data" description=""/>
+      </KeyWords>
+
+      <KeyWords name ="MDL Field" bold="true" italic = "false" color = "MidnightBlue">
+        <Key word =  "id" description="" />
+        <Key word =  "name" description="" />
+        <Key word =  "treeNode" description="" />
+        <Key word =  "firstTransition" description="" />
+        <Key word =  "decomposition" description="" />
+        <Key word =  "firstEvent" description="" />
+        <Key word =  "firstData" description="" />
+        <Key word =  "labelString" description="" />
+        <Key word =  "firstJunction" description="" />
+        <Key word =  "type" description="" />
+        <Key word =  "executionOrder" description="" />
+        <Key word =  "src" description="" />
+        <Key word =  "dst" description="" />
+        <Key word =  "linkNode" description="" />
+        <Key word =  "scope" description="" /> 
+        <Key word = "dataType" description=""/>
+        <Key word = "eml" description=""/>
+        <Key word = "isEML" description=""/>
+        <Key word = "script" description=""/>
+      </KeyWords>
+
+      <KeyWords name ="MDL Unused Field" bold="false" italic = "false" color = "Gray">
+        <Key word =  "created" description="" />
+        <Key word =  "isLibrary" description="" />
+        <Key word =  "firstTarget" description="" />
+        <Key word =  "sfVersion" description="" />
+        <Key word =  "windowPosition" description="" />
+        <Key word =  "viewLimits" description="" />
+        <Key word =  "transitionColor" description="" />
+        <Key word =  "transitionLabelColor" description="" />
+        <Key word =  "junctionColor" description="" />
+        <Key word =  "chartColor" description="" />
+        <Key word =  "screen" description="" />
+        <Key word =  "viewObj" description="" />
+        <Key word =  "visible" description="" />
+        <Key word =  "subviewS" description="" />
+        <Key word =  "ssIdHighWaterMark" description="" />
+        <Key word =  "chartFileNumber" description="" />
+        <Key word =  "disableImplicitCasting" description="" />
+        <Key word =  "position" description="" />
+        <Key word =  "fontSize" description="" />
+        <Key word =  "arrowSize" description="" />
+        <Key word =  "subviewer" description="" />
+        <Key word =  "ssIdNumber" description="" />
+        <Key word =  "intersection" description="" />
+        <Key word =  "midPoint" description="" />
+        <Key word =  "dataLimits" description="" />
+        <Key word =  "drawStyle" description="" />
+        <Key word =  "labelPosition" description="" />
+        <Key word =  "stampAngle" description="" />
+        <Key word =  "props" description="" />
+        <Key word =  "primitive" description="" />
+        <Key word =  "isSigned" description="" />
+        <Key word =  "wordLength" description="" />
+        <Key word = "zoomFactor" description=""/>
+        <Key word = "superState" description=""/>
+        <Key word = "userSpecifiedStateTransitionExecutionOrder" description=""/>
+        <Key word = "editorLayout" description=""/>
+        <Key word = "quantum" description=""/>
+        <Key word = "isGrouped" description=""/>
+        <Key word = "trigger" description=""/>
+        <Key word = "range" description=""/>
+        <Key word = "minimum" description=""/>
+        <Key word = "maximum" description=""/>
+        <Key word = "frame" description=""/>
+        <Key word = "array" description=""/>
+        <Key word = "size" description=""/>
+      </KeyWords>
+
+      <KeyWords name ="MDL Constant" bold="true" italic = "false" color = "Red">
+        <Key word =  "SET_STATE" description="" />
+        <Key word =  "CLUSTER_STATE" description="" />
+        <Key word =  "FUNC_STATE" description="" />
+        <Key word =  "SET_CHART" description="" />
+        <Key word =  "CLUSTER_CHART" description="" />
+        <Key word =  "LOCAL_EVENT" description="" />
+        <Key word =  "INPUT_EVENT" description="" />
+        <Key word =  "OUTPUT_EVENT" description="" />
+        <Key word =  "LOCAL_DATA" description="" />
+        <Key word =  "INPUT_DATA" description="" />
+        <Key word =  "OUTPUT_DATA" description="" />
+        <Key word =  "FUNCTION_INPUT_DATA" description="" />
+        <Key word =  "FUNCTION_OUTPUT_DATA" description="" />
+        <Key word =  "PARAMETER_DATA" description="" />
+        <Key word =  "AND_STATE" description="" />
+        <Key word =  "OR_STATE" description="" />
+        <Key word =  "CONNECTIVE_JUNCTION" description="" />
+        <Key word =  "HISTORY_JUNCTION" description="" />
+      </KeyWords>
+
+    </RuleSet>
+    
+    <RuleSet name = "AssertionRuleSet" ignorecase="false">
+
+      <!--<Delimiters>&amp;~!%^*()+|\#/{}:;"' ,	.?</Delimiters>-->
+      <Delimiters>&amp;&lt;&gt;~!%^*()-+=|\#/{}[]:;"' ,	.?</Delimiters>
+
+      <!--<Span name ="ProcessRef" bold ="true" italic ="false" color ="MidnightBlue" stopateol ="true">
+        <Begin></Begin>
+        <End>|=</End>
+      </Span>
+
+      <Span name ="ProcessRef" bold ="true" italic ="false" color ="MidnightBlue" stopateol ="true">
+        <Begin> </Begin>
+        <End>|=</End>
+      </Span>-->
+
+      <!--<MarkPrevious bold = "true" italic = "false" color = "MidnightBlue">(</MarkPrevious>-->
+            
+      <KeyWords name = "Operators" bold="true" italic="false" color="Red">
+        <Key word = "|=" description=""/>
+        <Key word = "=" description=""/>
+        <Key word = "|" description=""/>
+        <Key word = "&amp;" description=""/>
+        <Key word = "!" description=""/>
+        <Key word = ">" description=""/>
+        <Key word = "&lt;" description=""/>
+        <Key word = "[" description=""/>
+        <Key word = "]" description=""/>
+        <Key word = "-" description=""/>
+        <Key word = "->" description=""/>
+        <Key word = ">" description=""/>
+        <Key word = "R" description=""/>
+        <Key word = "G" description=""/>
+        <Key word = "F" description=""/>
+        <Key word = "X" description=""/>
+        <Key word = "V" description=""/>
+        <Key word = "U" description=""/>
+        <Key word = "#" description=""/>
+      </KeyWords>
+
+      <KeyWords name ="KeyWords" bold="false" italic = "false" color = "Blue">
+
+        <Key word =  "assert" description="assert a model satisfies a propery." />
+        <Key word =  "define" description="define a proposition or a constant."/>
+        <Key word =  "deadlockfree" description="Deadlockfree checking: #assert P() deadlockfree;"/>
+        <Key word =  "divergencefree" description="Divergencefree checking: #assert P() deadlockfree;"/>
+        <Key word =  "deterministic" description="Deterministic checking: #assert P() deterministic; If a process is deterministic, then for any state, there is no two out-going transitions leading to different states but with the same event."/>
+        <Key word =  "nonterminating" description="Nonterminating checking: #assert P() nonterminating;"/>
+        <Key word =  "reaches" description="Reachability checking: #assert P() reaches goal;"/>
+        <Key word =  "refines" description="Refinement checking: #assert P() refines Q();"/>
+        <Key word =  "refines&lt;F>" description="Stable failures refinement checking: #assert P() refines&lt;F> Q();"/>
+        <Key word =  "refines&lt;FD>" description="Failures and divergence refinement checking: #assert P() refines&lt;F> Q();"/>
+        <Key word = "&lt;F>" description=""/>
+        <Key word = "&lt;FD>" description=""/>
+        <Key word =  "true" description="true constant"/>
+        <Key word =  "false" description="false constant"/>
+        <Key word =  "init" description="special event denoting system initialization."/>
+        <Key word =  "tau" description="special event denoting an invisible event."/>
+        <Key word =  "with" description="keyword used with reachability checking: #assert P() reaches goal with min(weight);"/>
+        <Key word =  "min" description="keyword used with reachability checking: #assert P() reaches goal with min(weight);"/>
+        <Key word =  "max" description="keyword used with reachability checking: #assert P() reaches goal with max(weight);"/>
+      </KeyWords>
+
+    </RuleSet>
+
+  </RuleSets>
+
+</SyntaxDefinition>
+

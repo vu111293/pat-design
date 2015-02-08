@@ -1,0 +1,87 @@
+<#@ template language="C#" debug="False" hostspecific="true" #>
+using System.Collections.Generic;
+using PAT.Common.Classes.Expressions.ExpressionClass;
+using <# Write(this.Host.ResolveParameterValue("","","AssertionsNamespace")); #>;
+
+namespace <# Write(this.Host.ResolveParameterValue("","","LTSNamespace")); #>
+{
+    public abstract class Process
+    {
+        public string ProcessID;
+
+        /// <summary>
+        /// returns all the possible moves of the current process
+        /// </summary>
+        /// <returns></returns>
+        public abstract List<Configuration> MoveOneStep(Configuration eStep);
+
+        /// <summary>
+        /// Get the set of global variables which may be accessed by this process. Notice that arrays will be flatened (for one level). 
+        /// For instance, let leader[3] be an array, leader[0], leader[1] will be listed as two different variables. 
+        /// </summary>
+        /// <returns></returns>
+        public virtual List<string> GetGlobalVariables()
+        {
+            return new List<string>(0);
+        }
+
+        /// <summary>
+        /// Get the set of relevant channels.
+        /// </summary>
+        /// <returns></returns>
+        public virtual List<string> GetChannels()
+        {
+            return new List<string>(0);
+        }
+
+        /// <summary>
+        /// This method defines the logic for calculating the default alphabet of a process. That is, the set of events consitituting the 
+        /// process expression with process reference unfolded ONCE! We found this to be intuitive at the moment.
+        /// </summary>
+        /// <returns></returns>
+        public virtual HashSet<string> GetAlphabets(Dictionary<string, string> visitedDefinitionRefs)
+        {
+            return new HashSet<string>();
+        }
+
+        public virtual bool MustBeAbstracted()
+        {
+            return false;
+        }
+
+        /// <summary>
+        /// clear global constants and process parameters; This method is the starting point of run-time execution of the process.
+        /// </summary>
+        /// <param name="constMapping"></param>
+        /// <returns></returns>
+        public abstract Process ClearConstant(Dictionary<string, Expression> constMapping);
+
+        ///// <summary>
+        ///// returns all the possible synchoronous input process on the given channel
+        ///// </summary>
+        ///// <returns></returns>
+        public virtual List<Configuration> SyncInput(ConfigurationWithChannelData eStep) //, string syncChannel, Expression[] values
+        {
+            return new List<Configuration>(0);
+        }
+
+        public virtual Process GetTopLevelConcurrency(List<string> visitedDef)
+        {
+            return null;
+        }
+
+        ///// <summary>
+        ///// returns all the possible synchronous output steps
+        ///// </summary>
+        ///// <returns></returns>
+        public virtual List<ConfigurationWithChannelData> SyncOutput(Configuration eStep)
+        {
+            return new List<ConfigurationWithChannelData>();
+        }
+
+        public virtual bool IsProbabilistic()
+        {
+            return false;
+        }
+    }
+}

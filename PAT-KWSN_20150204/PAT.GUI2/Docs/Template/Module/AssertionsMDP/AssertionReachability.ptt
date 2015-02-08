@@ -1,0 +1,52 @@
+<#@ template language="C#" debug="False" hostspecific="true" #>
+using System.Collections.Generic;
+using PAT.Common.Classes.Expressions;
+using PAT.Common.Classes.LTS;
+using PAT.Common.Classes.ModuleInterface;
+using PAT.Common.Classes.Ultility;
+using QueryConstraintType=PAT.Common.Classes.Ultility.QueryConstraintType;
+using <# Write(this.Host.ResolveParameterValue("","","LTSNamespace")); #>;
+
+namespace <# Write(this.Host.ResolveParameterValue("","","AssertionsNamespace")); #>
+{
+    public class <# Write(this.Host.ResolveParameterValue("","","ModuleCode")); #>AssertionReachability : PAT.Common.Classes.SemanticModels.MDP.Assertion.AssertionReachability
+    {
+        public DefinitionRef Process;
+
+        public <# Write(this.Host.ResolveParameterValue("","","ModuleCode")); #>AssertionReachability(DefinitionRef processDef, string reachableState, QueryConstraintType constraintType)
+            : base(reachableState)
+        {
+            ConstraintType = constraintType;
+            Process = processDef;
+        }
+
+        public override void Initialize(SpecificationBase spec)
+        {
+            Specification Spec = spec as Specification;
+            ReachableStateCondition = Spec.DeclarationDatabase[ReachableStateLabel];
+
+            List<string> varList = Process.GetGlobalVariables();
+            varList.AddRange(ReachableStateCondition.GetVars());
+
+            Valuation GlobalEnv = Spec.SpecValuation.GetVariableChannelClone(varList, Process.GetChannels());
+
+            //Initialize InitialStep
+            InitialStep = new Configuration(Process, Constants.INITIAL_EVENT, null, GlobalEnv, false, 1, -1);
+
+            MustAbstract = Process.MustBeAbstracted();
+        }
+
+
+        public override string StartingProcess
+        {
+            get { return Process.ToString(); }
+        }
+
+
+        //todo: override ToString method if your assertion uses different syntax as PAT
+        //public override string ToString()
+        //{
+        //		return "";
+        //}
+    }
+}

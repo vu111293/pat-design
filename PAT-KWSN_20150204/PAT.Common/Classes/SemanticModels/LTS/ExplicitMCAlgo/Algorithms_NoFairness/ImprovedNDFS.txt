@@ -1,0 +1,97 @@
+ImprovedNDFS()
+{
+	BlueNDFS()
+}
+
+BlueNDFS()
+{
+	blueStack = Empty
+	blueStack.Push(initialState)
+	while (blueStack.Count > 0)
+	{
+		v = blueStack.Peek()
+		if (v.Color = White)
+		{
+			v.Color = Cyan
+			for (all w in successors(v))
+			{
+				if (w.Color = Cyan & (v is accepting || w is accepting))
+				{
+					report counterexample
+					return
+				}
+			}
+		}
+		unvisitedSuccessors = Empty
+		for (all w in successors(v))
+		{
+			if (w.Color = White)
+			{
+				unvisitedSuccessors.Add(w)
+			}
+		}
+		if (unvisitedSuccessors.Count > 0)
+		{
+			w = random(unvisitedSuccessors)
+			blueStack.Push(w)
+		}
+		else
+		{
+			if (v is accepting)
+			{
+				if (v is deadlock)
+				{
+					report counterexample
+					return
+				}
+				else
+				{
+					isStop = RedDFS(v)
+					if (isStop) {return}
+				}
+				v.Color = Pink
+			}
+			else
+			{
+				v.Color = Blue
+			}
+			blueStack.Pop()
+		}
+	}
+}
+RedDFS(acceptingState)
+{
+	redStack = Empty
+	redStack.Push(acceptingState)
+	while (redStack != Empty)
+	{
+		v = redStack.Peek()
+		for (all w in successors(v))
+		{
+			if (w.Color = Cyan)
+			{
+				report counterexample
+				return True
+			}
+		}
+		unvisitedSuccessors = Empty
+		for (all w in successors(v))
+		{
+			if (w.Color = Blue)
+			{
+				unvisitedSuccessors.Add(w)
+			}
+		}
+		if (unvisitedSuccessors.Count > 0)
+		{
+			w = random(unvisitedSuccessors)
+			w.Color = Pink
+			redStack.Push(w)
+		}
+		else
+		{
+			redStack.Pop()
+		}
+	}
+	return False
+}

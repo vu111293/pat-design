@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Please_wait_for_the_verification_to_stop_first__Otherwise_it_may_cause_exceptional_behaviors_" xml:space="preserve">
+    <value>Chờ quá trình kiểm tra kết thúc ,nếu không có thể lỗi sẽ xảy ra!</value>
+  </data>
+  <data name="Grammar_Checked" xml:space="preserve">
+    <value>Kiểm tra ngữ pháp</value>
+  </data>
+  <data name="C__library_code_is_saved_successfully_" xml:space="preserve">
+    <value>Thư viện C# được lưu thành công!</value>
+  </data>
+  <data name="Are_you_sure_you_want_to_delete_the_selected_process_" xml:space="preserve">
+    <value>Bạn có muốn xóa quá trình được chọn không?</value>
+  </data>
+  <data name="Please_stop_verification_or_simulation_before_parsing_the_model_" xml:space="preserve">
+    <value>Dừng quá trình kiểm tra hoặc mô phỏng trước khi biên dịch!</value>
+  </data>
+  <data name="Line_number" xml:space="preserve">
+    <value>Số dòng</value>
+  </data>
+  <data name="Normal_Mode_Selected" xml:space="preserve">
+    <value>Chọn lựa chế độ thông thường</value>
+  </data>
+  <data name="Parallel_Verification_UnSelected" xml:space="preserve">
+    <value>Không chọn kiểm tra song song</value>
+  </data>
+  <data name="Result_Generation_Cancelled" xml:space="preserve">
+    <value>Hủy quá trình sinh kết quả</value>
+  </data>
+  <data name="Exception_happened__" xml:space="preserve">
+    <value>Có lỗi xảy ra: </value>
+  </data>
+  <data name="Generate_Counterexample_UnSelected" xml:space="preserve">
+    <value>Sinh ra phản ví dụ không được lựa chọn</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Lỗi</value>
+  </data>
+  <data name="BDD_Selected" xml:space="preserve">
+    <value>Sử dụng BDD</value>
+  </data>
+  <data name="Checking_file_" xml:space="preserve">
+    <value>Kiểm tra file:</value>
+  </data>
+  <data name="Exception_happened_during_the_Contracts_compilation__" xml:space="preserve">
+    <value>Lỗi xảy ra khi biên dịch kiểu Contracts:</value>
+  </data>
+  <data name="Verification_has_been_running_for_" xml:space="preserve">
+    <value>Quá trình kiểm tra thực hiện trong {0}s</value>
+  </data>
+  <data name="The_Promela_model_is_empty_" xml:space="preserve">
+    <value>Mô hình Promela rỗng.</value>
+  </data>
+  <data name="Specification_is_parsed_in__0_s" xml:space="preserve">
+    <value>Chương trình được biên dịch trong {0}s.</value>
+  </data>
+  <data name="This_file_is_read_only__Do_you_want_to_overwrite_it_" xml:space="preserve">
+    <value>File này chỉ đọc. Bạn có muốn ghi đè lên không?</value>
+  </data>
+  <data name="Partial_Order_Reduction_UnSelected" xml:space="preserve">
+    <value>Không chọn Partial Order Reduction</value>
+  </data>
+  <data name="Verification_Starts___" xml:space="preserve">
+    <value>Bắt đầu quá trình kiểm tra...</value>
+  </data>
+  <data name="Verbose_Mode_Selected" xml:space="preserve">
+    <value>Chọn chế độ hiển thị chi tiết</value>
+  </data>
+  <data name="Please_input_a_valid_output_file_" xml:space="preserve">
+    <value>Hãy chọn một file xuất ra hợp lệ!</value>
+  </data>
+  <data name="Duplicate_Process_Name" xml:space="preserve">
+    <value>Tên quá trình đã được sử dụng trước đó</value>
+  </data>
+  <data name="File_format_is_not_supported_by_PAT_" xml:space="preserve">
+    <value>Định dạng file không được hỗ trợ!</value>
+  </data>
+  <data name="Please_input_a_model_first_" xml:space="preserve">
+    <value>Hãy nhập mô hình trước!</value>
+  </data>
+  <data name="Runtime_Exception_Happened" xml:space="preserve">
+    <value>Lỗi xảy ra.</value>
+  </data>
+  <data name="Invalid_email_address_" xml:space="preserve">
+    <value>Email không hợp lệ!</value>
+  </data>
+  <data name="Invalid_name_" xml:space="preserve">
+    <value>Tên không hợp lệ!</value>
+  </data>
+  <data name="Parsing_error_at_line_" xml:space="preserve">
+    <value>Lỗi biên dịch ở dòng</value>
+  </data>
+  <data name="Loading_error" xml:space="preserve">
+    <value>Lỗi xảy ra khi load file</value>
+  </data>
+  <data name="Partial_Order_Reduction_Selected" xml:space="preserve">
+    <value>Chọn Partial Order Reduction</value>
+  </data>
+  <data name="Error_happened_in_opening_" xml:space="preserve">
+    <value>Lỗi xảy ra khi mở file</value>
+  </data>
+  <data name="At_least_one_process_is_needed_in_the_model_" xml:space="preserve">
+    <value>Ít nhất một quá trình phải được chọn trong mô hình.</value>
+  </data>
+  <data name="Saving_error" xml:space="preserve">
+    <value>Lỗi xảy ra khi lưu</value>
+  </data>
+  <data name="Parallel_Verification_Selected" xml:space="preserve">
+    <value>Chọn kiểm tra song song</value>
+  </data>
+  <data name="Email_is_sent_successfully_" xml:space="preserve">
+    <value>Email được gởi thành công</value>
+  </data>
+  <data name="Generating_Result___" xml:space="preserve">
+    <value>Sinh ra kết quả</value>
+  </data>
+  <data name="Verifying_Assertion__" xml:space="preserve">
+    <value>Tính chất đang được kiểm tra: </value>
+  </data>
+  <data name="Exception_happened_during_the_compilation__" xml:space="preserve">
+    <value>Lỗi xảy ra khi biên dịch: </value>
+  </data>
+  <data name="Verification_Completed" xml:space="preserve">
+    <value>Kiểm tra thành công.</value>
+  </data>
+  <data name="Apply_Zeno_Check_UnSelected" xml:space="preserve">
+    <value>Không sử dụng kiểm tra Zeno</value>
+  </data>
+  <data name="Save_Output_File" xml:space="preserve">
+    <value>Lưu file xuất ra</value>
+  </data>
+  <data name="_running_on_" xml:space="preserve">
+    <value>Đang chạy</value>
+  </data>
+  <data name="Error_happned_in_loading_module_" xml:space="preserve">
+    <value>Lỗi xảy ra khi load module</value>
+  </data>
+  <data name="Open_Error__the_selected_file_is_not_found_" xml:space="preserve">
+    <value>Lỗi: File không tồn tại</value>
+  </data>
+  <data name="Generate_Counterexample_Selected" xml:space="preserve">
+    <value>Sinh ra phản ví dụ được lựa chọn</value>
+  </data>
+  <data name="Shortest_Witness_Trace_Selected" xml:space="preserve">
+    <value>Chọn chế độ tìm phản ví dụ ngắn nhất</value>
+  </data>
+  <data name="Please_make_sure_that_the_format_is_correct_" xml:space="preserve">
+    <value>Kiểm tra định dạng hợp lệ!</value>
+  </data>
+  <data name="Verification_Cancelled" xml:space="preserve">
+    <value>Hủy quá trình kiểm tra</value>
+  </data>
+  <data name="Exception_happened_during_saving__" xml:space="preserve">
+    <value>Lỗi xảy ra khi lưu file: </value>
+  </data>
+  <data name="Promela_Model_Translated" xml:space="preserve">
+    <value>Dịch mô hình Promela</value>
+  </data>
+  <data name="BDD_UnSelected" xml:space="preserve">
+    <value>Không sử dụng BDD</value>
+  </data>
+  <data name="C__library_is_built_successfully__You_can_use_them_now_in_your_models_" xml:space="preserve">
+    <value>Thư viện C# được xây dựng thành công!! Bây giờ bạn có thể sử dụng nó trong mô hình</value>
+  </data>
+  <data name="Please_select_some_input_files_" xml:space="preserve">
+    <value>Chọn một số file nhập vào!</value>
+  </data>
+  <data name="Apply_Zeno_Check_Selected" xml:space="preserve">
+    <value>Sử dụng kiểm tra Zeno</value>
+  </data>
+  <data name="_column_" xml:space="preserve">
+    <value>Cột</value>
+  </data>
+  <data name="Error__file_format_is_not_supported_" xml:space="preserve">
+    <value>Lỗi: Định dạng file không được hỗ trợ!</value>
+  </data>
+  <data name="An_error_occurred_while_compiling_the_C__code__" xml:space="preserve">
+    <value>Lỗi biên dịch code C#: </value>
+  </data>
+  <data name="Document__0__unsaved__Do_you_want_to_save_it_before_close_" xml:space="preserve">
+    <value>Tài liệu {0} chưa được lưu lại. Bạn có muốn lưu trước khi đóng không?</value>
+  </data>
+  <data name="Double_click_to_open_the_folder_of_" xml:space="preserve">
+    <value>Nhấp chuột 2 lần để mở thư mục </value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Xác nhận</value>
+  </data>
+  <data name="No_duplicated_process_names_are_allowed" xml:space="preserve">
+    <value>Tên quá trình đã được sử dụng trước đó</value>
+  </data>
+  <data name="UML_Model_Translated" xml:space="preserve">
+    <value>Dịch mô hình UML</value>
+  </data>
+  <data name="Shortest_Witness_Trace_UnSelected" xml:space="preserve">
+    <value>Không chọn chế độ tìm phản ví dụ ngắn nhất</value>
+  </data>
+  <data name="Please_load_a_model_first_" xml:space="preserve">
+    <value>Hãy load mô hình trước!</value>
+  </data>
+  <data name="Parsing_error__" xml:space="preserve">
+    <value>Lỗi biên dịch</value>
+  </data>
+  <data name="Sending_Email_failed_" xml:space="preserve">
+    <value>Gửi email không thành công.</value>
+  </data>
+  <data name="Open_Error_" xml:space="preserve">
+    <value>Lỗi xảy ra khi mở file</value>
+  </data>
+  <data name="Document_" xml:space="preserve">
+    <value>Tài liệu</value>
+  </data>
+</root>

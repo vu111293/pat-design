@@ -1,0 +1,211 @@
+#include <iostream>
+#include "SocketChannelClient.h"
+
+Q_DEFINE_THIS_FILE
+
+
+SocketChannelClient::
+SocketChannelClient(char* host_name, int host_port, int signalNumber) : QActive((QStateHandler)&SocketChannelClient::initial), m_timeEvt(TIMEOUT_SIG){
+	this->host_port = host_port;
+	this->host_name = host_name;
+	this->signalNumber = signalNumber;
+
+	wVersionRequested = MAKEWORD( 2, 2 );
+	err = WSAStartup( wVersionRequested, &wsaData );
+	if ( err != 0 || ( LOBYTE( wsaData.wVersion ) != 2 || HIBYTE( wsaData.wVersion ) != 2 )) {
+		fprintf(stderr, "Could not find useable sock dll %d\n",WSAGetLastError());
+	}
+
+	hsock = socket(AF_INET, SOCK_STREAM, 0);
+
+	if(hsock == -1){
+		printf("Error initializing socket %d\n",WSAGetLastError());
+	}
+
+	p_int = (int*)malloc(sizeof(int));
+	*p_int = 1;
+	
+	if( (setsockopt(hsock, SOL_SOCKET, SO_REUSEADDR, (char*)p_int, sizeof(int)) == -1 )|| (setsockopt(hsock, SOL_SOCKET, SO_KEEPALIVE, (char*)p_int, sizeof(int)) == -1 ) ){
+		printf("Error setting options %d\n", WSAGetLastError());
+		free(p_int);
+	}
+	free(p_int);
+
+	my_addr.sin_family = AF_INET ;
+	my_addr.sin_port = htons(host_port);
+	memset(&(my_addr.sin_zero), 0, 8);
+	my_addr.sin_addr.s_addr = inet_addr(host_name);
+	
+}
+
+SocketChannelClient::
+~SocketChannelClient(){
+}
+
+void SocketChannelClient::
+insertPacket(DataEvent* packet){
+	QF_CRIT_ENTRY();
+	eventList.push_back(packet);
+	QF_CRIT_EXIT();
+}
+
+void SocketChannelClient::
+sendData(int socket_fd, char* buffer, int bytesToSend){
+	int writeBytes = 0;
+	int bufferIndex = 0;
+	int bytesToWrite_;
+	int totalWriteBytes = 0;
+ 
+	//printf("supposed to send %d bytes\n", bytesToSend);
+
+	bytesToWrite_ = bytesToSend;
+	while(1){
+		//printf("client sending ddddddddaaaaaaaaatttttttttaaaaaaaaaaa\n");
+
+		writeBytes = send(socket_fd, &buffer[bufferIndex], bytesToWrite_, 0);
+		totalWriteBytes = totalWriteBytes + writeBytes;
+		
+		//printf("already receive %d bytes\n", totalWriteBytes);
+
+		if(writeBytes < 0){
+			fprintf(stderr,"socket send error! socket does not exist anymore\n");
+		}
+		if(writeBytes < bytesToWrite_){
+			bytesToWrite_ = bytesToWrite_ - writeBytes;
+			bufferIndex = bufferIndex + writeBytes;
+		}
+		else{
+			//printf("client sending data eeeeeeeeeeeeeennnnnnnnnnnddddddddd\n");
+			break;
+		}
+	}
+}
+
+void SocketChannelClient::
+receiveData(int socket_fd, char* buffer, int bytesToReceive){
+	int readBytes = 0;
+	int bufferIndex = 0;
+	int bytesToRead_;
+	int totalReadBytes = 0;
+ 
+	bytesToRead_ = bytesToReceive;
+	while(true){
+		readBytes = recv(socket_fd, &buffer[bufferIndex], bytesToRead_, 0);
+		totalReadBytes = totalReadBytes + readBytes;
+		if(readBytes < 0){
+			fprintf(stderr,"socket receive error! socket does not exist anymore\n");
+		}
+		if(readBytes < bytesToRead_){
+			bytesToRead_ = bytesToRead_ - readBytes;
+			bufferIndex = bufferIndex + readBytes;
+		}
+		else{
+			break;
+		}
+	}
+}
+
+QState SocketChannelClient::initial(SocketChannelClient *me, QEvent const *){
+
+	return Q_TRAN(&SocketChannelClient::connecting);
+}
+
+QState SocketChannelClient::
+connecting(SocketChannelClient *me, QEvent const *e){
+	DataEvent *pe;
+	DataEvent* de = (DataEvent*)e;
+	switch(e->sig){
+		case Q_ENTRY_SIG: 
+			me->m_timeEvt.postIn(me, WAIT_TIME);
+			return Q_HANDLED();
+
+		case Q_EXIT_SIG: 
+			return Q_HANDLED();
+
+		case TIMEOUT_SIG:
+			if( connect( me->hsock, (struct sockaddr*)&me->my_addr, sizeof(me->my_addr)) == SOCKET_ERROR ){
+				fprintf(stderr, "Error connecting socket %d\n", WSAGetLastError());
+			}
+
+			return Q_TRAN(&SocketChannelClient::serving);
+
+	}
+	return Q_SUPER(&QHsm::top);
+}
+
+QState SocketChannelClient::
+serving(SocketChannelClient *me, QEvent const *e){
+	DataEvent *pe;
+	DataEvent* de = (DataEvent*)e;
+	switch(e->sig){
+		case Q_ENTRY_SIG: 
+			me->m_timeEvt.postIn(me, WAIT_TIME);
+
+			//printf("Client is in serving state\n");
+
+			
+
+			return Q_HANDLED();
+
+		case Q_EXIT_SIG: 
+			return Q_HANDLED();
+
+		case TIMEOUT_SIG:
+			struct timeval time;
+			
+
+			while (true){
+				FD_ZERO(&me->oRead);
+				FD_SET(me->hsock, &me->oRead);
+				
+				time.tv_sec = 2;
+				time.tv_usec = 5000;
+
+				int result = select(0, &me->oRead, NULL, 0, &time);
+				
+				//printf("client result: %d\n", result);
+
+				if (FD_ISSET(me->hsock, &me->oRead))
+				{
+					memset(&me->receiveBuffer,0,sizeof(&me->receiveBuffer));
+
+					me->receiveData(me->hsock, me->receiveBuffer, sizeof(me->receiveBuffer));
+
+					//printf("client received data!\n");
+
+					DataEvent* de = Q_NEW(DataEvent, me->signalNumber);
+					
+					for(int i = 0; i < MAX_DATA_SIZE; i++){
+						de->data[i] = me->receiveBuffer[i];
+					}
+
+					QF::publish(de);
+				}
+				
+				while (me->eventList.size() != 0)
+				{
+					QF_CRIT_ENTRY();
+
+					DataEvent* dataEvt = me->eventList.front();
+					me->eventList.pop_front();
+					
+					QF_CRIT_EXIT();
+
+					memset(&me->sendBuffer,0,sizeof(&me->sendBuffer));
+
+					for(int i = 0; i < MAX_DATA_SIZE; i++){
+						me->sendBuffer[i] = dataEvt->data[i];
+					}
+
+					me->sendData(me->hsock, me->sendBuffer, sizeof(me->sendBuffer));
+					
+					QF::publish(dataEvt);
+					
+					//printf("client send out data: %s\n", me->sendBuffer);
+				}
+			}
+
+			return Q_HANDLED();
+	}
+	return Q_SUPER(&QHsm::top);
+}

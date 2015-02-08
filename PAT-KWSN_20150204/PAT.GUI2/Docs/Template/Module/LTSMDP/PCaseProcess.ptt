@@ -1,0 +1,138 @@
+<#@ template language="C#" debug="False" hostspecific="true" #>
+using System.Collections.Generic;
+using PAT.Common.Classes.Expressions.ExpressionClass;
+using PAT.Common.Classes.LTS;
+using PAT.Common.Classes.ModuleInterface;
+using System.Text;
+using PAT.Common.Classes.Ultility;
+using <# Write(this.Host.ResolveParameterValue("","","AssertionsNamespace")); #>;
+
+namespace <# Write(this.Host.ResolveParameterValue("","","LTSNamespace")); #>
+{
+    public sealed class PCaseProcess : Process
+    {
+        public Process[] Processes;
+        public float[] Probabilities;
+
+        public PCaseProcess(Process[] processes, float[] probs)
+        {
+            Processes = processes;
+            Probabilities = probs;
+         
+            //generate the process ID
+            StringBuilder IDBuilder = new StringBuilder(Constants.CASE);
+            for (int i = 0; i < Processes.Length; i++)
+            {
+                IDBuilder.Append(DataStore.DataManager.InitializeProcessID(Probabilities[i].ToString()));
+                IDBuilder.Append(Constants.CASECONDITIONAL);
+                IDBuilder.Append(Processes[i].ProcessID);
+                IDBuilder.Append(";");
+            }
+
+            ProcessID = DataStore.DataManager.InitializeProcessID(IDBuilder.ToString());
+        }
+
+        public override List<string> GetGlobalVariables()
+        {
+            List<string> Variables = new List<string>();
+
+            for (int i = 0; i < Processes.Length; i++)
+            {
+                Common.Classes.Ultility.Ultility.AddList(Variables, Processes[i].GetGlobalVariables());
+            }
+
+            return Variables;
+        }
+
+        public override List<string> GetChannels()
+        {
+            List<string> channels = new List<string>();
+
+            for (int i = 0; i < Processes.Length; i++)
+            {
+                List<string> vars = Processes[i].GetChannels();
+                foreach (string var in vars)
+                {
+                    if (!channels.Contains(var))
+                    {
+                        channels.Add(var);
+                    }
+                }
+            }
+
+            return channels;
+        }
+
+        public override List<Configuration> MoveOneStep(Configuration eStep)
+        {
+            List<Configuration> ReturnList = new List<Configuration>(1);
+            int index = Configuration.DistributionIndex++;
+
+            for (int i = 0; i < Processes.Length; i++)
+            {
+                Configuration next = new Configuration(Processes[i], Constants.TAU, Probabilities[i].ToString(), eStep.GlobalEnv, false, Probabilities[i], index);
+                ReturnList.Add(next);
+            }
+
+            return ReturnList;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder s = new StringBuilder();
+            s.AppendLine("pcase {");
+            for (int i = 0; i < Processes.Length; i++)
+            {
+                Process process = Processes[i];
+                s.AppendLine("[" + this.Probabilities[i].ToString() + "]:" + process.ToString());
+            }
+            s.AppendLine("}");
+            return s.ToString();
+        }
+
+        public override HashSet<string> GetAlphabets(Dictionary<string, string> visitedDefinitionRefs)
+        {
+            HashSet<string> toReturn = new HashSet<string>();
+
+            for (int i = 0; i < Processes.Length; i++)
+            {
+                Process process = Processes[i];
+                toReturn.UnionWith(process.GetAlphabets(visitedDefinitionRefs));
+            }
+
+            return toReturn;
+        }
+
+        public override Process ClearConstant(Dictionary<string, Expression> constMapping)
+        {
+            List<Process> newProcesses = new List<Process>(Processes.Length);
+
+            for (int i = 0; i < Processes.Length; i++)
+            {
+                Process newProc = Processes[i].ClearConstant(constMapping);
+                newProcesses.Add(newProc);
+            }
+
+            return new PCaseProcess(newProcesses.ToArray(), this.Probabilities);
+
+        }
+
+        public override bool MustBeAbstracted()
+        {
+            for (int i = 0; i < Processes.Length; i++)
+            {
+                if (Processes[i].MustBeAbstracted())
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public override bool IsProbabilistic()
+        {
+            return true;
+        }
+    }
+}

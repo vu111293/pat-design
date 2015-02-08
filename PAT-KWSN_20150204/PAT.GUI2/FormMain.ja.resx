@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ToolbarButton_AddComment.Text" xml:space="preserve">
+    <value>選択行をコメントアウト(Ctrl+Shift+C)</value>
+  </data>
+  <data name="MenuButton_Languages.Text" xml:space="preserve">
+    <value>言語</value>
+  </data>
+  <data name="MenuButton_Simulation.Text" xml:space="preserve">
+    <value>シミュレーション(&amp;S)</value>
+  </data>
+  <data name="MenuButton_ToggleAllOutlines.Text" xml:space="preserve">
+    <value>すべてのアウトライン表示の切り替え</value>
+  </data>
+  <data name="ToolbarButton_ZoomIn.Text" xml:space="preserve">
+    <value>テキストフォントの拡大</value>
+  </data>
+  <data name="ToolbarButton_Print.Text" xml:space="preserve">
+    <value>印刷 (Ctrl+P)</value>
+  </data>
+  <data name="StatusBar.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="ToolbarButton_New.Text" xml:space="preserve">
+    <value>新しいファイル</value>
+  </data>
+  <data name="MenuButton_Window.Text" xml:space="preserve">
+    <value>ウィンドウ(&amp;W)</value>
+  </data>
+  <data name="MenuButton_FindNext.Text" xml:space="preserve">
+    <value>次を検索(&amp;N)</value>
+  </data>
+  <data name="MenuButton_NavigateForward.Text" xml:space="preserve">
+    <value>次のタブへ移動(&amp;N)</value>
+  </data>
+  <data name="closeAllToolStripMenuItem.Text" xml:space="preserve">
+    <value>すべて閉じる</value>
+  </data>
+  <data name="MenuButton_Undo.Text" xml:space="preserve">
+    <value>取消(&amp;U)</value>
+  </data>
+  <data name="MenuButton_Redo.Text" xml:space="preserve">
+    <value>やり直し(&amp;R)</value>
+  </data>
+  <data name="MenuButton_Copy.Text" xml:space="preserve">
+    <value>コピー(&amp;C)</value>
+  </data>
+  <data name="MenuButton_Help.Text" xml:space="preserve">
+    <value>ヘルプ(&amp;H)</value>
+  </data>
+  <data name="MenuButton_HelpMenu.Text" xml:space="preserve">
+    <value>ヘルプ(&amp;H)</value>
+  </data>
+  <data name="MenuButton_StatusBar.Text" xml:space="preserve">
+    <value>ステータスバー(&amp;S)</value>
+  </data>
+  <data name="MenuButton_Print.Text" xml:space="preserve">
+    <value>印刷(&amp;P)</value>
+  </data>
+  <data name="MenuButton_EnableTrickingInAcceptingConditions.Text" xml:space="preserve">
+    <value>受理条件のトリックを有効にする(&amp;A)</value>
+    <comment>tecnical</comment>
+  </data>
+  <data name="MenuButton_SaveAs.Text" xml:space="preserve">
+    <value>名前をつけて保存(&amp;A)</value>
+  </data>
+  <data name="ToolbarButton_CheckGrammar.Text" xml:space="preserve">
+    <value>構文チェック(F5)</value>
+  </data>
+  <data name="MenuStrip.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="MenuButton_GoTo.Text" xml:space="preserve">
+    <value>指定行へ移動(&amp;G)</value>
+  </data>
+  <data name="MenuButton_View.Text" xml:space="preserve">
+    <value>表示(&amp;V)</value>
+  </data>
+  <data name="MenuButton_SubmitModel.Text" xml:space="preserve">
+    <value>モデルをメール(&amp;E)</value>
+  </data>
+  <data name="MenuButton_SelectAll.Text" xml:space="preserve">
+    <value>すべて選択(&amp;S)</value>
+  </data>
+  <data name="ToolbarButton_Zoom100.Text" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="MenuButton_Outlining.Text" xml:space="preserve">
+    <value>アウトライン(&amp;O)</value>
+  </data>
+  <data name="MenuButton_LineCounter.Text" xml:space="preserve">
+    <value>ソースコードラインカウンター</value>
+  </data>
+  <data name="MenuButton_PreviousBookmark.Text" xml:space="preserve">
+    <value>前のしおり</value>
+  </data>
+  <data name="MenuButton_ErrorList.Text" xml:space="preserve">
+    <value>エラー・リスト(&amp;E)</value>
+  </data>
+  <data name="closeAllButThisToolStripMenuItem.Text" xml:space="preserve">
+    <value>これ以外を全て閉じる</value>
+  </data>
+  <data name="MenuButton_ChineseTraditional.Text" xml:space="preserve">
+    <value>中国語(繁体字)</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>PAT-高度なシミュレーションおよびモデル検査ツール(バージョン</value>
+    <comment>Finish</comment>
+  </data>
+  <data name="MenuButton_ToggleBookmark.Text" xml:space="preserve">
+    <value>ブックマーク指定</value>
+  </data>
+  <data name="ToolbarButton_SubmitModel.ToolTipText" xml:space="preserve">
+    <value>現在のモデルをPATチームまたは友人にメール</value>
+  </data>
+  <data name="SplittoolStripMenuItem.Text" xml:space="preserve">
+    <value>ウィンドウ分割</value>
+  </data>
+  <data name="MenuButton_Vietnamese.Text" xml:space="preserve">
+    <value>ベトナム語</value>
+  </data>
+  <data name="MenuButton_EnableSimplificationOfTheFormula.Text" xml:space="preserve">
+    <value>式の論理的な簡素化を有効にする</value>
+    <comment>tecnical</comment>
+  </data>
+  <data name="MenuButton_LTLParsingOptions.Text" xml:space="preserve">
+    <value>LTLの分析の選択</value>
+  </data>
+  <data name="MenuButton_New.Text" xml:space="preserve">
+    <value>新規(&amp;N)</value>
+  </data>
+  <data name="MenuButton_Japanese.Text" xml:space="preserve">
+    <value>日本語</value>
+  </data>
+  <data name="MenuButton_GenerateLatex.Text" xml:space="preserve">
+    <value>LaTeXデータの印刷(&amp;L)</value>
+  </data>
+  <data name="ToolbarButton_Paste.Text" xml:space="preserve">
+    <value>貼り付け (Ctrl+V)</value>
+  </data>
+  <data name="MenuButton_SyntaxOptions.Text" xml:space="preserve">
+    <value>構文に関するオプション</value>
+  </data>
+  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="ToolbarButton_SubmitModel.Text" xml:space="preserve">
+    <value>モデルをメール</value>
+  </data>
+  <data name="MenuButton_Toolbar.Text" xml:space="preserve">
+    <value>ツールバー(&amp;T)</value>
+  </data>
+  <data name="MenuButton_ToggleOutline.Text" xml:space="preserve">
+    <value>アウトライン表示の切り替え</value>
+  </data>
+  <data name="MenuButton_CheckGrammer.Text" xml:space="preserve">
+    <value>構文チェック(&amp;C)</value>
+  </data>
+  <data name="MenuButton_Save.Text" xml:space="preserve">
+    <value>保存(&amp;S)</value>
+  </data>
+  <data name="MenuButton_AlwaysOnTop.Text" xml:space="preserve">
+    <value>常に前に(&amp;A)</value>
+  </data>
+  <data name="ToolbarButton_Find.Text" xml:space="preserve">
+    <value>検索(Ctrl+F)</value>
+  </data>
+  <data name="MenuButton_Russian.Text" xml:space="preserve">
+    <value>ロシア語</value>
+  </data>
+  <data name="MenuButton_Cut.Text" xml:space="preserve">
+    <value>切り取り(&amp;t)</value>
+  </data>
+  <data name="MenuButton_EnableOntheflyAutomataSimplification.Text" xml:space="preserve">
+    <value>オートマトンのOn-the-flyによる簡素化を有効にする(&amp;O)</value>
+    <comment>tecnical</comment>
+  </data>
+  <data name="MenuButton_LineNumber.Text" xml:space="preserve">
+    <value>行番号表示(&amp;L)</value>
+  </data>
+  <data name="MenuButton_Open.Text" xml:space="preserve">
+    <value>開く(&amp;O)</value>
+  </data>
+  <data name="MenuButton_Register.Text" xml:space="preserve">
+    <value>完全版を購入(&amp;P)</value>
+  </data>
+  <data name="openFileDialog1.Title" xml:space="preserve">
+    <value>クエリファイルを開く</value>
+  </data>
+  <data name="MenuButton_FindReplace.Text" xml:space="preserve">
+    <value>検索と置換(&amp;R)</value>
+  </data>
+  <data name="MenuButton_ChineseSimplified.Text" xml:space="preserve">
+    <value>中国語(簡体字)</value>
+  </data>
+  <data name="MenuButton_EnableAPosterioriAutomataSimplification.Text" xml:space="preserve">
+    <value>オートマトンの帰納的な簡素化を有効にする(&amp;P)</value>
+    <comment>tecnical</comment>
+  </data>
+  <data name="ToolbarButton_Save.Text" xml:space="preserve">
+    <value>保存(Ctrl+S)</value>
+  </data>
+  <data name="saveToolStripMenuItem.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="MenuButton_CloseCurrent.Text" xml:space="preserve">
+    <value>この文書を閉じる</value>
+  </data>
+  <data name="ToolbarButton_Verification.Text" xml:space="preserve">
+    <value>検査 (F7)</value>
+  </data>
+  <data name="MenuButton_French.Text" xml:space="preserve">
+    <value>フランス語</value>
+  </data>
+  <data name="newToolStripMenuItem.Text" xml:space="preserve">
+    <value>新しい</value>
+  </data>
+  <data name="ToolbarButton_SaveAs.Text" xml:space="preserve">
+    <value>名前を付けて保存</value>
+  </data>
+  <data name="MenuButton_NavigateBack.Text" xml:space="preserve">
+    <value>前のタブへ移動(&amp;P)</value>
+  </data>
+  <data name="MenuButton_Options.Text" xml:space="preserve">
+    <value>オプション…(&amp;O)</value>
+  </data>
+  <data name="MenuButton_Paste.Text" xml:space="preserve">
+    <value>貼り付け(&amp;P)</value>
+  </data>
+  <data name="MenuButton_EnableStronglyConnectedComponentsSimplification.Text" xml:space="preserve">
+    <value>強く接続された部品の簡素化を有効にする(&amp;C)</value>
+    <comment>tecnical</comment>
+  </data>
+  <data name="MenuButton_Formatting.Text" xml:space="preserve">
+    <value>整形</value>
+  </data>
+  <data name="MenuButton_English.Text" xml:space="preserve">
+    <value>英語</value>
+  </data>
+  <data name="ToolbarButton_LaTexGenerate.Text" xml:space="preserve">
+    <value>モデルのLaTeXデータを生成</value>
+  </data>
+  <data name="toolStripContainer1.Text" xml:space="preserve">
+    <value>toolStripContainer1</value>
+  </data>
+  <data name="MenuButton_Standard.Text" xml:space="preserve">
+    <value>標準(&amp;S)</value>
+  </data>
+  <data name="MenuButton_Website.Text" xml:space="preserve">
+    <value>ウェブサイト(&amp;W)</value>
+  </data>
+  <data name="MenuButton_ClearAllBookmarks.Text" xml:space="preserve">
+    <value>ブックマークを全てクリア</value>
+  </data>
+  <data name="ToolbarButton_FindNext.Text" xml:space="preserve">
+    <value>次を検索 (F3)</value>
+  </data>
+  <data name="MenuButton_Split.Text" xml:space="preserve">
+    <value>ウィンドウの分割(&amp;S)</value>
+  </data>
+  <data name="openFileDialog1.Filter" xml:space="preserve">
+    <value>LTLファイル|*.ltl|すべてのファイル|*.*</value>
+  </data>
+  <data name="MenuButton_Edit.Text" xml:space="preserve">
+    <value>編集(&amp;E)</value>
+  </data>
+  <data name="MenuButton_SubmitModel.ToolTipText" xml:space="preserve">
+    <value>このモデルをPATチームまたは友人にメールする</value>
+  </data>
+  <data name="MenuButton_RecentFiles.Text" xml:space="preserve">
+    <value>最近のファイル(&amp;R)</value>
+  </data>
+  <data name="ToolbarButton_Cut.Text" xml:space="preserve">
+    <value>切り取り(Ctrl+X)</value>
+  </data>
+  <data name="MenuButton_About.Text" xml:space="preserve">
+    <value>説明(&amp;A)</value>
+  </data>
+  <data name="MenuButton_File.Text" xml:space="preserve">
+    <value>ファイル(&amp;F)</value>
+  </data>
+  <data name="ToolbarButton_CheckGrammar.ToolTipText" xml:space="preserve">
+    <value>構文チェック(F5)</value>
+  </data>
+  <data name="ToolbarButton_Simulation.ToolTipText" xml:space="preserve">
+    <value>シミュレーション (F6)</value>
+  </data>
+  <data name="MenuButton_AddComment.Text" xml:space="preserve">
+    <value>選択行コメントアウト(&amp;m)</value>
+  </data>
+  <data name="ToolbarButton_Simulation.Text" xml:space="preserve">
+    <value>シミュレーション (F6)</value>
+  </data>
+  <data name="MenuButton_Spanish.Text" xml:space="preserve">
+    <value>スペイン語</value>
+  </data>
+  <data name="MenuButton_German.Text" xml:space="preserve">
+    <value>ドイツ語</value>
+  </data>
+  <data name="ToolbarButton_Copy.Text" xml:space="preserve">
+    <value>コピー(Ctrl+C)</value>
+  </data>
+  <data name="openContainingFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>保存フォルダを開く</value>
+  </data>
+  <data name="MenuButton_Register.ToolTipText" xml:space="preserve">
+    <value>完全版はより多くのモジュールと例が含まれています</value>
+  </data>
+  <data name="MenuButton_LTL2BA.Text" xml:space="preserve">
+    <value>LTLのオートマトンへのコンバータ</value>
+  </data>
+  <data name="MenuButton_CloseAllDocument.Text" xml:space="preserve">
+    <value>すべての文書を閉じる(&amp;C)</value>
+  </data>
+  <data name="MenuButton_NextBookmark.Text" xml:space="preserve">
+    <value>次のしおり</value>
+  </data>
+  <data name="ToolbarButton_ZoomOut.Text" xml:space="preserve">
+    <value>テキストフォントの縮小</value>
+  </data>
+  <data name="MenuButton_Verification.Text" xml:space="preserve">
+    <value>検査(&amp;V)</value>
+  </data>
+  <data name="MenuButton_VerificationBatch.Text" xml:space="preserve">
+    <value>検査(バッチモード)</value>
+  </data>
+  <data name="MenuButton_Find.Text" xml:space="preserve">
+    <value>検索(&amp;F)</value>
+  </data>
+  <data name="ToolbarButton_RemoveComment.Text" xml:space="preserve">
+    <value>コメントを外す (Ctrl+Shift+U)</value>
+  </data>
+  <data name="MenuButton_Specification.Text" xml:space="preserve">
+    <value>仕様</value>
+  </data>
+  <data name="MenuButton_RemoveComment.Text" xml:space="preserve">
+    <value>コメントを外す(&amp;e)</value>
+  </data>
+  <data name="ToolbarButton_NewModelWizard.Text" xml:space="preserve">
+    <value>新規モデルウィザード</value>
+  </data>
+  <data name="MenuButton_WhatsNewInPAT.Text" xml:space="preserve">
+    <value>PATの最新情報(&amp;N)</value>
+  </data>
+  <data name="MenuButton_OutputPanel.Text" xml:space="preserve">
+    <value>出力パネル(&amp;O)</value>
+  </data>
+  <data name="MenuButton_Examples.Text" xml:space="preserve">
+    <value>例(&amp;x)</value>
+  </data>
+  <data name="ToolbarButton_Zoom100.ToolTipText" xml:space="preserve">
+    <value>100%のテキストのサイズ</value>
+  </data>
+  <data name="MenuButton_Tools.Text" xml:space="preserve">
+    <value>道具(&amp;T)</value>
+  </data>
+  <data name="MenuButton_NewModelWizard.Text" xml:space="preserve">
+    <value>新規モデルウィザード</value>
+  </data>
+  <data name="MenuButton_Delete.Text" xml:space="preserve">
+    <value>削除(&amp;D)</value>
+  </data>
+  <data name="StandardToolBar.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="MenuButton_CheckForUpdate.Text" xml:space="preserve">
+    <value>更新の確認(&amp;C)</value>
+  </data>
+  <data name="MenuButton_EmailFeedback.Text" xml:space="preserve">
+    <value>電子メールによるフィードバック(&amp;E)</value>
+  </data>
+  <data name="ToolbarButton_Undo.Text" xml:space="preserve">
+    <value>取消し (Ctrl+Z)</value>
+  </data>
+  <data name="ToolbarButton_Verification.ToolTipText" xml:space="preserve">
+    <value>検査 (F7)</value>
+  </data>
+  <data name="MenuButton_Replace.Text" xml:space="preserve">
+    <value>置換(&amp;R)</value>
+  </data>
+  <data name="MenuButton_Import.Text" xml:space="preserve">
+    <value>インポート</value>
+  </data>
+  <data name="MenuButton_Exit.Text" xml:space="preserve">
+    <value>終了(&amp;x)</value>
+  </data>
+  <data name="StatusLabel_Status.Text" xml:space="preserve">
+    <value>準備完了</value>
+  </data>
+  <data name="ToolbarButton_Replace.Text" xml:space="preserve">
+    <value>置換 (Ctrl+H)</value>
+  </data>
+  <data name="MenuButton_Bookmarks.Text" xml:space="preserve">
+    <value>ブックマーク(&amp;k)</value>
+  </data>
+  <data name="ToolbarButton_Open.Text" xml:space="preserve">
+    <value>ファイルを開く (Ctrl+O)</value>
+  </data>
+  <data name="MenuButton_HignlightCurrentLine.Text" xml:space="preserve">
+    <value>現在行のハイライト(&amp;H)</value>
+  </data>
+  <data name="ToolbarButton_Redo.Text" xml:space="preserve">
+    <value>やり直し(Ctrl+Y)</value>
+  </data>
+  <data name="ToolbarButton_Specification.Text" xml:space="preserve">
+    <value>仕様</value>
+  </data>
+  <data name="MenuButton_CSharpLibary.Text" xml:space="preserve">
+    <value>C#のライブラリーエディタとコンパイラ</value>
+  </data>
+  <data name="FunctionalToolBar.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="MenuButton_Portuguese.Text" xml:space="preserve">
+    <value>ポルトガル語</value>
+  </data>
+</root>

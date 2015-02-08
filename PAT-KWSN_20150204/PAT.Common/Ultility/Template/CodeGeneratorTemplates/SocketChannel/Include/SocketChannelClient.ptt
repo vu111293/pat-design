@@ -1,0 +1,55 @@
+#ifndef SOCKET_CHANNEL_CLIENT_H
+#define SOCKET_CHANNEL_CLIENT_H
+
+#pragma comment(lib, "ws2_32.lib")
+
+#define WAIT_TIME 100
+
+#include <string>
+#include <list>
+
+#include "qp_port.h"
+#include "SigEvt.h"
+
+class SocketChannelClient : public QActive { 
+	public:
+		SocketChannelClient(char* host_name, int host_port, int signalNumber);
+		~SocketChannelClient();
+
+		void insertPacket(DataEvent* packet);
+		void sendData(int socket_fd, char* buffer, int bytesToSend);
+		void receiveData(int socket_fd, char* buffer, int bytesToReceive);
+
+		std::list<DataEvent*> eventList;
+		int signalNumber;
+		int buffer_size;
+
+	private:
+		static QState initial(SocketChannelClient *me, QEvent const *e);
+		static QState connecting(SocketChannelClient *me, QEvent const *e);
+		static QState serving(SocketChannelClient *me, QEvent const *e);
+
+	public:
+		std::string name;
+
+		int host_port;
+		char* host_name;
+		unsigned short wVersionRequested;
+		WSADATA wsaData;
+		int err;
+
+		int hsock;
+		int* p_int ;
+		struct sockaddr_in my_addr;
+
+		FD_SET oRead;
+		FD_SET oWrite;
+
+		char sendBuffer[MAX_DATA_SIZE*sizeof(uint8_t)];
+		char receiveBuffer[MAX_DATA_SIZE*sizeof(uint8_t)];
+
+	private:
+		QTimeEvt m_timeEvt;
+};
+
+#endif

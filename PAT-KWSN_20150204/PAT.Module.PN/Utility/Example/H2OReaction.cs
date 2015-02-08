@@ -1,0 +1,112 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace PAT.PN.Utility.Example
+{
+    class H2OReaction
+    {
+        public static string H2OReactionProblem()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("<PN>");
+            sb.AppendLine("<Declaration>//@@Abcxyz@@");
+            sb.AppendLine("Reaction = M1();");
+            sb.AppendLine("");
+            sb.AppendLine("#define goal_1 (Water == 2 &amp;&amp; H2 == 0 &amp;&amp; O2 == 0);");
+            sb.AppendLine("#define goal_2 (Water == 2 &amp;&amp; H2 == 0 &amp;&amp; O2 == 1);");
+            sb.AppendLine("");
+            sb.AppendLine("#assert Reaction() deadlockfree;");
+            sb.AppendLine("#assert Reaction() |= []&lt;&gt; decompose;");
+            sb.AppendLine("#assert Reaction() reaches goal_1;");
+            sb.AppendLine("#assert Reaction() reaches goal_2;</Declaration>");
+            sb.AppendLine("  <Models>");
+            sb.AppendLine("    <Model Name=\"M1\" Parameter=\"\" Zoom=\"1\" PlaceCounter=\"2\" TransitionCounter=\"2\">");
+            sb.AppendLine("      <Places>");
+            sb.AppendLine("        <Place Name=\"Water\" NumOfToken=\"0\" Capacity=\"0\">");
+            sb.AppendLine("          <Position X=\"6.93\" Y=\"2.19\" Width=\"0.2\" />");
+            sb.AppendLine("          <Label>");
+            sb.AppendLine("            <Position X=\"6.83\" Y=\"2.49\" Width=\"0.4\" />");
+            sb.AppendLine("          </Label>");
+            sb.AppendLine("          <Guard>");
+            sb.AppendLine("          </Guard>");
+            sb.AppendLine("        </Place>");
+            sb.AppendLine("        <Place Name=\"H2\" NumOfToken=\"2\" Capacity=\"0\">");
+            sb.AppendLine("          <Position X=\"3.9\" Y=\"1.4\" Width=\"0.2\" />");
+            sb.AppendLine("          <Label>");
+            sb.AppendLine("            <Position X=\"3.8\" Y=\"1.7\" Width=\"0.2\" />");
+            sb.AppendLine("          </Label>");
+            sb.AppendLine("          <Guard>");
+            sb.AppendLine("          </Guard>");
+            sb.AppendLine("        </Place>");
+            sb.AppendLine("        <Place Name=\"O2\" NumOfToken=\"1\" Capacity=\"0\">");
+            sb.AppendLine("          <Position X=\"3.9\" Y=\"2.6\" Width=\"0.2\" />");
+            sb.AppendLine("          <Label>");
+            sb.AppendLine("            <Position X=\"3.9\" Y=\"2.9\" Width=\"0.2\" />");
+            sb.AppendLine("          </Label>");
+            sb.AppendLine("          <Guard>");
+            sb.AppendLine("          </Guard>");
+            sb.AppendLine("        </Place>");
+            sb.AppendLine("      </Places>");
+            sb.AppendLine("      <Transitions>");
+            sb.AppendLine("        <Transition Name=\"compose\">");
+            sb.AppendLine("          <Position X=\"5.41\" Y=\"2.16\" Width=\"0.2\" />");
+            sb.AppendLine("          <Label>");
+            sb.AppendLine("            <Position X=\"5.31\" Y=\"2.46\" Width=\"0.6\" />");
+            sb.AppendLine("          </Label>");
+            sb.AppendLine("          <Guard>");
+            sb.AppendLine("          </Guard>");
+            sb.AppendLine("          <Program>");
+            sb.AppendLine("          </Program>");
+            sb.AppendLine("        </Transition>");
+            sb.AppendLine("        <Transition Name=\"decompose\">");
+            sb.AppendLine("          <Position X=\"8.64\" Y=\"2.3\" Width=\"0.2\" />");
+            sb.AppendLine("          <Label>");
+            sb.AppendLine("            <Position X=\"8.54\" Y=\"2.6\" Width=\"0.8\" />");
+            sb.AppendLine("          </Label>");
+            sb.AppendLine("          <Guard>");
+            sb.AppendLine("          </Guard>");
+            sb.AppendLine("          <Program>");
+            sb.AppendLine("          </Program>");
+            sb.AppendLine("        </Transition>");
+            sb.AppendLine("      </Transitions>");
+            sb.AppendLine("      <Arcs>");
+            sb.AppendLine("        <Arc From=\"H2\" To=\"compose\" Weight=\"2\">");
+            sb.AppendLine("          <Label>");
+            sb.AppendLine("            <Position X=\"4.755\" Y=\"1.69\" Width=\"0.25\" />");
+            sb.AppendLine("          </Label>");
+            sb.AppendLine("        </Arc>");
+            sb.AppendLine("        <Arc From=\"O2\" To=\"compose\" Weight=\"1\">");
+            sb.AppendLine("          <Label>");
+            sb.AppendLine("            <Position X=\"4.755\" Y=\"2.48\" Width=\"0.25\" />");
+            sb.AppendLine("          </Label>");
+            sb.AppendLine("        </Arc>");
+            sb.AppendLine("        <Arc From=\"compose\" To=\"Water\" Weight=\"2\">");
+            sb.AppendLine("          <Label>");
+            sb.AppendLine("            <Position X=\"6.27\" Y=\"2.085\" Width=\"0.25\" />");
+            sb.AppendLine("          </Label>");
+            sb.AppendLine("        </Arc>");
+            sb.AppendLine("        <Arc From=\"Water\" To=\"decompose\" Weight=\"2\">");
+            sb.AppendLine("          <Label>");
+            sb.AppendLine("            <Position X=\"7.885\" Y=\"2.155\" Width=\"0.25\" />");
+            sb.AppendLine("          </Label>");
+            sb.AppendLine("        </Arc>");
+            sb.AppendLine("        <Arc From=\"decompose\" To=\"H2\" Weight=\"2\">");
+            sb.AppendLine("          <Label>");
+            sb.AppendLine("            <Position X=\"6.4\" Y=\"1.8\" Width=\"0.25\" />");
+            sb.AppendLine("          </Label>");
+            sb.AppendLine("        </Arc>");
+            sb.AppendLine("        <Arc From=\"decompose\" To=\"O2\" Weight=\"1\">");
+            sb.AppendLine("          <Label>");
+            sb.AppendLine("            <Position X=\"6.37\" Y=\"2.55\" Width=\"0.25\" />");
+            sb.AppendLine("          </Label>");
+            sb.AppendLine("        </Arc>");
+            sb.AppendLine("      </Arcs>");
+            sb.AppendLine("    </Model>");
+            sb.AppendLine("  </Models>");
+            sb.AppendLine("</PN>");
+            return sb.ToString();
+        }
+    }
+}

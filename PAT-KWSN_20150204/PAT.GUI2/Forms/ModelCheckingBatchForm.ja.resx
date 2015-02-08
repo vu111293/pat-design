@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Button_Clear.Text" xml:space="preserve">
+    <value>消去</value>
+  </data>
+  <data name="CheckBox_Parallel.Text" xml:space="preserve">
+    <value>並列検査</value>
+  </data>
+  <data name="Button_Verify.ToolTip" xml:space="preserve">
+    <value>選択されたAssertionを検査</value>
+  </data>
+  <data name="Button_BAGraph.Text" xml:space="preserve">
+    <value>Buchiオートマトンの表示</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button_RemoveFiles.ToolTip" xml:space="preserve">
+    <value>選択したファイルを削除</value>
+  </data>
+  <data name="Button_Verify.Text" xml:space="preserve">
+    <value>検査</value>
+  </data>
+  <data name="CheckBox_ShortestTrace.ToolTip" xml:space="preserve">
+    <value>深さ優先探索を行うことにより、証拠となる最短のトレース経路を見つけます</value>
+  </data>
+  <data name="Button_Verify_Stop" xml:space="preserve">
+    <value>停止</value>
+    <comment>Stop Button Display</comment>
+  </data>
+  <data name="CheckBox_Verbose.ToolTip" xml:space="preserve">
+    <value>検査の詳細を示すための冗長なモード</value>
+  </data>
+  <data name="CheckBox_GenerateCounterexample.ToolTip" xml:space="preserve">
+    <value>反例を生成します</value>
+  </data>
+  <data name="ComboBox_Fairness.Items5" xml:space="preserve">
+    <value>グローバルな強公平性</value>
+  </data>
+  <data name="Label_Fairness.ToolTip" xml:space="preserve">
+    <value>システム公平性(Fairness)の設定</value>
+  </data>
+  <data name="GroupBox_Assertions.Text" xml:space="preserve">
+    <value>Asssertion</value>
+  </data>
+  <data name="CheckBox_PartialOrderReduction.Text" xml:space="preserve">
+    <value>Partial Order Reduction</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MenuItem_SaveAs.Text" xml:space="preserve">
+    <value>名前を付けて保存(&amp;S)</value>
+  </data>
+  <data name="Button_BAGraph.ToolTip" xml:space="preserve">
+    <value>選択されたLTL式の否定のBüchiのオートマトンの表示</value>
+  </data>
+  <data name="Label_TimeOutAfter.ToolTip" xml:space="preserve">
+    <value>何秒か経ったら検証を停止する。0はタイムアウト無しを意味する。</value>
+  </data>
+  <data name="Button_AddFiles.ToolTip" xml:space="preserve">
+    <value>ファイル追加</value>
+  </data>
+  <data name="Button_AddFiles.Text" xml:space="preserve">
+    <value>ファイル追加</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>検査(バッチモード）</value>
+    <comment>finish</comment>
+  </data>
+  <data name="MenuItem_SelectAll.Text" xml:space="preserve">
+    <value>全て選択(&amp;A)</value>
+  </data>
+  <data name="Label_TimeOutAfter.Text" xml:space="preserve">
+    <value>何秒後タイムアウト</value>
+  </data>
+  <data name="ComboBox_Fairness.Items1" xml:space="preserve">
+    <value>イベントレベル弱公平性</value>
+  </data>
+  <data name="Button_Clear.ToolTip" xml:space="preserve">
+    <value>全てのファイルを消去</value>
+  </data>
+  <data name="MenuItem_Copy.Text" xml:space="preserve">
+    <value>コピー(&amp;C)</value>
+  </data>
+  <data name="CheckBox_BDD.Text" xml:space="preserve">
+    <value>BDD</value>
+  </data>
+  <data name="Label_Fairness.Text" xml:space="preserve">
+    <value>システム公平性の設定</value>
+  </data>
+  <data name="Button_BrowseOutput.Text" xml:space="preserve">
+    <value>ブラウズ</value>
+  </data>
+  <data name="CheckBox_PartialOrderReduction.ToolTip" xml:space="preserve">
+    <value>モデル検査のスピードアップのため、部分順序関係(Partial Order)を利用して状態数を削減します。 使うことをおお奨めします。</value>
+  </data>
+  <data name="Button_AddFolder.Text" xml:space="preserve">
+    <value>フォルダ追加</value>
+  </data>
+  <data name="MenuItem_Clear.Text" xml:space="preserve">
+    <value>消去(&amp;l)</value>
+  </data>
+  <data name="CheckBox_Parallel.ToolTip" xml:space="preserve">
+    <value>マルチコアCPUを検査のスピードをあげるために利用（マルチコアCPUがあれば使用してください)</value>
+  </data>
+  <data name="CheckBox_BDD.ToolTip" xml:space="preserve">
+    <value>BDD</value>
+  </data>
+  <data name="CheckBox_CheckNonZenoness.ToolTip" xml:space="preserve">
+    <value>このチェックは有限時間間隔に無限のステップを含む非現実的な実行を取り除きます。</value>
+  </data>
+  <data name="ComboBox_Fairness.Items" xml:space="preserve">
+    <value>公平性を考慮しない</value>
+  </data>
+  <data name="GroupBox_SelectedAssertion.Text" xml:space="preserve">
+    <value>Assertion選択</value>
+  </data>
+  <data name="MenuItem_Paste.Text" xml:space="preserve">
+    <value>貼り付け(&amp;t)</value>
+  </data>
+  <data name="CheckBox_POR.ToolTip" xml:space="preserve">
+    <value>モデル検査のスピードアップのため、部分順序関係(Partial Order)を利用して状態数を削減します。 使うことをおお奨めします。</value>
+  </data>
+  <data name="CheckBox_ShortestTrace.Text" xml:space="preserve">
+    <value>最短トレース</value>
+  </data>
+  <data name="ComboBox_Fairness.Items3" xml:space="preserve">
+    <value>プロセスレベル弱公平性</value>
+  </data>
+  <data name="CheckBox_CheckNonZenoness.Text" xml:space="preserve">
+    <value>Zenoチェックの適用</value>
+  </data>
+  <data name="CheckBox_Verbose.Text" xml:space="preserve">
+    <value>冗長</value>
+  </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>No.</value>
+  </data>
+  <data name="Button_SimulateWitnessTrace.Text" xml:space="preserve">
+    <value>証拠のトレースをシミュレーション</value>
+  </data>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value>システム公平性の設定</value>
+  </data>
+  <data name="StatusLabel_Text.Text" xml:space="preserve">
+    <value>準備ができました</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>モジュールの選択</value>
+  </data>
+  <data name="Label_SearchDepth.Text" xml:space="preserve">
+    <value>探索の深さ</value>
+  </data>
+  <data name="TextBox_Output.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NUD_Depth.ToolTip" xml:space="preserve">
+    <value>探索の深さを指定。 0は無限を意味する。 (Partial Order Reductionは深さ0では無効になる)</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>Assertion</value>
+  </data>
+  <data name="CheckBox_POR.Text" xml:space="preserve">
+    <value>部分順序関係</value>
+  </data>
+  <data name="Button_BrowseOutput.ToolTip" xml:space="preserve">
+    <value>ブラウズ</value>
+  </data>
+  <data name="CheckBox_GenerateCounterexample.Text" xml:space="preserve">
+    <value>反例の生成</value>
+  </data>
+  <data name="GroupBox_Options.Text" xml:space="preserve">
+    <value>オプション</value>
+  </data>
+  <data name="Button_AddFolder.ToolTip" xml:space="preserve">
+    <value>フォルダ追加</value>
+  </data>
+  <data name="MenuItem_Cut.Text" xml:space="preserve">
+    <value>切り取り(&amp;P)</value>
+  </data>
+  <data name="ComboBox_Fairness.Items4" xml:space="preserve">
+    <value>プロセスレベル強公平性</value>
+  </data>
+  <data name="ComboBox_Fairness.Items2" xml:space="preserve">
+    <value>イベントレベル強公平性</value>
+  </data>
+  <data name="Button_RemoveFiles.Text" xml:space="preserve">
+    <value>ファイル削除</value>
+  </data>
+  <data name="GroupBox_Output.Text" xml:space="preserve">
+    <value>出力</value>
+  </data>
+</root>

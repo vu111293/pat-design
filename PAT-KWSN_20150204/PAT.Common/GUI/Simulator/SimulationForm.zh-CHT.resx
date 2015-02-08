@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Button_SpeedFast.Text" xml:space="preserve">
+    <value>快速(0.5s)</value>
+  </data>
+  <data name="Button_Direction.ToolTip" xml:space="preserve">
+    <value>圖表圖畫的方向： T是從上到下， L是從左到右</value>
+  </data>
+  <data name="columnHeader9.Text" xml:space="preserve">
+    <value>目標進程</value>
+  </data>
+  <data name="Button_GenerateGraph.ToolTipText" xml:space="preserve">
+    <value>生成完整的狀態圖</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>源進程</value>
+  </data>
+  <data name="saveToolStripMenuItem.Text" xml:space="preserve">
+    <value>保存為文本</value>
+  </data>
+  <data name="Button_DisplayCounterexample.Text" xml:space="preserve">
+    <value>顯示反例</value>
+  </data>
+  <data name="From.Text" xml:space="preserve">
+    <value>從</value>
+  </data>
+  <data name="Button_Simulate.Text" xml:space="preserve">
+    <value>模擬</value>
+  </data>
+  <data name="FromState.Text" xml:space="preserve">
+    <value>狀態</value>
+  </data>
+  <data name="columnHeader7.Text" xml:space="preserve">
+    <value>事件</value>
+  </data>
+  <data name="Button_InteractionPane.Text" xml:space="preserve">
+    <value>交互窗口</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>從這裡播放</value>
+  </data>
+  <data name="Button_DisplaySCC.Text" xml:space="preserve">
+    <value>顯示強連通圖</value>
+  </data>
+  <data name="Process.Text" xml:space="preserve">
+    <value>進程</value>
+  </data>
+  <data name="Button_CounterExample.ToolTipText" xml:space="preserve">
+    <value>高亮顯示反例</value>
+  </data>
+  <data name="toolStripContainer1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="columnHeader10.Text" xml:space="preserve">
+    <value>源狀態</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>模擬</value>
+  </data>
+  <data name="Button_Reset.Text" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="Button_CounterExample.Text" xml:space="preserve">
+    <value>反例</value>
+  </data>
+  <data name="Button_20seconds.Text" xml:space="preserve">
+    <value>20秒</value>
+  </data>
+  <data name="Button_10seconds.Text" xml:space="preserve">
+    <value>10秒</value>
+  </data>
+  <data name="Button_60seconds.Text" xml:space="preserve">
+    <value>60秒</value>
+  </data>
+  <data name="State.Text" xml:space="preserve">
+    <value>狀態</value>
+  </data>
+  <data name="columnHeader8.Text" xml:space="preserve">
+    <value>目標狀態</value>
+  </data>
+  <data name="Button_Stop.Text" xml:space="preserve">
+    <value>停止</value>
+    <comment>Stop Button Display</comment>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button_SpeedVerySlow.Text" xml:space="preserve">
+    <value>非常慢(4s)</value>
+  </data>
+  <data name="Button_SpeedNormal.Text" xml:space="preserve">
+    <value>正常(1s)</value>
+  </data>
+  <data name="Button_SpeedVeryFast.Text" xml:space="preserve">
+    <value>非常快速(0.25s)</value>
+  </data>
+  <data name="GroupBox_EventTrace.Text" xml:space="preserve">
+    <value>事件歷史</value>
+  </data>
+  <data name="columnHeader6.Text" xml:space="preserve">
+    <value>目標進程</value>
+  </data>
+  <data name="Button_DataPane.Text" xml:space="preserve">
+    <value>數據窗口</value>
+  </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>到</value>
+  </data>
+  <data name="cpToolStripMenuItem.Text" xml:space="preserve">
+    <value>複製進程</value>
+  </data>
+  <data name="ListView_EnabledEvents.ToolTip" xml:space="preserve">
+    <value>雙擊執行事件。 藍色顯示當前狀態激活事件。</value>
+  </data>
+  <data name="Button_Settings.Text" xml:space="preserve">
+    <value>設置</value>
+  </data>
+  <data name="Event.Text" xml:space="preserve">
+    <value>事件</value>
+  </data>
+  <data name="columnHeader5.Text" xml:space="preserve">
+    <value>激活事件</value>
+  </data>
+  <data name="Button_AnimationSpeed.Text" xml:space="preserve">
+    <value>動畫速度</value>
+  </data>
+  <data name="ListView_Trace.ToolTip" xml:space="preserve">
+    <value>點擊行顯示歷史狀態圖</value>
+  </data>
+  <data name="Button_StatePane.Text" xml:space="preserve">
+    <value>狀態欄</value>
+  </data>
+  <data name="InteractionPanel" xml:space="preserve">
+    <value>事件和軌跡窗口</value>
+    <comment>InteractionPanel Text</comment>
+  </data>
+  <data name="copyEventToolStripMenuItem.Text" xml:space="preserve">
+    <value>複製事件</value>
+  </data>
+  <data name="Label_Processes.Text" xml:space="preserve">
+    <value>進程</value>
+  </data>
+  <data name="Button_Export.Text" xml:space="preserve">
+    <value>導出</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>事件</value>
+  </data>
+  <data name="Button_40seconds.Text" xml:space="preserve">
+    <value>40秒</value>
+  </data>
+  <data name="hideTauTransitionToolStripMenuItem.Text" xml:space="preserve">
+    <value>隱藏tau轉換</value>
+  </data>
+  <data name="Button_PlayTrace.Text" xml:space="preserve">
+    <value>播放事件蹤跡</value>
+  </data>
+  <data name="Button_GenerateGraph.Text" xml:space="preserve">
+    <value>生成狀態圖</value>
+  </data>
+  <data name="Button_SpeedSlow.Text" xml:space="preserve">
+    <value>慢速(2s)</value>
+  </data>
+  <data name="DataStorePanel" xml:space="preserve">
+    <value>數據賦值窗口</value>
+    <comment>DataStorePanel</comment>
+  </data>
+  <data name="GroupBox_EnabledEvents.Text" xml:space="preserve">
+    <value>激活事件</value>
+  </data>
+  <data name="Button_5seconds.Text" xml:space="preserve">
+    <value>5秒</value>
+  </data>
+  <data name="Button_PopupDelay.Text" xml:space="preserve">
+    <value>提示顯示延遲</value>
+  </data>
+  <data name="Button_Direction.Text" xml:space="preserve">
+    <value>TB</value>
+  </data>
+  <data name="columnHeader4.Text" xml:space="preserve">
+    <value>源狀態</value>
+  </data>
+  <data name="Button_Simulate.ToolTipText" xml:space="preserve">
+    <value>開始隨機模擬</value>
+  </data>
+</root>

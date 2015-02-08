@@ -1,0 +1,164 @@
+﻿<#@ template language="C#" debug="False" hostspecific="true" #>
+using System;
+using System.Text;
+using System.Collections.Generic;
+using PAT.Common.Classes.Expressions;
+using PAT.Common.Classes.Expressions.ExpressionClass;
+using PAT.Common.Classes.Ultility;
+using PAT.Common.Classes.ModuleInterface;
+using <# Write(this.Host.ResolveParameterValue("","","AssertionsNamespace")); #>;
+using BDDExpression = PAT.Common.Classes.Expressions.ExpressionClass;
+
+namespace <# Write(this.Host.ResolveParameterValue("","","LTSNamespace")); #>
+{
+    public sealed class CaseProcess : Process
+    {
+        public Process[] Processes;
+        public Expression[] Conditions;
+
+        public CaseProcess(Process[] processes, Expression[] conds)
+        {
+            Processes = processes;
+            Conditions = conds;
+
+            //generate the process ID
+            StringBuilder IDBuilder = new StringBuilder(Constants.CASE);
+            for (int i = 0; i < Processes.Length; i++)
+            {
+                //IDBuilder.Append(DataStore.DataManager.InitializeProcessID(Conditions[i].GetID()));
+                IDBuilder.Append(Conditions[i].ExpressionID);
+                IDBuilder.Append(Constants.CASECONDITIONAL);
+                IDBuilder.Append(Processes[i].ProcessID);
+                IDBuilder.Append(";");
+            }
+
+            ProcessID = DataStore.DataManager.InitializeProcessID(IDBuilder.ToString());
+        }
+
+        public override List<string> GetGlobalVariables()
+        {
+            List<string> Variables = new List<string>();
+
+            for (int i = 0; i < Conditions.Length; i++)
+            {
+                Common.Classes.Ultility.Ultility.AddList(Variables, Processes[i].GetGlobalVariables());
+                Common.Classes.Ultility.Ultility.AddList(Variables, Conditions[i].GetVars());
+            }
+
+            return Variables;
+        }
+
+        public override List<string> GetChannels()
+        {
+            List<string> channels = new List<string>();
+
+            for (int i = 0; i < Conditions.Length; i++)
+            {
+                List<string> vars = Processes[i].GetChannels();
+                foreach (string var in vars)
+                {
+                    if (!channels.Contains(var))
+                    {
+                        channels.Add(var);
+                    }
+                }
+            }
+
+            return channels;
+        }
+
+        public override void MoveOneStep(Valuation GlobalEnv, List<Configuration> list)
+        {
+            System.Diagnostics.Debug.Assert(list.Count == 0);
+
+            for (int i = 0; i < Processes.Length; i++)
+            {
+                Expression con = Conditions[i];
+                ExpressionValue v = EvaluatorDenotational.Evaluate(con, GlobalEnv);
+
+                if ((v as BoolConstant).Value)
+                {
+                    list.Add(new Configuration(Processes[i], Constants.TAU, "[" + con + "]", GlobalEnv, false));
+                    return;
+                }
+            }
+
+            //if there is no condition is true, return a skip action
+            list.Add(new Configuration(new Skip(), Constants.TAU, "[default]", GlobalEnv, false));
+        }
+
+        public override string ToString()
+        {
+            if (Processes.Length == 1)
+            {
+                return "if" + Conditions[0] + "{" + Processes[0] + "}";
+            }
+
+            StringBuilder s = new StringBuilder();
+            s.AppendLine("case {");
+            for (int i = 0; i < Processes.Length; i++)
+            {
+                Expression con = Conditions[i];
+                Process process = Processes[i];
+                s.AppendLine(con + ":" + process);
+            }
+            s.AppendLine("}");
+            return s.ToString();
+        }
+
+        public override HashSet<string> GetAlphabets(Dictionary<string, string> visitedDefinitionRefs)
+        {
+            HashSet<string> toReturn = new HashSet<string>();
+
+            for (int i = 0; i < Processes.Length; i++)
+            {
+                Process process = Processes[i];
+                toReturn.UnionWith(process.GetAlphabets(visitedDefinitionRefs));
+            }
+
+            return toReturn;
+        }
+
+        public override Process ClearConstant(Dictionary<string, Expression> constMapping)
+        {
+            List<Process> newProcesses = new List<Process>(Processes.Length);
+            List<Expression> newConditions = new List<Expression>(Processes.Length);
+
+            for (int i = 0; i < Processes.Length; i++)
+            {
+                Expression newCon = Conditions[i].ClearConstant(constMapping);
+                newConditions.Add(newCon);
+                Process newProc = Processes[i].ClearConstant(constMapping);
+                newProcesses.Add(newProc);
+            }
+
+            return new CaseProcess(newProcesses.ToArray(), newConditions.ToArray());
+        }
+
+        public override bool MustBeAbstracted()
+        {
+            for (int i = 0; i < Processes.Length; i++)
+            {
+                if (Processes[i].MustBeAbstracted())
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public override bool IsBDDEncodable()
+        {
+            for (int i = 0; i < Processes.Length; i++)
+            {
+                if (!Processes[i].IsBDDEncodable())
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+    }
+}

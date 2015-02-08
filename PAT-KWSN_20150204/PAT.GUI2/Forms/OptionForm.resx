@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CheckBox_EmailSSL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="CheckBox_EmailSSL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 70</value>
+  </data>
+  <data name="CheckBox_EmailSSL.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="CheckBox_EmailSSL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 19</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CheckBox_EmailSSL.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="CheckBox_EmailSSL.Text" xml:space="preserve">
+    <value>Sending Emails using SSL connection</value>
+  </data>
+  <data name="CheckBox_EmailSSL.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="CheckBox_EmailSSL.ToolTip" xml:space="preserve">
+    <value>Switch this off if sending email failed</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_EmailSSL.Name" xml:space="preserve">
+    <value>CheckBox_EmailSSL</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_EmailSSL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_EmailSSL.Parent" xml:space="preserve">
+    <value>TabPage_General</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_EmailSSL.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ComboBox_DefaultModelingLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 100</value>
+  </data>
+  <data name="ComboBox_DefaultModelingLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 21</value>
+  </data>
+  <data name="ComboBox_DefaultModelingLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_DefaultModelingLanguage.Name" xml:space="preserve">
+    <value>ComboBox_DefaultModelingLanguage</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_DefaultModelingLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_DefaultModelingLanguage.Parent" xml:space="preserve">
+    <value>TabPage_General</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_DefaultModelingLanguage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Label_DefaultModelingLanguage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_DefaultModelingLanguage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label_DefaultModelingLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 102</value>
+  </data>
+  <data name="Label_DefaultModelingLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 13</value>
+  </data>
+  <data name="Label_DefaultModelingLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="Label_DefaultModelingLanguage.Text" xml:space="preserve">
+    <value>Default Modeling Language</value>
+  </data>
+  <data name="&gt;&gt;Label_DefaultModelingLanguage.Name" xml:space="preserve">
+    <value>Label_DefaultModelingLanguage</value>
+  </data>
+  <data name="&gt;&gt;Label_DefaultModelingLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_DefaultModelingLanguage.Parent" xml:space="preserve">
+    <value>TabPage_General</value>
+  </data>
+  <data name="&gt;&gt;Label_DefaultModelingLanguage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CheckBox_PerformDeterminization.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CheckBox_PerformDeterminization.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 57</value>
+  </data>
+  <data name="CheckBox_PerformDeterminization.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="CheckBox_PerformDeterminization.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 19</value>
+  </data>
+  <data name="CheckBox_PerformDeterminization.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="CheckBox_PerformDeterminization.Text" xml:space="preserve">
+    <value>Perform determinization before refinement checking</value>
+  </data>
+  <data name="CheckBox_PerformDeterminization.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_PerformDeterminization.Name" xml:space="preserve">
+    <value>CheckBox_PerformDeterminization</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_PerformDeterminization.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_PerformDeterminization.Parent" xml:space="preserve">
+    <value>GroupBox_Verification</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_PerformDeterminization.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Label_SearchInitialSize.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_SearchInitialSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 28</value>
+  </data>
+  <data name="Label_SearchInitialSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 13</value>
+  </data>
+  <data name="Label_SearchInitialSize.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Label_SearchInitialSize.Text" xml:space="preserve">
+    <value>Search Hash Table's Initial Size</value>
+  </data>
+  <data name="&gt;&gt;Label_SearchInitialSize.Name" xml:space="preserve">
+    <value>Label_SearchInitialSize</value>
+  </data>
+  <data name="&gt;&gt;Label_SearchInitialSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_SearchInitialSize.Parent" xml:space="preserve">
+    <value>GroupBox_Verification</value>
+  </data>
+  <data name="&gt;&gt;Label_SearchInitialSize.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="NUD_MC_Initial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 26</value>
+  </data>
+  <data name="NUD_MC_Initial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
+  </data>
+  <data name="NUD_MC_Initial.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="NUD_MC_Initial.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="NUD_MC_Initial.ToolTip" xml:space="preserve">
+    <value>Set a bigger value if your model is huge. This may speed up the model checking to avoid too many re-hashing.</value>
+  </data>
+  <data name="&gt;&gt;NUD_MC_Initial.Name" xml:space="preserve">
+    <value>NUD_MC_Initial</value>
+  </data>
+  <data name="&gt;&gt;NUD_MC_Initial.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUD_MC_Initial.Parent" xml:space="preserve">
+    <value>GroupBox_Verification</value>
+  </data>
+  <data name="&gt;&gt;NUD_MC_Initial.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="GroupBox_Verification.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 225</value>
+  </data>
+  <data name="GroupBox_Verification.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 110</value>
+  </data>
+  <data name="GroupBox_Verification.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="GroupBox_Verification.Text" xml:space="preserve">
+    <value>Verification</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Verification.Name" xml:space="preserve">
+    <value>GroupBox_Verification</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Verification.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Verification.Parent" xml:space="preserve">
+    <value>TabPage_General</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Verification.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="NUD_SimulationBound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 24</value>
+  </data>
+  <data name="NUD_SimulationBound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
+  </data>
+  <data name="NUD_SimulationBound.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="NUD_SimulationBound.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="NUD_SimulationBound.ToolTip" xml:space="preserve">
+    <value>The maximum number of states that can be drawn in the Simulator.</value>
+  </data>
+  <data name="&gt;&gt;NUD_SimulationBound.Name" xml:space="preserve">
+    <value>NUD_SimulationBound</value>
+  </data>
+  <data name="&gt;&gt;NUD_SimulationBound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUD_SimulationBound.Parent" xml:space="preserve">
+    <value>GroupBox_Simulation</value>
+  </data>
+  <data name="&gt;&gt;NUD_SimulationBound.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Label_SearchUpperBound.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_SearchUpperBound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 26</value>
+  </data>
+  <data name="Label_SearchUpperBound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 13</value>
+  </data>
+  <data name="Label_SearchUpperBound.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="Label_SearchUpperBound.Text" xml:space="preserve">
+    <value>State Searching Upper Bound </value>
+  </data>
+  <data name="&gt;&gt;Label_SearchUpperBound.Name" xml:space="preserve">
+    <value>Label_SearchUpperBound</value>
+  </data>
+  <data name="&gt;&gt;Label_SearchUpperBound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_SearchUpperBound.Parent" xml:space="preserve">
+    <value>GroupBox_Simulation</value>
+  </data>
+  <data name="&gt;&gt;Label_SearchUpperBound.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GroupBox_Simulation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 141</value>
+  </data>
+  <data name="GroupBox_Simulation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 75</value>
+  </data>
+  <data name="GroupBox_Simulation.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="GroupBox_Simulation.Text" xml:space="preserve">
+    <value>Simulation</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Simulation.Name" xml:space="preserve">
+    <value>GroupBox_Simulation</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Simulation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Simulation.Parent" xml:space="preserve">
+    <value>TabPage_General</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Simulation.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="CheckBox_AutoSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 43</value>
+  </data>
+  <data name="CheckBox_AutoSave.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="CheckBox_AutoSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 19</value>
+  </data>
+  <data name="CheckBox_AutoSave.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="CheckBox_AutoSave.Text" xml:space="preserve">
+    <value>Auto save models when actions (simulate, verification) performed</value>
+  </data>
+  <data name="CheckBox_AutoSave.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_AutoSave.Name" xml:space="preserve">
+    <value>CheckBox_AutoSave</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_AutoSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_AutoSave.Parent" xml:space="preserve">
+    <value>TabPage_General</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_AutoSave.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="CheckBox_CheckUpdate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 16</value>
+  </data>
+  <data name="CheckBox_CheckUpdate.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="CheckBox_CheckUpdate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 19</value>
+  </data>
+  <data name="CheckBox_CheckUpdate.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="CheckBox_CheckUpdate.Text" xml:space="preserve">
+    <value>Check the updates before PAT starts</value>
+  </data>
+  <data name="CheckBox_CheckUpdate.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_CheckUpdate.Name" xml:space="preserve">
+    <value>CheckBox_CheckUpdate</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_CheckUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_CheckUpdate.Parent" xml:space="preserve">
+    <value>TabPage_General</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_CheckUpdate.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="TabPage_General.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="TabPage_General.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="TabPage_General.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 341</value>
+  </data>
+  <data name="TabPage_General.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TabPage_General.Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="&gt;&gt;TabPage_General.Name" xml:space="preserve">
+    <value>TabPage_General</value>
+  </data>
+  <data name="&gt;&gt;TabPage_General.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TabPage_General.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;TabPage_General.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="nudMessageLength.Location" type="System.Drawing.Point, System.Drawing">
+    <value>197, 72</value>
+  </data>
+  <data name="nudMessageLength.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="nudMessageLength.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="nudMessageLength.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <metadata name="toolTipVariableRange.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>327, 18</value>
+  </metadata>
+  <data name="nudMessageLength.ToolTip" xml:space="preserve">
+    <value>Maximum channel message length value. For example if this value is 2,  then the channel communication c?x.y.z is not allowed since its message length is 3.</value>
+  </data>
+  <data name="&gt;&gt;nudMessageLength.Name" xml:space="preserve">
+    <value>nudMessageLength</value>
+  </data>
+  <data name="&gt;&gt;nudMessageLength.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudMessageLength.Parent" xml:space="preserve">
+    <value>tabBDD</value>
+  </data>
+  <data name="&gt;&gt;nudMessageLength.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 75</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 13</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Maximum  Channel Message Length</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>tabBDD</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="nudMessageUpper.Location" type="System.Drawing.Point, System.Drawing">
+    <value>197, 125</value>
+  </data>
+  <data name="nudMessageUpper.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="nudMessageUpper.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="nudMessageUpper.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="nudMessageUpper.ToolTip" xml:space="preserve">
+    <value>The upper bound of channel message. For example: c?x.y, and c!z then x, y and z must be in the range [lowerbound...upperbound]. This value is applied for all your channels.</value>
+  </data>
+  <data name="&gt;&gt;nudMessageUpper.Name" xml:space="preserve">
+    <value>nudMessageUpper</value>
+  </data>
+  <data name="&gt;&gt;nudMessageUpper.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudMessageUpper.Parent" xml:space="preserve">
+    <value>tabBDD</value>
+  </data>
+  <data name="&gt;&gt;nudMessageUpper.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 129</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Message Upper Bound</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>tabBDD</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="nudMessageLower.Location" type="System.Drawing.Point, System.Drawing">
+    <value>197, 98</value>
+  </data>
+  <data name="nudMessageLower.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="nudMessageLower.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="nudMessageLower.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="nudMessageLower.ToolTip" xml:space="preserve">
+    <value>The lower bound of channel message. For example: c?x.y, and c!z then x, y and z must be in the range [lowerbound...upperbound]. This value is applied for all your channels.</value>
+  </data>
+  <data name="&gt;&gt;nudMessageLower.Name" xml:space="preserve">
+    <value>nudMessageLower</value>
+  </data>
+  <data name="&gt;&gt;nudMessageLower.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudMessageLower.Parent" xml:space="preserve">
+    <value>tabBDD</value>
+  </data>
+  <data name="&gt;&gt;nudMessageLower.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 102</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 13</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Message  Lower Bound</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>tabBDD</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="NUD_VarUpperBound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>197, 45</value>
+  </data>
+  <data name="NUD_VarUpperBound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="NUD_VarUpperBound.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="NUD_VarUpperBound.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="NUD_VarUpperBound.ToolTip" xml:space="preserve">
+    <value>The default variable upper bound value. This value is applied to all variables declared without the range.</value>
+  </data>
+  <data name="&gt;&gt;NUD_VarUpperBound.Name" xml:space="preserve">
+    <value>NUD_VarUpperBound</value>
+  </data>
+  <data name="&gt;&gt;NUD_VarUpperBound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUD_VarUpperBound.Parent" xml:space="preserve">
+    <value>tabBDD</value>
+  </data>
+  <data name="&gt;&gt;NUD_VarUpperBound.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 48</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Variable Upper Bound</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>tabBDD</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="NUD_VarLowerBound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>197, 18</value>
+  </data>
+  <data name="NUD_VarLowerBound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="NUD_VarLowerBound.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="NUD_VarLowerBound.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="NUD_VarLowerBound.ToolTip" xml:space="preserve">
+    <value>The default variable lower bound value. This value is applied to all variables declared without the range.</value>
+  </data>
+  <data name="&gt;&gt;NUD_VarLowerBound.Name" xml:space="preserve">
+    <value>NUD_VarLowerBound</value>
+  </data>
+  <data name="&gt;&gt;NUD_VarLowerBound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUD_VarLowerBound.Parent" xml:space="preserve">
+    <value>tabBDD</value>
+  </data>
+  <data name="&gt;&gt;NUD_VarLowerBound.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="Label_VarLowerBound.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_VarLowerBound.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label_VarLowerBound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 21</value>
+  </data>
+  <data name="Label_VarLowerBound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 13</value>
+  </data>
+  <data name="Label_VarLowerBound.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="Label_VarLowerBound.Text" xml:space="preserve">
+    <value>Variable Lower Bound</value>
+  </data>
+  <data name="&gt;&gt;Label_VarLowerBound.Name" xml:space="preserve">
+    <value>Label_VarLowerBound</value>
+  </data>
+  <data name="&gt;&gt;Label_VarLowerBound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_VarLowerBound.Parent" xml:space="preserve">
+    <value>tabBDD</value>
+  </data>
+  <data name="&gt;&gt;Label_VarLowerBound.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="textBoxEventParaMin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="textBoxEventParaMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>197, 152</value>
+  </data>
+  <data name="textBoxEventParaMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 20</value>
+  </data>
+  <data name="textBoxEventParaMin.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <metadata name="toolTipEventParameterRange.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>154, 21</value>
+  </metadata>
+  <data name="textBoxEventParaMin.ToolTip" xml:space="preserve">
+    <value>[A1, A2, ..., An]  where Ai is the lower bound value of i.th event parameter</value>
+  </data>
+  <data name="&gt;&gt;textBoxEventParaMin.Name" xml:space="preserve">
+    <value>textBoxEventParaMin</value>
+  </data>
+  <data name="&gt;&gt;textBoxEventParaMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxEventParaMin.Parent" xml:space="preserve">
+    <value>tabBDD</value>
+  </data>
+  <data name="&gt;&gt;textBoxEventParaMin.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="labelEventParaMin.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelEventParaMin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelEventParaMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 156</value>
+  </data>
+  <data name="labelEventParaMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 13</value>
+  </data>
+  <data name="labelEventParaMin.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="labelEventParaMin.Text" xml:space="preserve">
+    <value>Event Parameter Lower Bounds</value>
+  </data>
+  <data name="&gt;&gt;labelEventParaMin.Name" xml:space="preserve">
+    <value>labelEventParaMin</value>
+  </data>
+  <data name="&gt;&gt;labelEventParaMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelEventParaMin.Parent" xml:space="preserve">
+    <value>tabBDD</value>
+  </data>
+  <data name="&gt;&gt;labelEventParaMin.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="textBoxEventParaMax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="textBoxEventParaMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>197, 178</value>
+  </data>
+  <data name="textBoxEventParaMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 20</value>
+  </data>
+  <data name="textBoxEventParaMax.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="textBoxEventParaMax.ToolTip" xml:space="preserve">
+    <value>[A1, A2, ..., An]  where Ai is the upper bound value of i.th event parameter</value>
+  </data>
+  <data name="&gt;&gt;textBoxEventParaMax.Name" xml:space="preserve">
+    <value>textBoxEventParaMax</value>
+  </data>
+  <data name="&gt;&gt;textBoxEventParaMax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxEventParaMax.Parent" xml:space="preserve">
+    <value>tabBDD</value>
+  </data>
+  <data name="&gt;&gt;textBoxEventParaMax.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="labelEventParaMax.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelEventParaMax.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelEventParaMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 183</value>
+  </data>
+  <data name="labelEventParaMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 13</value>
+  </data>
+  <data name="labelEventParaMax.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="labelEventParaMax.Text" xml:space="preserve">
+    <value>Event Parameter Upper Bounds</value>
+  </data>
+  <data name="&gt;&gt;labelEventParaMax.Name" xml:space="preserve">
+    <value>labelEventParaMax</value>
+  </data>
+  <data name="&gt;&gt;labelEventParaMax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelEventParaMax.Parent" xml:space="preserve">
+    <value>tabBDD</value>
+  </data>
+  <data name="&gt;&gt;labelEventParaMax.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="tabBDD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabBDD.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabBDD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 341</value>
+  </data>
+  <data name="tabBDD.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabBDD.Text" xml:space="preserve">
+    <value>BDD Settings</value>
+  </data>
+  <data name="&gt;&gt;tabBDD.Name" xml:space="preserve">
+    <value>tabBDD</value>
+  </data>
+  <data name="&gt;&gt;tabBDD.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabBDD.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabBDD.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Label_CutNumberUpperBound.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_CutNumberUpperBound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 80</value>
+  </data>
+  <data name="Label_CutNumberUpperBound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 13</value>
+  </data>
+  <data name="Label_CutNumberUpperBound.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="Label_CutNumberUpperBound.Text" xml:space="preserve">
+    <value>Cut Number Upper Bound for Parameterized System</value>
+  </data>
+  <data name="&gt;&gt;Label_CutNumberUpperBound.Name" xml:space="preserve">
+    <value>Label_CutNumberUpperBound</value>
+  </data>
+  <data name="&gt;&gt;Label_CutNumberUpperBound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_CutNumberUpperBound.Parent" xml:space="preserve">
+    <value>TabPage_CSP</value>
+  </data>
+  <data name="&gt;&gt;Label_CutNumberUpperBound.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="NUD_CutNumberBound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 77</value>
+  </data>
+  <data name="NUD_CutNumberBound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 22</value>
+  </data>
+  <data name="NUD_CutNumberBound.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="NUD_CutNumberBound.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;NUD_CutNumberBound.Name" xml:space="preserve">
+    <value>NUD_CutNumberBound</value>
+  </data>
+  <data name="&gt;&gt;NUD_CutNumberBound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUD_CutNumberBound.Parent" xml:space="preserve">
+    <value>TabPage_CSP</value>
+  </data>
+  <data name="&gt;&gt;NUD_CutNumberBound.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Label_InitialCutNumber.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_InitialCutNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 49</value>
+  </data>
+  <data name="Label_InitialCutNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 13</value>
+  </data>
+  <data name="Label_InitialCutNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="Label_InitialCutNumber.Text" xml:space="preserve">
+    <value>Initial Cut Number for Parameterized System Abstraction</value>
+  </data>
+  <data name="&gt;&gt;Label_InitialCutNumber.Name" xml:space="preserve">
+    <value>Label_InitialCutNumber</value>
+  </data>
+  <data name="&gt;&gt;Label_InitialCutNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_InitialCutNumber.Parent" xml:space="preserve">
+    <value>TabPage_CSP</value>
+  </data>
+  <data name="&gt;&gt;Label_InitialCutNumber.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="NUD_CutNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 45</value>
+  </data>
+  <data name="NUD_CutNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 22</value>
+  </data>
+  <data name="NUD_CutNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="NUD_CutNumber.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;NUD_CutNumber.Name" xml:space="preserve">
+    <value>NUD_CutNumber</value>
+  </data>
+  <data name="&gt;&gt;NUD_CutNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NUD_CutNumber.Parent" xml:space="preserve">
+    <value>TabPage_CSP</value>
+  </data>
+  <data name="&gt;&gt;NUD_CutNumber.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="CheckBox_LinkCSP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 16</value>
+  </data>
+  <data name="CheckBox_LinkCSP.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="CheckBox_LinkCSP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 21</value>
+  </data>
+  <data name="CheckBox_LinkCSP.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="CheckBox_LinkCSP.Text" xml:space="preserve">
+    <value>Open CSP Models (*.csp) using PAT</value>
+  </data>
+  <data name="CheckBox_LinkCSP.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_LinkCSP.Name" xml:space="preserve">
+    <value>CheckBox_LinkCSP</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_LinkCSP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_LinkCSP.Parent" xml:space="preserve">
+    <value>TabPage_CSP</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_LinkCSP.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="TabPage_CSP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="TabPage_CSP.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="TabPage_CSP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 341</value>
+  </data>
+  <data name="TabPage_CSP.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="TabPage_CSP.Text" xml:space="preserve">
+    <value>CSP Module</value>
+  </data>
+  <data name="&gt;&gt;TabPage_CSP.Name" xml:space="preserve">
+    <value>TabPage_CSP</value>
+  </data>
+  <data name="&gt;&gt;TabPage_CSP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TabPage_CSP.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;TabPage_CSP.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 367</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Button_OK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 385</value>
+  </data>
+  <data name="Button_OK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="Button_OK.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Button_OK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;Button_OK.Name" xml:space="preserve">
+    <value>Button_OK</value>
+  </data>
+  <data name="&gt;&gt;Button_OK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button_OK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button_OK.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Button_Cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 385</value>
+  </data>
+  <data name="Button_Cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="Button_Cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Button_Cancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;Button_Cancel.Name" xml:space="preserve">
+    <value>Button_Cancel</value>
+  </data>
+  <data name="&gt;&gt;Button_Cancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button_Cancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button_Cancel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Button_DefaultSetting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 385</value>
+  </data>
+  <data name="Button_DefaultSetting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 23</value>
+  </data>
+  <data name="Button_DefaultSetting.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Button_DefaultSetting.Text" xml:space="preserve">
+    <value>Default Setting</value>
+  </data>
+  <data name="&gt;&gt;Button_DefaultSetting.Name" xml:space="preserve">
+    <value>Button_DefaultSetting</value>
+  </data>
+  <data name="&gt;&gt;Button_DefaultSetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button_DefaultSetting.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button_DefaultSetting.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>408, 420</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTipEventParameterRange.Name" xml:space="preserve">
+    <value>toolTipEventParameterRange</value>
+  </data>
+  <data name="&gt;&gt;toolTipEventParameterRange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTipVariableRange.Name" xml:space="preserve">
+    <value>toolTipVariableRange</value>
+  </data>
+  <data name="&gt;&gt;toolTipVariableRange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>OptionForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

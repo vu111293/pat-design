@@ -1,0 +1,38 @@
+<#@ template language="C#" debug="False" hostspecific="true" #>
+using PAT.Common.Classes.LTS;
+using PAT.Common.Classes.ModuleInterface;
+using PAT.Common.Classes.Ultility;
+using <# Write(this.Host.ResolveParameterValue("","","LTSNamespace")); #>;
+
+namespace <# Write(this.Host.ResolveParameterValue("","","AssertionsNamespace")); #>
+{
+    public class <# Write(this.Host.ResolveParameterValue("","","ModuleCode")); #>AssertionDeadLock : PAT.Common.Classes.SemanticModels.MDP.Assertion.AssertionDeadLock
+    {
+        public DefinitionRef Process;
+
+        public <# Write(this.Host.ResolveParameterValue("","","ModuleCode")); #>AssertionDeadLock(DefinitionRef processDef, QueryConstraintType constraintType, bool isNonTerminating) : base(isNonTerminating)
+        {
+            Process = processDef;
+            QueryConstraintType = constraintType;
+        }
+
+        public override void Initialize(SpecificationBase spec)
+        {
+            Assertion.Initialize(this, Process, spec);
+        }           
+
+        public override string StartingProcess
+        {
+            get
+            {
+                return Process.ToString();
+            }
+        }
+        
+        //todo: override ToString method if your assertion uses different syntax as PAT
+        //public override string ToString()
+        //{
+        //		return "";
+        //}
+    }
+}

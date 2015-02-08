@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ToolbarButton_AddComment.Text" xml:space="preserve">
+    <value>添加注釋 (Ctrl+Shift+C)</value>
+  </data>
+  <data name="MenuButton_Languages.Text" xml:space="preserve">
+    <value>Languages (語言)</value>
+  </data>
+  <data name="MenuButton_Simulation.Text" xml:space="preserve">
+    <value>模擬(&amp;S)</value>
+  </data>
+  <data name="MenuButton_ToggleAllOutlines.Text" xml:space="preserve">
+    <value>切換所有大綱</value>
+  </data>
+  <data name="ToolbarButton_ZoomIn.Text" xml:space="preserve">
+    <value>放大字體</value>
+  </data>
+  <data name="ToolbarButton_Print.Text" xml:space="preserve">
+    <value>打印 (Ctrl+P)</value>
+  </data>
+  <data name="StatusBar.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToolbarButton_New.Text" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="MenuButton_Window.Text" xml:space="preserve">
+    <value>窗口(&amp;W)</value>
+  </data>
+  <data name="openFileDialog1.Filter" xml:space="preserve">
+    <value>LTL文件|*.ltl|所有文件|*.*</value>
+  </data>
+  <data name="MenuButton_FindNext.Text" xml:space="preserve">
+    <value>查找下一個</value>
+  </data>
+  <data name="MenuButton_NavigateForward.Text" xml:space="preserve">
+    <value>去前一標簽(&amp;N)</value>
+  </data>
+  <data name="MenuButton_LineCounter.Text" xml:space="preserve">
+    <value>行數</value>
+  </data>
+  <data name="closeAllToolStripMenuItem.Text" xml:space="preserve">
+    <value>關閉所有標簽</value>
+  </data>
+  <data name="MenuButton_Undo.Text" xml:space="preserve">
+    <value>撤銷(&amp;U)</value>
+  </data>
+  <data name="MenuButton_Redo.Text" xml:space="preserve">
+    <value>再做(&amp;R)</value>
+  </data>
+  <data name="MenuButton_Copy.Text" xml:space="preserve">
+    <value>複制(&amp;C)</value>
+  </data>
+  <data name="MenuButton_Help.Text" xml:space="preserve">
+    <value>幫助(&amp;H)</value>
+  </data>
+  <data name="MenuButton_HelpMenu.Text" xml:space="preserve">
+    <value>幫助(&amp;H)</value>
+  </data>
+  <data name="MenuButton_StatusBar.Text" xml:space="preserve">
+    <value>狀態欄(&amp;S)</value>
+  </data>
+  <data name="MenuButton_Print.Text" xml:space="preserve">
+    <value>打印(&amp;P)</value>
+  </data>
+  <data name="MenuButton_EnableTrickingInAcceptingConditions.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MenuButton_SaveAs.Text" xml:space="preserve">
+    <value>另存爲(&amp;A)</value>
+  </data>
+  <data name="ToolbarButton_CheckGrammar.Text" xml:space="preserve">
+    <value>語法檢測 (F5)</value>
+  </data>
+  <data name="MenuStrip.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MenuButton_GoTo.Text" xml:space="preserve">
+    <value>去..行(&amp;G)</value>
+  </data>
+  <data name="MenuButton_View.Text" xml:space="preserve">
+    <value>查看(&amp;V)</value>
+  </data>
+  <data name="MenuButton_SubmitModel.Text" xml:space="preserve">
+    <value>電郵模型</value>
+  </data>
+  <data name="MenuButton_SelectAll.Text" xml:space="preserve">
+    <value>全選(&amp;S)</value>
+  </data>
+  <data name="ToolbarButton_Zoom100.Text" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="MenuButton_Outlining.Text" xml:space="preserve">
+    <value>&amp; 大綱</value>
+  </data>
+  <data name="ToolbarButton_LaTexGenerate.Text" xml:space="preserve">
+    <value>LaTex生成</value>
+  </data>
+  <data name="MenuButton_PreviousBookmark.Text" xml:space="preserve">
+    <value>上個書簽</value>
+  </data>
+  <data name="MenuButton_ErrorList.Text" xml:space="preserve">
+    <value>&amp; 錯誤表</value>
+  </data>
+  <data name="closeAllButThisToolStripMenuItem.Text" xml:space="preserve">
+    <value>關閉其他標簽</value>
+  </data>
+  <data name="MenuButton_ChineseTraditional.Text" xml:space="preserve">
+    <value>繁體中文</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>PAT - 模型模擬檢驗工具 (版本</value>
+  </data>
+  <data name="MenuButton_ToggleBookmark.Text" xml:space="preserve">
+    <value>切換書簽</value>
+  </data>
+  <data name="ToolbarButton_SubmitModel.ToolTipText" xml:space="preserve">
+    <value>向PAT作者或朋友發送當前模型</value>
+  </data>
+  <data name="SplittoolStripMenuItem.Text" xml:space="preserve">
+    <value>劃分窗口</value>
+  </data>
+  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="MenuButton_EnableSimplificationOfTheFormula.Text" xml:space="preserve">
+    <value>啟用公式簡化</value>
+  </data>
+  <data name="MenuButton_LTLParsingOptions.Text" xml:space="preserve">
+    <value>LTL解析選項</value>
+  </data>
+  <data name="MenuButton_New.Text" xml:space="preserve">
+    <value>新建(&amp;N)</value>
+  </data>
+  <data name="MenuButton_Japanese.Text" xml:space="preserve">
+    <value>日語</value>
+  </data>
+  <data name="MenuButton_GenerateLatex.Text" xml:space="preserve">
+    <value>&amp;LaTex生成</value>
+  </data>
+  <data name="ToolbarButton_Paste.Text" xml:space="preserve">
+    <value>粘貼 (Ctrl+V)</value>
+  </data>
+  <data name="MenuButton_SyntaxOptions.Text" xml:space="preserve">
+    <value>語法選項(&amp;O)</value>
+  </data>
+  <data name="ToolbarButton_SubmitModel.Text" xml:space="preserve">
+    <value>電郵模型</value>
+  </data>
+  <data name="MenuButton_Toolbar.Text" xml:space="preserve">
+    <value>工具欄(&amp;T)</value>
+  </data>
+  <data name="MenuButton_ToggleOutline.Text" xml:space="preserve">
+    <value>切換大綱</value>
+  </data>
+  <data name="MenuButton_CheckGrammer.Text" xml:space="preserve">
+    <value>語法檢測(&amp;C)</value>
+  </data>
+  <data name="MenuButton_AlwaysOnTop.Text" xml:space="preserve">
+    <value>總是在上面(&amp;A)</value>
+  </data>
+  <data name="ToolbarButton_Find.Text" xml:space="preserve">
+    <value>查找 (Ctrl+F)</value>
+  </data>
+  <data name="MenuButton_Russian.Text" xml:space="preserve">
+    <value>俄語</value>
+  </data>
+  <data name="MenuButton_Cut.Text" xml:space="preserve">
+    <value>剪切(&amp;T)</value>
+  </data>
+  <data name="MenuButton_EnableOntheflyAutomataSimplification.Text" xml:space="preserve">
+    <value>啟用On-the-fly自動機簡化</value>
+  </data>
+  <data name="ToolbarButton_FindNext.Text" xml:space="preserve">
+    <value>查找下一個 (F3)</value>
+  </data>
+  <data name="MenuButton_Open.Text" xml:space="preserve">
+    <value>打開(&amp;O)</value>
+  </data>
+  <data name="MenuButton_Register.Text" xml:space="preserve">
+    <value>&amp; 購買完整版本</value>
+  </data>
+  <data name="openFileDialog1.Title" xml:space="preserve">
+    <value>打開文件對話框</value>
+  </data>
+  <data name="MenuButton_FindReplace.Text" xml:space="preserve">
+    <value>查找和替換(&amp;F)</value>
+  </data>
+  <data name="MenuButton_ChineseSimplified.Text" xml:space="preserve">
+    <value>簡體中文</value>
+  </data>
+  <data name="MenuButton_EnableAPosterioriAutomataSimplification.Text" xml:space="preserve">
+    <value>啟用APosteriori自動機簡化</value>
+  </data>
+  <data name="ToolbarButton_Save.Text" xml:space="preserve">
+    <value>保存 (Ctrl+S)</value>
+  </data>
+  <data name="saveToolStripMenuItem.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="MenuButton_CloseCurrent.Text" xml:space="preserve">
+    <value>關閉當前文件</value>
+  </data>
+  <data name="ToolbarButton_Verification.Text" xml:space="preserve">
+    <value>驗證 (F7)</value>
+  </data>
+  <data name="MenuButton_French.Text" xml:space="preserve">
+    <value>法語</value>
+  </data>
+  <data name="newToolStripMenuItem.Text" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="MenuButton_Vietnamese.Text" xml:space="preserve">
+    <value>越南語</value>
+  </data>
+  <data name="MenuButton_NavigateBack.Text" xml:space="preserve">
+    <value>去下一標簽(&amp;P)</value>
+  </data>
+  <data name="MenuButton_Options.Text" xml:space="preserve">
+    <value>選項(&amp;O)</value>
+  </data>
+  <data name="MenuButton_Paste.Text" xml:space="preserve">
+    <value>粘貼(&amp;P)</value>
+  </data>
+  <data name="MenuButton_EnableStronglyConnectedComponentsSimplification.Text" xml:space="preserve">
+    <value>啟用強連通子圖簡化</value>
+  </data>
+  <data name="MenuButton_Formatting.Text" xml:space="preserve">
+    <value>格式</value>
+  </data>
+  <data name="MenuButton_English.Text" xml:space="preserve">
+    <value>英語</value>
+  </data>
+  <data name="ToolbarButton_Copy.Text" xml:space="preserve">
+    <value>複制 (Ctrl+C)</value>
+  </data>
+  <data name="toolStripContainer1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MenuButton_Standard.Text" xml:space="preserve">
+    <value>標準</value>
+  </data>
+  <data name="MenuButton_Website.Text" xml:space="preserve">
+    <value>PAT網址(&amp;W)</value>
+  </data>
+  <data name="MenuButton_ClearAllBookmarks.Text" xml:space="preserve">
+    <value>清除所有書簽</value>
+  </data>
+  <data name="MenuButton_Save.Text" xml:space="preserve">
+    <value>保存(&amp;S)</value>
+  </data>
+  <data name="MenuButton_Split.Text" xml:space="preserve">
+    <value>&amp; 劃分窗口</value>
+  </data>
+  <data name="ToolbarButton_SaveAs.Text" xml:space="preserve">
+    <value>另存爲</value>
+  </data>
+  <data name="MenuButton_Edit.Text" xml:space="preserve">
+    <value>編輯(&amp;E)</value>
+  </data>
+  <data name="MenuButton_SubmitModel.ToolTipText" xml:space="preserve">
+    <value>通過電子郵件向PAT作者或朋友發送當前模型</value>
+  </data>
+  <data name="MenuButton_RecentFiles.Text" xml:space="preserve">
+    <value>最近編輯文件(&amp;R)</value>
+  </data>
+  <data name="ToolbarButton_Cut.Text" xml:space="preserve">
+    <value>剪切 (Ctrl+X)</value>
+  </data>
+  <data name="MenuButton_About.Text" xml:space="preserve">
+    <value>關于(&amp;A)</value>
+  </data>
+  <data name="MenuButton_File.Text" xml:space="preserve">
+    <value>文件(&amp;F)</value>
+  </data>
+  <data name="ToolbarButton_CheckGrammar.ToolTipText" xml:space="preserve">
+    <value>語法檢測 (F5)</value>
+  </data>
+  <data name="ToolbarButton_Simulation.ToolTipText" xml:space="preserve">
+    <value>模擬 (F6)</value>
+  </data>
+  <data name="MenuButton_AddComment.Text" xml:space="preserve">
+    <value>添加注釋</value>
+  </data>
+  <data name="ToolbarButton_Simulation.Text" xml:space="preserve">
+    <value>模擬 (F6)</value>
+  </data>
+  <data name="MenuButton_Spanish.Text" xml:space="preserve">
+    <value>西班牙語</value>
+  </data>
+  <data name="MenuButton_German.Text" xml:space="preserve">
+    <value>德語</value>
+  </data>
+  <data name="MenuButton_Register.ToolTipText" xml:space="preserve">
+    <value>完整版本包括更多模塊和例子</value>
+  </data>
+  <data name="MenuButton_LTL2BA.Text" xml:space="preserve">
+    <value>轉換LTL公式到Buchii自動機</value>
+  </data>
+  <data name="MenuButton_CloseAllDocument.Text" xml:space="preserve">
+    <value>關閉所有文件</value>
+  </data>
+  <data name="MenuButton_LineNumber.Text" xml:space="preserve">
+    <value>顯示行號(&amp;L)</value>
+  </data>
+  <data name="MenuButton_NextBookmark.Text" xml:space="preserve">
+    <value>下個書簽</value>
+  </data>
+  <data name="ToolbarButton_ZoomOut.Text" xml:space="preserve">
+    <value>縮小字體</value>
+  </data>
+  <data name="MenuButton_Verification.Text" xml:space="preserve">
+    <value>驗證(&amp;V)</value>
+  </data>
+  <data name="MenuButton_VerificationBatch.Text" xml:space="preserve">
+    <value>驗證(批處理方式)</value>
+  </data>
+  <data name="MenuButton_Find.Text" xml:space="preserve">
+    <value>查找</value>
+  </data>
+  <data name="ToolbarButton_RemoveComment.Text" xml:space="preserve">
+    <value>取消注釋 (Ctrl+Shift+U)</value>
+  </data>
+  <data name="MenuButton_Specification.Text" xml:space="preserve">
+    <value>模型相關</value>
+  </data>
+  <data name="MenuButton_RemoveComment.Text" xml:space="preserve">
+    <value>刪除注釋</value>
+  </data>
+  <data name="ToolbarButton_NewModelWizard.Text" xml:space="preserve">
+    <value>新建模型嚮導</value>
+  </data>
+  <data name="MenuButton_WhatsNewInPAT.Text" xml:space="preserve">
+    <value>最新特性</value>
+  </data>
+  <data name="MenuButton_OutputPanel.Text" xml:space="preserve">
+    <value>輸出窗口(&amp;O)</value>
+  </data>
+  <data name="MenuButton_Examples.Text" xml:space="preserve">
+    <value>例子(&amp;X)</value>
+  </data>
+  <data name="ToolbarButton_Zoom100.ToolTipText" xml:space="preserve">
+    <value>100%文本大小</value>
+  </data>
+  <data name="MenuButton_Tools.Text" xml:space="preserve">
+    <value>工具(&amp;T)</value>
+  </data>
+  <data name="MenuButton_NewModelWizard.Text" xml:space="preserve">
+    <value>新建模型嚮導</value>
+  </data>
+  <data name="MenuButton_Delete.Text" xml:space="preserve">
+    <value>&amp; 刪除</value>
+  </data>
+  <data name="StandardToolBar.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MenuButton_CheckForUpdate.Text" xml:space="preserve">
+    <value>檢查更新(&amp;C)</value>
+  </data>
+  <data name="MenuButton_EmailFeedback.Text" xml:space="preserve">
+    <value>電子郵件反饋(&amp;E)</value>
+  </data>
+  <data name="ToolbarButton_Undo.Text" xml:space="preserve">
+    <value>撤銷 (Ctrl+Z)</value>
+  </data>
+  <data name="ToolbarButton_Verification.ToolTipText" xml:space="preserve">
+    <value>驗證 (F7)</value>
+  </data>
+  <data name="MenuButton_Replace.Text" xml:space="preserve">
+    <value>替換</value>
+  </data>
+  <data name="MenuButton_Import.Text" xml:space="preserve">
+    <value>導入</value>
+  </data>
+  <data name="MenuButton_Exit.Text" xml:space="preserve">
+    <value>退出(&amp;X)</value>
+  </data>
+  <data name="StatusLabel_Status.Text" xml:space="preserve">
+    <value>准備好</value>
+  </data>
+  <data name="openContainingFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>開放包含的文件夾</value>
+  </data>
+  <data name="ToolbarButton_Replace.Text" xml:space="preserve">
+    <value>替換(Ctrl+H)</value>
+  </data>
+  <data name="MenuButton_Bookmarks.Text" xml:space="preserve">
+    <value>書籤</value>
+  </data>
+  <data name="ToolbarButton_Open.Text" xml:space="preserve">
+    <value>打開 (Ctrl+O)</value>
+  </data>
+  <data name="MenuButton_HignlightCurrentLine.Text" xml:space="preserve">
+    <value>高亮顯示當前行(&amp;H)</value>
+  </data>
+  <data name="ToolbarButton_Redo.Text" xml:space="preserve">
+    <value>重複 (Ctrl+Y)</value>
+  </data>
+  <data name="ToolbarButton_Specification.Text" xml:space="preserve">
+    <value>模型相關</value>
+  </data>
+  <data name="MenuButton_CSharpLibary.Text" xml:space="preserve">
+    <value>C#庫編輯和編譯器(&amp;L)</value>
+  </data>
+  <data name="MenuButton_Portuguese.Text" xml:space="preserve">
+    <value>葡萄牙語</value>
+  </data>
+</root>

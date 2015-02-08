@@ -1,0 +1,31 @@
+<#@ template language="C#" debug="False" hostspecific="true" #>
+using System.Collections.Generic;
+using PAT.Common.Classes.Expressions.ExpressionClass;
+using PAT.Common.Classes.Ultility;
+using <# Write(this.Host.ResolveParameterValue("","","AssertionsNamespace")); #>;
+
+namespace <# Write(this.Host.ResolveParameterValue("","","LTSNamespace")); #>
+{
+    public sealed class Stop : Process
+    {
+        public Stop()
+        {
+            ProcessID = Constants.STOP;
+        }
+
+        public override List<Configuration> MoveOneStep(Configuration eStep)
+        {
+            return new List<Configuration>(0);
+        }
+
+        public override string ToString()
+        {
+            return "Stop";
+        }
+
+        public override Process ClearConstant(Dictionary<string, Expression> constMapping)
+        {
+            return this;
+        }
+    }
+}

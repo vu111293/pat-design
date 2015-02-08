@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MenuButton_Tools.Text" xml:space="preserve">
+    <value>&amp;Werkzeuge</value>
+  </data>
+  <data name="ToolbarButton_Verification.Text" xml:space="preserve">
+    <value>Überprüfung (F7)</value>
+  </data>
+  <data name="MenuButton_Window.Text" xml:space="preserve">
+    <value>&amp;Window</value>
+  </data>
+  <data name="MenuButton_Simulation.Text" xml:space="preserve">
+    <value>&amp;Simulation</value>
+  </data>
+  <data name="ToolbarButton_New.Text" xml:space="preserve">
+    <value>Neue Akte</value>
+  </data>
+  <data name="MenuButton_Register.Text" xml:space="preserve">
+    <value>&amp;Purchase the Full Version</value>
+  </data>
+  <data name="MenuButton_Vietnamese.Text" xml:space="preserve">
+    <value>Vietnamesisch</value>
+  </data>
+  <data name="MenuButton_RecentFiles.Text" xml:space="preserve">
+    <value>&amp;Neue Akten</value>
+  </data>
+  <data name="ToolbarButton_Zoom100.ToolTipText" xml:space="preserve">
+    <value>100% Text Size</value>
+  </data>
+  <data name="closeAllButThisToolStripMenuItem.Text" xml:space="preserve">
+    <value>Schließen Sie alle Fesnter</value>
+  </data>
+  <data name="MenuButton_EnableAPosterioriAutomataSimplification.Text" xml:space="preserve">
+    <value>Enable a &amp;Posteriori automata simplification</value>
+  </data>
+  <data name="MenuButton_LTLParsingOptions.Text" xml:space="preserve">
+    <value>LTL &amp;Satzgliederungs-Auswahlen</value>
+  </data>
+  <data name="MenuButton_Verification.Text" xml:space="preserve">
+    <value>&amp;Überprüfung</value>
+  </data>
+  <data name="MenuButton_Import.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="saveToolStripMenuItem.Text" xml:space="preserve">
+    <value>Außer</value>
+  </data>
+  <data name="MenuButton_Register.ToolTipText" xml:space="preserve">
+    <value>Full version of PAT includes more modules and examples</value>
+  </data>
+  <data name="MenuButton_Find.Text" xml:space="preserve">
+    <value>&amp;Suchen</value>
+  </data>
+  <data name="MenuButton_Paste.Text" xml:space="preserve">
+    <value>&amp;Paste</value>
+  </data>
+  <data name="MenuButton_Open.Text" xml:space="preserve">
+    <value>&amp;öffnen</value>
+  </data>
+  <data name="MenuButton_GoTo.Text" xml:space="preserve">
+    <value>&amp;Gehen Sie zu …</value>
+  </data>
+  <data name="slidingGameToolStripMenuItem.Text" xml:space="preserve">
+    <value>Schieben des Spiels</value>
+  </data>
+  <data name="MenuButton_CloseCurrent.Text" xml:space="preserve">
+    <value>Close Current Tab</value>
+  </data>
+  <data name="sNIZToolStripMenuItem.Text" xml:space="preserve">
+    <value>SNZI: Ersteigbare ungleich nullanzeigen</value>
+  </data>
+  <data name="MenuButton_Examples.Text" xml:space="preserve">
+    <value>E&amp;xamples</value>
+  </data>
+  <data name="ToolbarButton_LaTexGenerate.Text" xml:space="preserve">
+    <value>Erzeugen Sie Latex-Darstellung des Modells</value>
+  </data>
+  <data name="MenuButton_Save.Text" xml:space="preserve">
+    <value>&amp;Sichern unter</value>
+  </data>
+  <data name="MenuButton_StatusBar.Text" xml:space="preserve">
+    <value>&amp;StatusBar</value>
+  </data>
+  <data name="stackImplementationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Gleichzeitige Stapel-Implementierung</value>
+  </data>
+  <data name="MenuButton_ToggleAllOutlines.Text" xml:space="preserve">
+    <value>Toggle All Outlinings</value>
+  </data>
+  <data name="MenuButton_AddComment.Text" xml:space="preserve">
+    <value>Co&amp;mment Vorwähler</value>
+  </data>
+  <data name="MenuButton_FindNext.Text" xml:space="preserve">
+    <value>Weitersuchen</value>
+  </data>
+  <data name="StandardToolBar.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="MenuButton_Spanish.Text" xml:space="preserve">
+    <value>Spanisch</value>
+  </data>
+  <data name="ToolbarButton_Print.Text" xml:space="preserve">
+    <value>Drucken (Ctrl+P)</value>
+  </data>
+  <data name="MenuButton_LTL2BA.Text" xml:space="preserve">
+    <value>LTL to Automata Converter</value>
+  </data>
+  <data name="ToolbarButton_Redo.Text" xml:space="preserve">
+    <value>Redo (Ctrl+Y)</value>
+  </data>
+  <data name="MenuButton_EnableStronglyConnectedComponentsSimplification.Text" xml:space="preserve">
+    <value>Enable strongly &amp;Connected components simplification</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>PAT - eine verbesserte Simulation und ein vorbildliches überprüfungswerkzeug (Version</value>
+  </data>
+  <data name="MenuButton_NewModelWizard.Text" xml:space="preserve">
+    <value>Neue Modell-Assistent</value>
+  </data>
+  <data name="MenuButton_RemoveComment.Text" xml:space="preserve">
+    <value>Uncomm&amp;HNOvorwähler</value>
+  </data>
+  <data name="ToolbarButton_Simulation.Text" xml:space="preserve">
+    <value>Simulation (F6)</value>
+  </data>
+  <data name="MenuButton_German.Text" xml:space="preserve">
+    <value>Deutsch</value>
+  </data>
+  <data name="MenuButton_SaveAs.Text" xml:space="preserve">
+    <value>Sichern unter</value>
+  </data>
+  <data name="MenuButton_EnableTrickingInAcceptingConditions.Text" xml:space="preserve">
+    <value>Enable tricking in &amp;Accepting conditions</value>
+  </data>
+  <data name="MenuButton_About.Text" xml:space="preserve">
+    <value>&amp;Über</value>
+  </data>
+  <data name="ToolbarButton_Simulation.ToolTipText" xml:space="preserve">
+    <value>Simulation (F6)</value>
+  </data>
+  <data name="MenuButton_AlwaysOnTop.Text" xml:space="preserve">
+    <value>&amp;Immer auf die Oberseite</value>
+  </data>
+  <data name="openFileDialog1.Title" xml:space="preserve">
+    <value>Open Query File</value>
+  </data>
+  <data name="MenuButton_VerificationBatch.Text" xml:space="preserve">
+    <value>Verification (Batch Mode)</value>
+  </data>
+  <data name="MenuButton_Undo.Text" xml:space="preserve">
+    <value>&amp;Annulieren</value>
+  </data>
+  <data name="openFileDialog1.Filter" xml:space="preserve">
+    <value>LTL-Akten|*.ltl|Alle Akten|*.*</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="MenuButton_EmailFeedback.Text" xml:space="preserve">
+    <value>&amp;EMail-Feedback</value>
+  </data>
+  <data name="MenuButton_English.Text" xml:space="preserve">
+    <value>Englisch</value>
+  </data>
+  <data name="MenuButton_NextBookmark.Text" xml:space="preserve">
+    <value>Next Bookmark</value>
+  </data>
+  <data name="MenuButton_Options.Text" xml:space="preserve">
+    <value>&amp;Auswaehlen…</value>
+  </data>
+  <data name="MenuButton_File.Text" xml:space="preserve">
+    <value>&amp;Akte</value>
+  </data>
+  <data name="MenuButton_Japanese.Text" xml:space="preserve">
+    <value>Japanisch</value>
+  </data>
+  <data name="StatusLabel_Status.Text" xml:space="preserve">
+    <value>Bereit</value>
+  </data>
+  <data name="MenuButton_PreviousBookmark.Text" xml:space="preserve">
+    <value>Previous Bookmark</value>
+  </data>
+  <data name="MenuButton_Website.Text" xml:space="preserve">
+    <value>&amp;Web site</value>
+  </data>
+  <data name="MenuButton_NavigateBack.Text" xml:space="preserve">
+    <value>Gehen Sie zum &amp;Vorhergehenden Punkt</value>
+  </data>
+  <data name="SieveofEratosthenes.Text" xml:space="preserve">
+    <value>Sieb von Eratosthenes</value>
+  </data>
+  <data name="ToolbarButton_SaveAs.Text" xml:space="preserve">
+    <value>Sichern unter</value>
+  </data>
+  <data name="MenuButton_French.Text" xml:space="preserve">
+    <value>Französisch</value>
+  </data>
+  <data name="ToolbarButton_SubmitModel.ToolTipText" xml:space="preserve">
+    <value>Senden aktuelle Modell zu PAT-Teams zur Mitwirkung im Projekt PAT</value>
+  </data>
+  <data name="MenuButton_CheckGrammer.Text" xml:space="preserve">
+    <value>&amp;Überprüfen Sie Grammatik</value>
+  </data>
+  <data name="ToolbarButton_Replace.Text" xml:space="preserve">
+    <value>Ersetzen (Ctrl+H)</value>
+  </data>
+  <data name="ToolbarButton_CheckGrammar.Text" xml:space="preserve">
+    <value>Überprüfen Sie Grammatik (F5)</value>
+  </data>
+  <data name="MenuButton_EnableOntheflyAutomataSimplification.Text" xml:space="preserve">
+    <value>Enable &amp;On-the-fly automata simplification</value>
+  </data>
+  <data name="ToolbarButton_NewModelWizard.Text" xml:space="preserve">
+    <value>Neue Modell-Assistent</value>
+  </data>
+  <data name="newToolStripMenuItem.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="MenuButton_Languages.Text" xml:space="preserve">
+    <value>Languages (Sprachen)</value>
+  </data>
+  <data name="MenuButton_Replace.Text" xml:space="preserve">
+    <value>&amp;Ersetzen</value>
+  </data>
+  <data name="ToolbarButton_RemoveComment.Text" xml:space="preserve">
+    <value>Uncomment Vorwähler (Ctrl+Shift+U)</value>
+  </data>
+  <data name="MenuButton_Toolbar.Text" xml:space="preserve">
+    <value>&amp;Symbolleiste</value>
+  </data>
+  <data name="MenuButton_Bookmarks.Text" xml:space="preserve">
+    <value>Boo&amp;kmarks</value>
+  </data>
+  <data name="FunctionalToolBar.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="MenuButton_SelectAll.Text" xml:space="preserve">
+    <value>&amp;Auswahl</value>
+  </data>
+  <data name="MenuButton_Help.Text" xml:space="preserve">
+    <value>&amp;Hilfe</value>
+  </data>
+  <data name="ToolbarButton_Copy.Text" xml:space="preserve">
+    <value>Kopieren (Ctrl+C)</value>
+  </data>
+  <data name="MenuButton_Print.Text" xml:space="preserve">
+    <value>&amp;Druck</value>
+  </data>
+  <data name="ToolbarButton_Zoom100.Text" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="ToolbarButton_SubmitModel.Text" xml:space="preserve">
+    <value>Senden Modell zu PAT</value>
+  </data>
+  <data name="MenuButton_Formatting.Text" xml:space="preserve">
+    <value>Formating</value>
+  </data>
+  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Abschluss</value>
+  </data>
+  <data name="ToolbarButton_Open.Text" xml:space="preserve">
+    <value>Geöffnete Akte (Ctrl+O)</value>
+  </data>
+  <data name="ToolbarButton_Find.Text" xml:space="preserve">
+    <value>Entdeckung (Ctrl+F)</value>
+  </data>
+  <data name="StatusBar.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="ToolbarButton_FindNext.Text" xml:space="preserve">
+    <value>FindNext (F3)</value>
+  </data>
+  <data name="MenuButton_New.Text" xml:space="preserve">
+    <value>&amp;Neu</value>
+  </data>
+  <data name="MenuButton_LineNumber.Text" xml:space="preserve">
+    <value>&amp;LZahl</value>
+  </data>
+  <data name="MenuButton_LineCounter.Text" xml:space="preserve">
+    <value>Quellencode-Linie Kostenzähler</value>
+  </data>
+  <data name="MenuButton_EnableSimplificationOfTheFormula.Text" xml:space="preserve">
+    <value>Enable &amp;Logical simplification of the formula</value>
+  </data>
+  <data name="MenuButton_Specification.Text" xml:space="preserve">
+    <value>Spezifikation</value>
+  </data>
+  <data name="MenuButton_FindReplace.Text" xml:space="preserve">
+    <value>&amp;Finden Sie und ersetzen Sie</value>
+  </data>
+  <data name="MenuButton_CSharpLibary.Text" xml:space="preserve">
+    <value>C# &amp;Bibliotheks-Herausgeber und Kompilator</value>
+  </data>
+  <data name="MenuButton_ChineseSimplified.Text" xml:space="preserve">
+    <value>Chinesen (vereinfacht)</value>
+  </data>
+  <data name="ToolbarButton_Verification.ToolTipText" xml:space="preserve">
+    <value>Überprüfung (F7)</value>
+  </data>
+  <data name="ToolbarButton_AddComment.Text" xml:space="preserve">
+    <value>Anmerkungs-Auswahl (Ctrl+Shift+C)</value>
+  </data>
+  <data name="closeAllToolStripMenuItem.Text" xml:space="preserve">
+    <value>Schließen Sie alle Fenster</value>
+  </data>
+  <data name="MenuButton_HelpMenu.Text" xml:space="preserve">
+    <value>&amp;Hilfe</value>
+  </data>
+  <data name="ToolbarButton_Save.Text" xml:space="preserve">
+    <value>Außer (Ctrl+S)</value>
+  </data>
+  <data name="MenuButton_GenerateLatex.Text" xml:space="preserve">
+    <value>Druck &amp;Latex</value>
+  </data>
+  <data name="MenuButton_Portuguese.Text" xml:space="preserve">
+    <value>Portugiesisch</value>
+  </data>
+  <data name="MenuButton_ToggleBookmark.Text" xml:space="preserve">
+    <value>Toggle Bookmark</value>
+  </data>
+  <data name="MenuButton_SyntaxOptions.Text" xml:space="preserve">
+    <value>Syntax &amp;Waehlen</value>
+  </data>
+  <data name="MenuButton_OutputPanel.Text" xml:space="preserve">
+    <value>&amp;Ausgangs-Verkleidung</value>
+  </data>
+  <data name="MenuButton_ToggleOutline.Text" xml:space="preserve">
+    <value>Toggle Outlining</value>
+  </data>
+  <data name="toolStripContainer1.Text" xml:space="preserve">
+    <value>toolStripContainer1</value>
+  </data>
+  <data name="MenuButton_Exit.Text" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <data name="MenuStrip.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="MenuButton_Edit.Text" xml:space="preserve">
+    <value>&amp;Editieren</value>
+  </data>
+  <data name="ToolbarButton_Specification.Text" xml:space="preserve">
+    <value>Spezifikation</value>
+  </data>
+  <data name="MenuButton_ChineseTraditional.Text" xml:space="preserve">
+    <value>Chinesen (traditionell)</value>
+  </data>
+  <data name="ToolbarButton_CheckGrammar.ToolTipText" xml:space="preserve">
+    <value>Analysieren Sie Spezifikation (F5)</value>
+  </data>
+  <data name="ToolbarButton_Undo.Text" xml:space="preserve">
+    <value>Annulieren (Ctrl+Z)</value>
+  </data>
+  <data name="ToolbarButton_ZoomIn.Text" xml:space="preserve">
+    <value>Zoom In Text Font</value>
+  </data>
+  <data name="MenuButton_Outlining.Text" xml:space="preserve">
+    <value>&amp;Outlining</value>
+  </data>
+  <data name="ToolbarButton_ZoomOut.Text" xml:space="preserve">
+    <value>Zoom Out Text Font</value>
+  </data>
+  <data name="MenuButton_Split.Text" xml:space="preserve">
+    <value>&amp;Split Window</value>
+  </data>
+  <data name="MenuButton_Cut.Text" xml:space="preserve">
+    <value>Cu&amp;t</value>
+  </data>
+  <data name="MenuButton_Copy.Text" xml:space="preserve">
+    <value>&amp;Kopie</value>
+  </data>
+  <data name="MenuButton_Russian.Text" xml:space="preserve">
+    <value>Russisch</value>
+  </data>
+  <data name="MenuButton_View.Text" xml:space="preserve">
+    <value>&amp;Ansicht</value>
+  </data>
+  <data name="openContainingFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Geöffnetes enthaltenes Faltblatt</value>
+  </data>
+  <data name="MenuButton_NavigateForward.Text" xml:space="preserve">
+    <value>Gehen Sie zum &amp;Folgender Vorsprung</value>
+  </data>
+  <data name="MenuButton_HignlightCurrentLine.Text" xml:space="preserve">
+    <value>&amp;Hignlight Schreibzeile</value>
+  </data>
+  <data name="MenuButton_SubmitModel.ToolTipText" xml:space="preserve">
+    <value>Senden aktuelle Modell zu PAT-Teams zur Mitwirkung im Projekt PAT</value>
+  </data>
+  <data name="MenuButton_ClearAllBookmarks.Text" xml:space="preserve">
+    <value>Clear All Bookmarks</value>
+  </data>
+  <data name="MenuButton_Standard.Text" xml:space="preserve">
+    <value>&amp;Standard</value>
+  </data>
+  <data name="MenuButton_Redo.Text" xml:space="preserve">
+    <value>&amp;Redo</value>
+  </data>
+  <data name="MenuButton_Delete.Text" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="MenuButton_SubmitModel.Text" xml:space="preserve">
+    <value>Senden Modell zu PAT</value>
+  </data>
+  <data name="MenuButton_CloseAllDocument.Text" xml:space="preserve">
+    <value>&amp;Close All Documents</value>
+  </data>
+  <data name="ToolbarButton_Cut.Text" xml:space="preserve">
+    <value>Schneiden (Ctrl+X)</value>
+  </data>
+  <data name="MenuButton_WhatsNewInPAT.Text" xml:space="preserve">
+    <value>What&amp;#39; s &amp;Neu im KLAPS</value>
+  </data>
+  <data name="SplittoolStripMenuItem.Text" xml:space="preserve">
+    <value>Split Window</value>
+  </data>
+  <data name="MenuButton_ErrorList.Text" xml:space="preserve">
+    <value>&amp; Störungs-Liste</value>
+  </data>
+  <data name="ToolbarButton_Paste.Text" xml:space="preserve">
+    <value>Paste (Ctrl+V)</value>
+  </data>
+  <data name="MenuButton_CheckForUpdate.Text" xml:space="preserve">
+    <value>&amp;Prüfen Sie nach Updates</value>
+  </data>
+</root>

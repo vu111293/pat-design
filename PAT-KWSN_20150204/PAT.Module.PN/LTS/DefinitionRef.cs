@@ -1,0 +1,275 @@
+﻿using System.Collections.Generic;
+using System.Text;
+using PAT.Common.Classes.Expressions;
+using PAT.Common.Classes.Expressions.ExpressionClass;
+using PAT.Common.Classes.LTS;
+using PAT.Common.Classes.ModuleInterface;
+using PAT.PN.Assertions;
+
+namespace PAT.PN.LTS
+{
+    public sealed class DefinitionRef : PetriNet
+    {
+        public string Name;
+        public Expression[] Args;
+        public Definition Def;
+
+        public DefinitionRef(string name, Expression[] args)
+        {
+            Name = name;
+            Args = args;
+            StringBuilder ID = new StringBuilder(Name + "(");
+
+            for (int i = 0; i < Args.Length; i++)
+            {
+                ID.Append(Args[i].ExpressionID);
+                if (i < Args.Length - 1)
+                    ID.Append(",");
+            }
+
+            ID.Append(")");
+            ProcessID = DataStore.DataManager.InitializeProcessID(ID.ToString());
+        }
+
+        public PetriNet GetProcess(Valuation global)
+        {
+            Expression[] newArgs = new Expression[Args.Length];
+
+            //instance String has all information about the argument value,  which is used for storing the process of definition into the DefinitionInstanceDatabase
+            //idString store only local information about the argument (exclude the global variables)
+            string instanceString = Name + "(";
+            string idString = Name + "(";
+            for (int i = 0; i < Args.Length; i++)
+            {
+                Expression exp = Args[i];
+                idString += exp.ExpressionID;
+
+                if (!exp.HasVar)
+                {
+                    newArgs[i] = exp;
+                    instanceString += exp.ExpressionID;
+                }
+                else
+                {
+                    ExpressionValue v = EvaluatorDenotational.Evaluate(exp, global);
+                    newArgs[i] = v;
+
+                    instanceString += v.ExpressionID;
+                }
+
+                if (i < Args.Length - 1)
+                {
+                    instanceString += ",";
+                    idString += ",";
+                }
+            }
+            idString += ")";
+            instanceString += ")";
+
+            PetriNet ProcExpr = DataStore.DataManager.DefinitionInstanceDatabase.GetContainsKey(instanceString);
+            if (ProcExpr != null)
+                return ProcExpr;
+            Dictionary<string, Expression> values = new Dictionary<string, Expression>(Args.Length);
+
+            for (int i = 0; i < newArgs.Length; i++)
+                values.Add(Def.LocalVariables[i], newArgs[i]);
+
+            ProcessID = DataStore.DataManager.InitializeProcessID(idString);
+
+            //lock the data manager to prevent the multi-thread update the last Process ID at the same time.
+            lock (DataStore.DataManager)
+            {
+                ProcExpr = Def.Process.ClearConstant(values); //Instantiate
+                DataStore.DataManager.SetLastProcessID(ProcessID);
+            }
+
+            ProcExpr.ProcessID = ProcessID;
+            DataStore.DataManager.DefinitionInstanceDatabase.Add(instanceString, ProcExpr);
+            return ProcExpr;
+        }
+
+        public override void SyncOutput(Valuation GlobalEnv, List<PNConfigurationWithChannelData> list)
+        {
+            GetProcess(GlobalEnv).SyncOutput(GlobalEnv, list);
+        }
+
+        public override void SyncInput(PNConfigurationWithChannelData eStep, List<PNConfiguration> list)
+        {
+            GetProcess(eStep.GlobalEnv).SyncInput(eStep, list);
+        }
+
+        public override string ToString()
+        {
+            return Name + "(" + Common.Classes.Ultility.Ultility.PPStringList(Args) + ")";
+        }
+
+        public override HashSet<string> GetAlphabets(Dictionary<string, string> visitedDefinitionRefs)
+        {
+            if (visitedDefinitionRefs == null)
+                return new HashSet<string>();
+
+            if (Specification.CollectDataOperationEvent == null)
+            {
+
+                if (Def.AlphabetsCalculable)
+                    return new HashSet<string>(Def.Alphabets);
+
+                //if the alphabet is defined manually. 
+                if (Def.AlphabetEvents != null)
+                {
+                    Dictionary<string, Expression> newMapping = new Dictionary<string, Expression>();
+                    for (int i = 0; i < Args.Length; i++)
+                    {
+                        string key = Def.LocalVariables[i];
+                        newMapping.Add(key, Args[i]);
+                    }
+
+                    EventCollection evtcoll = Def.AlphabetEvents.ClearConstant(newMapping);
+
+                    if (!evtcoll.ContainsVariable())
+                        return new HashSet<string>(evtcoll.EventNames);
+
+                    StringBuilder sb = new StringBuilder();
+                    sb.AppendLine("ERROR - PAT FAILED to calculate the alphabet of process " + Name + ".");
+                    sb.AppendLine("CAUSE - Process " + Name + " is invoked with gloabl variables as parameters!");
+                    sb.AppendLine(
+                        "REMEDY - 1) Avoid passing global variable as parameters  2) Or manually specify the alphabet of process " +
+                        Name +
+                        " using the following syntax: \n\r\t #alphabet " + Name +
+                        " {X}; \n\rwhere X is a set of event names with no variables.");
+                    throw new RuntimeException(sb.ToString());
+                }
+
+                //if the arguments contain variable (global variable), then throw an exception to say we can't calculate the alphabet.
+                foreach (var arg in Args)
+                {
+                    if (arg.HasVar)
+                    {
+                        StringBuilder sb = new StringBuilder();
+                        sb.AppendLine("ERROR - PAT FAILED to calculate the alphabet of process " + Name + ".");
+                        sb.AppendLine("CAUSE - Process " + Name +
+                                      " is invoked with gloabl variables as parameters!");
+                        sb.AppendLine("REMEDY - Manually specify the alphabet of process " + Name +
+                                      " using the following syntax: \n\r\t #alphabet " + Name +
+                                      " {X}; \n\rwhere X is a set of events.");
+                        throw new RuntimeException(sb.ToString());
+                    }
+                }
+            }
+
+            string idString = Name + "(";
+            for (int i = 0; i < Args.Length; i++)
+            {
+                Expression exp = Args[i];
+                idString += exp.ToString();
+                if (i < Args.Length - 1)
+                    idString += ",";
+            }
+            idString += ")";
+
+            if (Specification.CollectDataOperationEvent == null)
+            {
+                if (visitedDefinitionRefs.ContainsKey(Name))
+                {
+                    if (visitedDefinitionRefs[Name] != idString)
+                    {
+                        StringBuilder sb = new StringBuilder();
+
+                        sb.AppendLine("ERROR - PAT FAILED to calculate the alphabet of process " + Name + ".");
+                        sb.AppendLine("CAUSE - Process " + Name + " is recursively invoked with different parameters!");
+                        sb.AppendLine("REMEDY - Manually specify the alphabet of process " + Name +
+                                      " using the following syntax: \n\r\t #alphabet " + Name +
+                                      " {X}; \n\rwhere X is a set of events.");
+                        throw new RuntimeException(sb.ToString());
+                    }
+
+                    return new HashSet<string>();
+                }
+                else
+                {
+                    Dictionary<string, string> newVisitedDef = new Dictionary<string, string>();
+
+                    foreach (string var in visitedDefinitionRefs.Keys)
+                        newVisitedDef.Add(var, visitedDefinitionRefs[var]);
+
+                    newVisitedDef.Add(Name, idString);
+
+                    return GetProcess(null).GetAlphabets(newVisitedDef);
+                }
+            }
+            else
+            {
+                if (visitedDefinitionRefs.ContainsKey(Name))
+                    return new HashSet<string>();
+
+                Dictionary<string, string> newVisitedDef = new Dictionary<string, string>();
+
+                foreach (string var in visitedDefinitionRefs.Keys)
+                    newVisitedDef.Add(var, visitedDefinitionRefs[var]);
+                newVisitedDef.Add(Name, idString);
+
+                return Def.Process.GetAlphabets(newVisitedDef);
+            }
+        }
+
+        public override List<string> GetGlobalVariables()
+        {
+            List<string> vars = Def.GlobalVars;
+            foreach (Expression expression in Args)
+                Common.Classes.Ultility.Ultility.Union(vars, expression.GetVars());
+
+            return vars;
+        }
+
+        public override List<string> GetChannels()
+        {
+            return Def.Channels;
+        }
+
+        public override PetriNet ClearConstant(Dictionary<string, Expression> constMapping)
+        {
+            Expression[] newArgs = new Expression[Args.Length];
+
+            for (int i = 0; i < Args.Length; i++)
+            {
+                Expression arg = Args[i].ClearConstant(constMapping);
+
+                if (!arg.HasVar)
+                    newArgs[i] = EvaluatorDenotational.Evaluate(arg, null);
+                else
+                    newArgs[i] = arg;
+            }
+
+            DefinitionRef newRef = new DefinitionRef(Name, newArgs);
+
+            //this is a special cases happened in the middle of parsing, where the current Def is not initialized in the parser.
+            //so need to put the newRef into the def list to initialize the Def once the parsing is done.
+            if (Def == null)
+            {
+            }
+            else
+            {
+                newRef.Def = Def;
+            }
+
+            return newRef;
+        }
+
+        public override bool MustBeAbstracted()
+        {
+            return Def.MustAbstract;
+        }
+
+        public override PetriNet GetTopLevelConcurrency(List<string> visitedDef)
+        {
+            if (!visitedDef.Contains(Name))
+            {
+                List<string> newVisitedDef = new List<string>(visitedDef);
+                newVisitedDef.Add(Name);
+                return Def.Process.GetTopLevelConcurrency(newVisitedDef);
+            }
+
+            return null;
+        }
+    }
+}

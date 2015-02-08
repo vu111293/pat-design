@@ -1,0 +1,48 @@
+<#@ template language="C#" debug="False" hostspecific="true" #>
+using PAT.Common.Classes.LTS;
+using PAT.Common.Classes.ModuleInterface;
+using PAT.Common.Classes.Ultility;
+using <# Write(this.Host.ResolveParameterValue("","","LTSNamespace")); #>;
+
+namespace <# Write(this.Host.ResolveParameterValue("","","AssertionsNamespace")); #>
+{
+    public class <# Write(this.Host.ResolveParameterValue("","","ModuleCode")); #>AssertionRefinement : PAT.Common.Classes.SemanticModels.MDP.Assertion.AssertionRefinement
+    {
+        public DefinitionRef ImplementationProcess;
+        public DefinitionRef SpecificationProcess;
+
+        #region "Basic Methods"
+
+        public <# Write(this.Host.ResolveParameterValue("","","ModuleCode")); #>AssertionRefinement(DefinitionRef processDef, DefinitionRef target, QueryConstraintType constraintType)
+            : base()
+        {
+            ConstraintType = constraintType;
+            ImplementationProcess = processDef;
+            SpecificationProcess = target;
+        }
+
+        public override void Initialize(SpecificationBase spec)
+        {
+            Assertion.Initialize(this, ImplementationProcess, SpecificationProcess, spec);
+        }
+
+        #endregion
+
+
+        public override string StartingProcess
+        {
+            get { return ImplementationProcess.ToString(); }
+        }
+
+        public override string SpecProcess
+        {
+            get { return SpecificationProcess.ToString(); }
+        }
+
+        //todo: override ToString method if your assertion uses different syntax as PAT
+        //public override string ToString()
+        //{
+        //		return "";
+        //}        
+    }
+}

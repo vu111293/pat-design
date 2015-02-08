@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>PAT - 개선된 시뮬레이션/모델링 도구 (버전</value>
+  </data>
+  <data name="closeAllButThisToolStripMenuItem.Text" xml:space="preserve">
+    <value>이 도구를 제외하고 모두 닫기</value>
+  </data>
+  <data name="closeAllToolStripMenuItem.Text" xml:space="preserve">
+    <value>모두 닫기</value>
+  </data>
+  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="FunctionalToolBar.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="MenuButton_About.Text" xml:space="preserve">
+    <value>제품 정보(&amp;A)</value>
+  </data>
+  <data name="MenuButton_AddComment.Text" xml:space="preserve">
+    <value>주석 선택</value>
+  </data>
+  <data name="MenuButton_AlwaysOnTop.Text" xml:space="preserve">
+    <value>항상 맨위에 보이기&amp;A)</value>
+  </data>
+  <data name="MenuButton_Bookmarks.Text" xml:space="preserve">
+    <value>바로가기</value>
+  </data>
+  <data name="MenuButton_CheckForUpdate.Text" xml:space="preserve">
+    <value>업데이트 확인(&amp;C)</value>
+  </data>
+  <data name="MenuButton_CheckGrammer.Text" xml:space="preserve">
+    <value>문법 검사하기(&amp;C)</value>
+  </data>
+  <data name="MenuButton_ChineseSimplified.Text" xml:space="preserve">
+    <value>중국어 간체</value>
+  </data>
+  <data name="MenuButton_ChineseTraditional.Text" xml:space="preserve">
+    <value>중국어 번체</value>
+  </data>
+  <data name="MenuButton_ClearAllBookmarks.Text" xml:space="preserve">
+    <value>모든 북마크 삭제하기</value>
+  </data>
+  <data name="MenuButton_CloseAllDocument.Text" xml:space="preserve">
+    <value>모든 문서 닫기</value>
+  </data>
+  <data name="MenuButton_CloseCurrent.Text" xml:space="preserve">
+    <value>현재 탭 닫기</value>
+  </data>
+  <data name="MenuButton_Copy.Text" xml:space="preserve">
+    <value>복사하기(&amp;C)</value>
+  </data>
+  <data name="MenuButton_CSharpLibary.Text" xml:space="preserve">
+    <value>C# 라이브러리 편집기와 컴파일러(&amp;L)</value>
+  </data>
+  <data name="MenuButton_Cut.Text" xml:space="preserve">
+    <value>잘라내기(&amp;T)</value>
+  </data>
+  <data name="MenuButton_Delete.Text" xml:space="preserve">
+    <value>&amp; 삭제</value>
+  </data>
+  <data name="MenuButton_Edit.Text" xml:space="preserve">
+    <value>편집(&amp;E)</value>
+  </data>
+  <data name="MenuButton_EmailFeedback.Text" xml:space="preserve">
+    <value>이메일로 사용자 의견 보내기(&amp;E)</value>
+  </data>
+  <data name="MenuButton_EnableAPosterioriAutomataSimplification.Text" xml:space="preserve">
+    <value>시작전 오토마타 간소화기능 켜기</value>
+  </data>
+  <data name="MenuButton_EnableOntheflyAutomataSimplification.Text" xml:space="preserve">
+    <value>실행중(on-the-fly) 오토마타 간소화기능 켜기</value>
+  </data>
+  <data name="MenuButton_EnableSimplificationOfTheFormula.Text" xml:space="preserve">
+    <value>논리식 간소화기능 켜기</value>
+  </data>
+  <data name="MenuButton_EnableStronglyConnectedComponentsSimplification.Text" xml:space="preserve">
+    <value>강연결요소 단순화기능 켜기</value>
+  </data>
+  <data name="MenuButton_EnableTrickingInAcceptingConditions.Text" xml:space="preserve">
+    <value>수락조건에 tricking 지원하기</value>
+  </data>
+  <data name="MenuButton_English.Text" xml:space="preserve">
+    <value>영어</value>
+  </data>
+  <data name="MenuButton_ErrorList.Text" xml:space="preserve">
+    <value>&amp;오류 목록</value>
+  </data>
+  <data name="MenuButton_Examples.Text" xml:space="preserve">
+    <value>예제(&amp;X)</value>
+  </data>
+  <data name="MenuButton_Exit.Text" xml:space="preserve">
+    <value>나가기(&amp;X)</value>
+  </data>
+  <data name="MenuButton_File.Text" xml:space="preserve">
+    <value>파일(&amp;F)</value>
+  </data>
+  <data name="MenuButton_Find.Text" xml:space="preserve">
+    <value>찾기</value>
+  </data>
+  <data name="MenuButton_FindNext.Text" xml:space="preserve">
+    <value>다음 찾기</value>
+  </data>
+  <data name="MenuButton_FindReplace.Text" xml:space="preserve">
+    <value>찾아 바꾸기(&amp;F)</value>
+  </data>
+  <data name="MenuButton_Formatting.Text" xml:space="preserve">
+    <value>포맷하기</value>
+  </data>
+  <data name="MenuButton_French.Text" xml:space="preserve">
+    <value>불어</value>
+  </data>
+  <data name="MenuButton_GenerateLatex.Text" xml:space="preserve">
+    <value>&amp;LaTex로 인쇄</value>
+  </data>
+  <data name="MenuButton_German.Text" xml:space="preserve">
+    <value>독어</value>
+  </data>
+  <data name="MenuButton_GoTo.Text" xml:space="preserve">
+    <value>다음 줄로 이동:(&amp;G)</value>
+  </data>
+  <data name="MenuButton_Help.Text" xml:space="preserve">
+    <value>도움말(&amp;H)</value>
+  </data>
+  <data name="MenuButton_HelpMenu.Text" xml:space="preserve">
+    <value>도움말(&amp;H)</value>
+  </data>
+  <data name="MenuButton_HignlightCurrentLine.Text" xml:space="preserve">
+    <value>현재 줄 강조하기(&amp;H)</value>
+  </data>
+  <data name="MenuButton_Import.Text" xml:space="preserve">
+    <value>삽입</value>
+  </data>
+  <data name="MenuButton_Japanese.Text" xml:space="preserve">
+    <value>일어</value>
+  </data>
+  <data name="MenuButton_Languages.Text" xml:space="preserve">
+    <value>언어</value>
+  </data>
+  <data name="MenuButton_LineCounter.Text" xml:space="preserve">
+    <value>소스코드 줄번호 기록계</value>
+  </data>
+  <data name="MenuButton_LineNumber.Text" xml:space="preserve">
+    <value>줄번호(&amp;L)</value>
+  </data>
+  <data name="MenuButton_LTL2BA.Text" xml:space="preserve">
+    <value>LTL -&gt; 오토마타 변환기</value>
+  </data>
+  <data name="MenuButton_LTLParsingOptions.Text" xml:space="preserve">
+    <value>LTL 구문분석 선택사항</value>
+  </data>
+  <data name="MenuButton_NavigateBack.Text" xml:space="preserve">
+    <value>이전 탭으로 이동(&amp;P)</value>
+  </data>
+  <data name="MenuButton_NavigateForward.Text" xml:space="preserve">
+    <value>다음 탭으로 이동(&amp;N)</value>
+  </data>
+  <data name="MenuButton_New.Text" xml:space="preserve">
+    <value>새로 만들기(&amp;N)</value>
+  </data>
+  <data name="MenuButton_NewModelWizard.Text" xml:space="preserve">
+    <value>새 모델 마법사</value>
+  </data>
+  <data name="MenuButton_NextBookmark.Text" xml:space="preserve">
+    <value>다음 북마크</value>
+  </data>
+  <data name="MenuButton_Open.Text" xml:space="preserve">
+    <value>열기(&amp;O)</value>
+  </data>
+  <data name="MenuButton_Options.Text" xml:space="preserve">
+    <value>선택사항(&amp;O)</value>
+  </data>
+  <data name="MenuButton_Outlining.Text" xml:space="preserve">
+    <value>요약하기</value>
+  </data>
+  <data name="MenuButton_OutputPanel.Text" xml:space="preserve">
+    <value>출력 창(&amp;O)</value>
+  </data>
+  <data name="MenuButton_Paste.Text" xml:space="preserve">
+    <value>붙여넣기</value>
+  </data>
+  <data name="MenuButton_Portuguese.Text" xml:space="preserve">
+    <value>포르투갈어</value>
+  </data>
+  <data name="MenuButton_PreviousBookmark.Text" xml:space="preserve">
+    <value>이전 북마크</value>
+  </data>
+  <data name="MenuButton_Print.Text" xml:space="preserve">
+    <value>인쇄(&amp;P)</value>
+  </data>
+  <data name="MenuButton_RecentFiles.Text" xml:space="preserve">
+    <value>최근 작업 파일(&amp;R)</value>
+  </data>
+  <data name="MenuButton_Redo.Text" xml:space="preserve">
+    <value>다시 실행(&amp;R)</value>
+  </data>
+  <data name="MenuButton_Register.Text" xml:space="preserve">
+    <value>완성판 구입(&amp;P)</value>
+  </data>
+  <data name="MenuButton_Register.ToolTipText" xml:space="preserve">
+    <value>PAT 완성판에는 더 많은 모듈과 예제가 포함되어 있습니다.</value>
+  </data>
+  <data name="MenuButton_RemoveComment.Text" xml:space="preserve">
+    <value>주석 취소하기</value>
+  </data>
+  <data name="MenuButton_Replace.Text" xml:space="preserve">
+    <value>바꾸기</value>
+  </data>
+  <data name="MenuButton_Russian.Text" xml:space="preserve">
+    <value>러시아어</value>
+  </data>
+  <data name="MenuButton_Save.Text" xml:space="preserve">
+    <value>저장하기(&amp;S)</value>
+  </data>
+  <data name="MenuButton_SaveAs.Text" xml:space="preserve">
+    <value>다른 이름으로 저장(&amp;A)</value>
+  </data>
+  <data name="MenuButton_SelectAll.Text" xml:space="preserve">
+    <value>모두 선택하기(&amp;S)</value>
+  </data>
+  <data name="MenuButton_Simulation.Text" xml:space="preserve">
+    <value>시뮬레이션(&amp;S)</value>
+  </data>
+  <data name="MenuButton_Spanish.Text" xml:space="preserve">
+    <value>스페인어</value>
+  </data>
+  <data name="MenuButton_Specification.Text" xml:space="preserve">
+    <value>명세서</value>
+  </data>
+  <data name="MenuButton_Split.Text" xml:space="preserve">
+    <value>윈도우 분할하기(&amp;S)</value>
+  </data>
+  <data name="MenuButton_Standard.Text" xml:space="preserve">
+    <value>표준</value>
+  </data>
+  <data name="MenuButton_StatusBar.Text" xml:space="preserve">
+    <value>상태 바(&amp;S)</value>
+  </data>
+  <data name="MenuButton_SubmitModel.Text" xml:space="preserve">
+    <value>이메일로 모델 전송하기</value>
+  </data>
+  <data name="MenuButton_SubmitModel.ToolTipText" xml:space="preserve">
+    <value>현재 모델을 PAT 팀 또는 친구에게 이메일로 보내기</value>
+  </data>
+  <data name="MenuButton_SyntaxOptions.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MenuButton_ToggleAllOutlines.Text" xml:space="preserve">
+    <value>모든 요약(Outlinings) 토글하기</value>
+  </data>
+  <data name="MenuButton_ToggleBookmark.Text" xml:space="preserve">
+    <value>북마크 토글하기</value>
+  </data>
+  <data name="MenuButton_ToggleOutline.Text" xml:space="preserve">
+    <value>요약기능 토글하기</value>
+  </data>
+  <data name="MenuButton_Toolbar.Text" xml:space="preserve">
+    <value>툴바(&amp;T)</value>
+  </data>
+  <data name="MenuButton_Tools.Text" xml:space="preserve">
+    <value>도구(&amp;T)</value>
+  </data>
+  <data name="MenuButton_Undo.Text" xml:space="preserve">
+    <value>실행 취소하기(&amp;U)</value>
+  </data>
+  <data name="MenuButton_Verification.Text" xml:space="preserve">
+    <value>검증(&amp;V)</value>
+  </data>
+  <data name="MenuButton_VerificationBatch.Text" xml:space="preserve">
+    <value>검증(배치모드)</value>
+  </data>
+  <data name="MenuButton_Vietnamese.Text" xml:space="preserve">
+    <value>베트남어</value>
+  </data>
+  <data name="MenuButton_View.Text" xml:space="preserve">
+    <value>보기(&amp;V)</value>
+  </data>
+  <data name="MenuButton_Website.Text" xml:space="preserve">
+    <value>웹사이트(&amp;W)</value>
+  </data>
+  <data name="MenuButton_WhatsNewInPAT.Text" xml:space="preserve">
+    <value>PAT 최신 뉴스</value>
+  </data>
+  <data name="MenuButton_Window.Text" xml:space="preserve">
+    <value>창(&amp;W)</value>
+  </data>
+  <data name="MenuStrip.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="newToolStripMenuItem.Text" xml:space="preserve">
+    <value>새로 만들기</value>
+  </data>
+  <data name="openContainingFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>저장되어 있는 폴더 열기</value>
+  </data>
+  <data name="openFileDialog1.Filter" xml:space="preserve">
+    <value>LTL 파일|*.ltl | 모든 파일|*.*</value>
+  </data>
+  <data name="openFileDialog1.Title" xml:space="preserve">
+    <value>질의 파일 열기</value>
+  </data>
+  <data name="saveToolStripMenuItem.Text" xml:space="preserve">
+    <value>저장하기</value>
+  </data>
+  <data name="SplittoolStripMenuItem.Text" xml:space="preserve">
+    <value>창 분할하기</value>
+  </data>
+  <data name="StandardToolBar.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="StatusBar.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="StatusLabel_Status.Text" xml:space="preserve">
+    <value>준비완료</value>
+  </data>
+  <data name="ToolbarButton_AddComment.Text" xml:space="preserve">
+    <value>주석 선택하기(Ctrl+Shift+C)</value>
+  </data>
+  <data name="ToolbarButton_CheckGrammar.Text" xml:space="preserve">
+    <value>문법 검사하기(F5)</value>
+  </data>
+  <data name="ToolbarButton_CheckGrammar.ToolTipText" xml:space="preserve">
+    <value>문법 검사하기(F5)</value>
+  </data>
+  <data name="ToolbarButton_Copy.Text" xml:space="preserve">
+    <value>복사하기(Ctrl+C)</value>
+  </data>
+  <data name="ToolbarButton_Cut.Text" xml:space="preserve">
+    <value>잘라내기(Ctrl+X)</value>
+  </data>
+  <data name="ToolbarButton_Find.Text" xml:space="preserve">
+    <value>찾기(Ctrl+F)</value>
+  </data>
+  <data name="ToolbarButton_FindNext.Text" xml:space="preserve">
+    <value>다음 찾기(F3)</value>
+  </data>
+  <data name="ToolbarButton_LaTexGenerate.Text" xml:space="preserve">
+    <value>모델을 LaTex로 생성하기</value>
+  </data>
+  <data name="ToolbarButton_New.Text" xml:space="preserve">
+    <value>새로운 모델 만들기</value>
+  </data>
+  <data name="ToolbarButton_NewModelWizard.Text" xml:space="preserve">
+    <value>새로운 모델 위저드</value>
+  </data>
+  <data name="ToolbarButton_Open.Text" xml:space="preserve">
+    <value>모델 열기(Ctrl+O)</value>
+  </data>
+  <data name="ToolbarButton_Paste.Text" xml:space="preserve">
+    <value>붙여넣기(Ctrl+V)</value>
+  </data>
+  <data name="ToolbarButton_Print.Text" xml:space="preserve">
+    <value>인쇄(Ctrl+P)</value>
+  </data>
+  <data name="ToolbarButton_Redo.Text" xml:space="preserve">
+    <value>다시 실행(Ctrl+Y)</value>
+  </data>
+  <data name="ToolbarButton_RemoveComment.Text" xml:space="preserve">
+    <value>주석 취소하기(Ctrl+Shift+U)</value>
+  </data>
+  <data name="ToolbarButton_Replace.Text" xml:space="preserve">
+    <value>바꾸기(Ctrl+H)</value>
+  </data>
+  <data name="ToolbarButton_Save.Text" xml:space="preserve">
+    <value>저장(Ctrl+S)</value>
+  </data>
+  <data name="ToolbarButton_SaveAs.Text" xml:space="preserve">
+    <value>다른 이름으로 저장</value>
+  </data>
+  <data name="ToolbarButton_Simulation.Text" xml:space="preserve">
+    <value>시뮬레이션(F6)</value>
+  </data>
+  <data name="ToolbarButton_Simulation.ToolTipText" xml:space="preserve">
+    <value>시뮬레이션(F6)</value>
+  </data>
+  <data name="ToolbarButton_Specification.Text" xml:space="preserve">
+    <value>명세</value>
+  </data>
+  <data name="ToolbarButton_SubmitModel.Text" xml:space="preserve">
+    <value>모델을 이메일로 보내기</value>
+  </data>
+  <data name="ToolbarButton_SubmitModel.ToolTipText" xml:space="preserve">
+    <value>현재 모델을 PAT 팀 또는 친구에게 이메일로 보내기</value>
+  </data>
+  <data name="ToolbarButton_Undo.Text" xml:space="preserve">
+    <value>되돌리기(Ctrl+Z)</value>
+  </data>
+  <data name="ToolbarButton_Verification.Text" xml:space="preserve">
+    <value>검증(F7)</value>
+  </data>
+  <data name="ToolbarButton_Verification.ToolTipText" xml:space="preserve">
+    <value>검증(F7)</value>
+  </data>
+  <data name="ToolbarButton_Zoom100.Text" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="ToolbarButton_Zoom100.ToolTipText" xml:space="preserve">
+    <value>텍스트 크기 100%</value>
+  </data>
+  <data name="ToolbarButton_ZoomIn.Text" xml:space="preserve">
+    <value>폰트 키우기</value>
+  </data>
+  <data name="ToolbarButton_ZoomOut.Text" xml:space="preserve">
+    <value>폰트 축소하기</value>
+  </data>
+  <data name="toolStripContainer1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="enableSpecificationOutputToolStripMenuItem.Text" xml:space="preserve">
+    <value>명세서 출력기능 켜기</value>
+  </data>
+  <data name="enableSpecificationOutputToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>명세서가 출력하기에 너무 길면(너무 느려지면)이 기능을 끄세요.</value>
+  </data>
+  <data name="MenuButton_FindUsages.Text" xml:space="preserve">
+    <value>사용법 찾아보기</value>
+  </data>
+  <data name="MenuButton_ModelExplorer.Text" xml:space="preserve">
+    <value>모델 탐색기</value>
+  </data>
+  <data name="MenuButton_ModuleGenerator.Text" xml:space="preserve">
+    <value>모델 생성기</value>
+  </data>
+  <data name="stNewVersion.Text" xml:space="preserve">
+    <value>PAT의 새로운 버전이 있습니다.</value>
+  </data>
+</root>

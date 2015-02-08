@@ -1,0 +1,1008 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D7BA9A8-C774-4480-858A-92A04FBB8466}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PAT.Common</RootNamespace>
+    <AssemblyName>PAT.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CONTRACTS_FULL;TEST;OPTIMAL_FOR_EXP_;MULTI_CORE_;ADD_IN_;BDD</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsCustomRewriterAssembly>
+    </CodeContractsCustomRewriterAssembly>
+    <CodeContractsCustomRewriterClass>
+    </CodeContractsCustomRewriterClass>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>False</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsBuildReferenceAssembly>False</CodeContractsBuildReferenceAssembly>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsLibPaths>
+    </CodeContractsLibPaths>
+    <CodeContractsPlatformPath>
+    </CodeContractsPlatformPath>
+    <CodeContractsExtraAnalysisOptions>
+    </CodeContractsExtraAnalysisOptions>
+    <CodeContractsBaseLineFile>
+    </CodeContractsBaseLineFile>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>False</CodeContractsShowSquigglies>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>CONTRACTS_FULL;TEST;OPTIMAL_FOR_EXP_;MULTI_CORE_;BDD</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsCustomRewriterAssembly>
+    </CodeContractsCustomRewriterAssembly>
+    <CodeContractsCustomRewriterClass>
+    </CodeContractsCustomRewriterClass>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>False</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsBuildReferenceAssembly>False</CodeContractsBuildReferenceAssembly>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsLibPaths>
+    </CodeContractsLibPaths>
+    <CodeContractsPlatformPath>
+    </CodeContractsPlatformPath>
+    <CodeContractsExtraAnalysisOptions>
+    </CodeContractsExtraAnalysisOptions>
+    <CodeContractsBaseLineFile>
+    </CodeContractsBaseLineFile>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>False</CodeContractsShowSquigglies>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CONTRACTS_FULL;CONTRACTS_FULL;Statistics;TEST</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>CONTRACTS_FULL;Statistics;TEST</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\DLL\PAT\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Msagl, Version=2.0.1.0, Culture=neutral, PublicKeyToken=7f84f738e1fc245c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Msagl.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Msagl.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Msagl.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Msagl.GraphViewerGdi, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Msagl.GraphViewerGdi.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextTemplating, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.VisualStudio.TextTemplating.dll</HintPath>
+    </Reference>
+    <Reference Include="PAT.Editor.Docking">
+      <HintPath>..\DLL\PAT\PAT.Editor.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\BA\BuchiAutomata.cs" />
+    <Compile Include="Classes\BA\LTL2BA.cs" />
+    <Compile Include="Classes\CUDD\ODDNode.cs" />
+    <Compile Include="Classes\DataStructure\ClockValuation.cs" />
+    <Compile Include="Classes\DataStructure\FullDiffDBM.cs" />
+    <Compile Include="Classes\DataStructure\NewDBM.cs" />
+    <Compile Include="Classes\SemanticModels\DTMC\AssertionReachability.cs" />
+    <Compile Include="Classes\SemanticModels\DTMC\DTMC.cs" />
+    <Compile Include="Classes\SemanticModels\DTMC\DTMCConfiguration.cs" />
+    <Compile Include="Classes\SemanticModels\DTMC\Group.cs" />
+    <Compile Include="Classes\SemanticModels\DTMC\LinearEquationSolver.cs" />
+    <Compile Include="Classes\SemanticModels\DTMC\Row.cs" />
+    <Compile Include="Classes\SemanticModels\DTMC\SparseMatrix.cs" />
+    <Compile Include="Classes\SemanticModels\DTMC\SparseMatrixMDP.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\AssertionCSPDeadlockAI.cs" />
+    <Compile Include="Classes\SemanticModels\MDP2\AssertionReachabilityCut.cs" />
+    <Compile Include="Classes\SemanticModels\MDP2\Group.cs" />
+    <Compile Include="Classes\SemanticModels\MDP2\LinearEquationSolver.cs" />
+    <Compile Include="Classes\SemanticModels\MDP2\Row.cs" />
+    <Compile Include="Classes\SemanticModels\MDP2\SparseMatrixMDP.cs" />
+    <Compile Include="Classes\SemanticModels\Prob\NondetAlgo.cs" />
+    <Compile Include="Classes\SemanticModels\Prob\ProbAlgo.cs" />
+    <Compile Include="Classes\DataStructure\Set.cs" />
+    <Compile Include="Classes\DataStructure\StringDictionary.cs" />
+    <Compile Include="Classes\DataStructure\StringHashTable.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\VariablePrime.cs" />
+    <Compile Include="Classes\Expressions\Valuation.cs" />
+    <Compile Include="Classes\Expressions\EvaluatorDenotational.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\Assignment.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\BoolConstant.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\StaticMethodCall.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\Expression.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\If.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\IntConstant.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\PrimitiveApplication.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\PropertyAssignment.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\Record.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\RecordValue.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\RuntimeException.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\Sequence.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\Variable.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\While.cs" />
+    <Compile Include="Classes\BA\LTL2BA\alternating.cs" />
+    <Compile Include="Classes\BA\LTL2BA\BAClasses.cs" />
+    <Compile Include="Classes\BA\LTL2BA\buchi.cs" />
+    <Compile Include="Classes\BA\LTL2BA\cache.cs" />
+    <Compile Include="Classes\BA\LTL2BA\generalized.cs" />
+    <Compile Include="Classes\BA\LTL2BA\lex.cs" />
+    <Compile Include="Classes\BA\LTL2BA\main.cs" />
+    <Compile Include="Classes\BA\LTL2BA\mem.cs" />
+    <Compile Include="Classes\BA\LTL2BA\parse.cs" />
+    <Compile Include="Classes\BA\LTL2BA\rewrt.cs" />
+    <Compile Include="Classes\BA\LTL2BA\set.cs" />
+    <Compile Include="Classes\BA\LTL2BA\trans.cs" />
+    <Compile Include="Classes\BA\Proposition.cs" />
+    <None Include="Classes\BA\State.cs" />
+    <Compile Include="Classes\BA\Transition.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\Algorithms_Fairness\FairTarjan_Random.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\Algorithms_Fairness\MultiCoreLocalFair_Heuristic.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\Algorithms_Fairness\MultiCoreQueueFair_Heuristic.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\Algorithms_NoFairness\CommonData.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\Algorithms_NoFairness\ImprovedMultiCoreImprovedTarjan_Heuristic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\Algorithms_NoFairness\ImprovedMultiCoreNDFS_Heuristic.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\Algorithms_NoFairness\ImprovedNestedDFS_Random.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\Algorithms_NoFairness\ImprovedTarjan_Random.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\Algorithms_NoFairness\MultiCoreImprovedTarjan_Heuristic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\Algorithms_NoFairness\MultiCoreNDFS_Heuristic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\AssertionCSPDeadLock.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\ImprovedTarjanMultiCore\AssertionLTLMultiCoreTarjanGeldenhuysValmari.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\ImprovedTarjanAlgorithmsOneCore\AssertionLTLTarjanGeldenhuysValmari.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\MultiCoreGlobalVariables\AssertionLTLMultiCoreSharedVariables.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\MultiCoreNestedDepthFirstSearchSharedRedStates\AssertionLTLMultiCoreNestedDepthFirstSearchSharedRedStates.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\MultiCoreTarjanSpawnFairThreads\AssertionLTLMultiCore.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\MultiCoreTarjanSpawnFairThreads\FairThread.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\MultiCoreTarjanSpawnFairThreads\TarjanThread.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\MultiCoreTarjanSpawnFairThreads\ThreadPool.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\NestedDFS\AssertionLTLNestedDFS.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\SwamNestedDepthFirstSearch\AssertionLTLSwarmNestedDepthFirstSearch.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\SwarmTarjanModelChecking\AssertionLTLSwarmTarjanModelChecking.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\AssertionFairLTL.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\AssertionCSPDeadLock.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Graph.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\GraphForTA.cs" />
+    <Compile Include="Classes\SemanticModels\MDP\ExplicitMCAlgo\AssertionLTL-MEC.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\IndexChoice.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\TimeBehaviors.cs" />
+    <Compile Include="GUI\BPELModule\BPELModel.cs" />
+    <Compile Include="GUI\BPELModule\Parsing.cs" />
+    <Compile Include="GUI\KWSNModule\WSNBase.cs" />
+    <Compile Include="GUI\KWSNModule\WSNCanvas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\KWSNModule\WSNModel.cs" />
+    <Compile Include="GUI\KWSNModule\WSNSensorChannel.cs" />
+    <Compile Include="GUI\KWSNModule\WSNSensorItem.cs" />
+    <Compile Include="GUI\PNModule\Parsing.cs" />
+    <Compile Include="GUI\PNModule\PNArc.cs" />
+    <Compile Include="GUI\PNModule\PNCanvas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\PNModule\PNCanvas.designer.cs">
+      <DependentUpon>PNCanvas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PNModule\PNLabel.cs" />
+    <Compile Include="GUI\PNModule\PNModel.cs" />
+    <Compile Include="GUI\PNModule\PNPlace.cs" />
+    <Compile Include="GUI\PNModule\PNTransition.cs" />
+    <Compile Include="GUI\RuntimeExceptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\RuntimeExceptionDialog.designer.cs">
+      <DependentUpon>RuntimeExceptionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ExceptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ExceptionDialog.designer.cs">
+      <DependentUpon>ExceptionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DataStoreWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ModelChecker\LTL2AutoamataConverter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ModelChecker\LTL2AutoamataConverter.designer.cs">
+      <DependentUpon>LTL2AutoamataConverter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Simulator\FormTraceInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\PDDLModule\Parsing.cs" />
+    <Compile Include="GUI\PDDLModule\PDDLModel.cs" />
+    <Compile Include="GUI\UMLModule\Parsing.cs" />
+    <Compile Include="GUI\UMLModule\UMLModel.cs" />
+    <Compile Include="ImageConstantLibrary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImageConstantLibrary.designer.cs">
+      <DependentUpon>ImageConstantLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleFacadeBase.cs" />
+    <Compile Include="ParsingException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\ModuleInterface\SpecificationBase.cs" />
+    <Compile Include="Classes\Ultility\Constants.cs" />
+    <Compile Include="Ultility\Log.cs" />
+    <Compile Include="Ultility\Template\CodeGeneratorTemplates\CodeGeneratorHost.cs" />
+    <Compile Include="Ultility\Template\CodeGeneratorTemplates\CSCodeGenHost.cs" />
+    <Compile Include="Ultility\Template\TemplateGenerator.cs" />
+    <Compile Include="Ultility\Ultility.cs" />
+    <EmbeddedResource Include="GUI\Simulator\FormTraceInput.de.resx">
+      <DependentUpon>FormTraceInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Simulator\FormTraceInput.ja.resx">
+      <DependentUpon>FormTraceInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Simulator\FormTraceInput.resx">
+      <DependentUpon>FormTraceInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Simulator\FormTraceInput.vi.resx">
+      <DependentUpon>FormTraceInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Simulator\FormTraceInput.zh-CHS.resx">
+      <DependentUpon>FormTraceInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Simulator\FormTraceInput.zh-CHT.resx">
+      <DependentUpon>FormTraceInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Simulator\FormTraceInput.ko.resx">
+      <DependentUpon>FormTraceInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\qassert.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\qep.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\qep_pkg.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\qep_port.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\qequeue.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\qevent.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\qf.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\qf_pkg.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\qf_port.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\qk.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\qmpool.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\qp_port.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\qpset.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\qs.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\qs_dummy.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\qs_port.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\qvanilla.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qa_defer.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qa_fifo.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qa_get_.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qa_lifo.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qa_run.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qa_sub.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qa_usub.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qa_usuba.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qep.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qeq_fifo.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qeq_get.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qeq_init.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qeq_lifo.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qf_act.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qf_gc.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qf_log2.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qf_new.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qf_pool.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qf_port.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qf_psini.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qf_pspub.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qf_pwr2.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qf_tick.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qfsm_dis.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qfsm_ini.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qhsm_dis.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qhsm_in.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qhsm_ini.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qhsm_top.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qmp_get.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qmp_init.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qmp_put.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qte_arm.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qte_ctor.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qte_ctr.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qte_darm.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\qte_rarm.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\Solution.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\Project.ptt">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\Project-vcxproj.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\include\bsp.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\QuantumPlatform\source\bsp.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\CSCodeGen\CSCodeGenProject.tt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\CSCodeGen\CSCodeGenSolution.tt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\SocketChannel\Include\SocketChannelClient.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\SocketChannel\Include\SocketChannelServer.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\SocketChannel\Source\SocketChannelClient.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\SocketChannel\Source\SocketChannelServer.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\HardwareMappings\PC\Windows\Include\HardwareAPIs.ptt" />
+    <EmbeddedResource Include="Ultility\Template\CodeGeneratorTemplates\HardwareMappings\PC\Windows\Source\HardwareAPIs.ptt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GUI\DataStoreWindow.de.resx">
+      <DependentUpon>DataStoreWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DataStoreWindow.ja.resx">
+      <DependentUpon>DataStoreWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DataStoreWindow.vi.resx">
+      <DependentUpon>DataStoreWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DataStoreWindow.zh-CHS.resx">
+      <DependentUpon>DataStoreWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DataStoreWindow.ko.resx">
+      <DependentUpon>DataStoreWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DataStoreWindow.zh-CHT.resx">
+      <DependentUpon>DataStoreWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ExampleForm.de.resx">
+      <DependentUpon>ExampleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ExampleForm.ja.resx">
+      <DependentUpon>ExampleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ExampleForm.resx">
+      <DependentUpon>ExampleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ExampleForm.vi.resx">
+      <DependentUpon>ExampleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ExampleForm.zh-CHS.resx">
+      <DependentUpon>ExampleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ExampleForm.zh-CHT.resx">
+      <DependentUpon>ExampleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ExampleForm.ko.resx">
+      <DependentUpon>ExampleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ModelChecker\ModelCheckingForm2.de.resx">
+      <DependentUpon>ModelCheckingForm2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ModelChecker\ModelCheckingForm2.ja.resx">
+      <DependentUpon>ModelCheckingForm2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ModelChecker\ModelCheckingForm2.resx">
+      <DependentUpon>ModelCheckingForm2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ModelChecker\ModelCheckingForm2.vi.resx">
+      <DependentUpon>ModelCheckingForm2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ModelChecker\ModelCheckingForm2.zh-CHS.resx">
+      <DependentUpon>ModelCheckingForm2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ModelChecker\ModelCheckingForm2.zh-CHT.resx">
+      <DependentUpon>ModelCheckingForm2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ModelChecker\ModelCheckingForm2.ko.resx">
+      <DependentUpon>ModelCheckingForm2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ModelChecker\LTL2AutoamataConverter.de.resx">
+      <DependentUpon>LTL2AutoamataConverter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ModelChecker\LTL2AutoamataConverter.ja.resx">
+      <DependentUpon>LTL2AutoamataConverter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ModelChecker\LTL2AutoamataConverter.vi.resx">
+      <DependentUpon>LTL2AutoamataConverter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ModelChecker\LTL2AutoamataConverter.ko.resx">
+      <DependentUpon>LTL2AutoamataConverter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\StateInfoControl.de.resx">
+      <DependentUpon>StateInfoControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\StateInfoControl.ja.resx">
+      <DependentUpon>StateInfoControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\StateInfoControl.resx">
+      <DependentUpon>StateInfoControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\StateInfoControl.ko.resx">
+      <DependentUpon>StateInfoControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ExceptionDialog.de.resx">
+      <DependentUpon>ExceptionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ExceptionDialog.ja.resx">
+      <DependentUpon>ExceptionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ExceptionDialog.vi.resx">
+      <DependentUpon>ExceptionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ExceptionDialog.zh-CHS.resx">
+      <DependentUpon>ExceptionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ExceptionDialog.zh-CHT.resx">
+      <DependentUpon>ExceptionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ExceptionDialog.ko.resx">
+      <DependentUpon>ExceptionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ModelChecker\LTL2AutoamataConverter.zh-CHS.resx">
+      <DependentUpon>LTL2AutoamataConverter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ModelChecker\LTL2AutoamataConverter.zh-CHT.resx">
+      <DependentUpon>LTL2AutoamataConverter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\RuntimeExceptionDialog.de.resx">
+      <DependentUpon>RuntimeExceptionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\RuntimeExceptionDialog.ja.resx">
+      <DependentUpon>RuntimeExceptionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\RuntimeExceptionDialog.resx">
+      <DependentUpon>RuntimeExceptionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\RuntimeExceptionDialog.ko.resx">
+      <DependentUpon>RuntimeExceptionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ExceptionDialog.resx">
+      <DependentUpon>ExceptionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DataStoreWindow.resx">
+      <DependentUpon>DataStoreWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ModelChecker\LTL2AutoamataConverter.resx">
+      <DependentUpon>LTL2AutoamataConverter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\RuntimeExceptionDialog.vi.resx">
+      <DependentUpon>RuntimeExceptionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\RuntimeExceptionDialog.zh-CHS.resx">
+      <DependentUpon>RuntimeExceptionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\RuntimeExceptionDialog.zh-CHT.resx">
+      <DependentUpon>RuntimeExceptionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Simulator\SimulationForm.de.resx">
+      <DependentUpon>SimulationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Simulator\SimulationForm.ja.resx">
+      <DependentUpon>SimulationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Simulator\SimulationForm.resx">
+      <DependentUpon>SimulationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Simulator\SimulationForm.vi.resx">
+      <DependentUpon>SimulationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Simulator\SimulationForm.zh-CHS.resx">
+      <DependentUpon>SimulationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Simulator\SimulationForm.zh-CHT.resx">
+      <DependentUpon>SimulationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Simulator\SimulationForm.ko.resx">
+      <DependentUpon>SimulationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\StateInfoControl.vi.resx">
+      <DependentUpon>StateInfoControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\StateInfoControl.zh-CHS.resx">
+      <DependentUpon>StateInfoControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\StateInfoControl.zh-CHT.resx">
+      <DependentUpon>StateInfoControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageConstantLibrary.resx">
+      <DependentUpon>ImageConstantLibrary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.zh-CHS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.zh-CHT.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.ko.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\BA\Algorithms\algorithms\InclusionAnti.cs" />
+    <Compile Include="Classes\BA\Algorithms\algorithms\InclusionOpt.cs" />
+    <Compile Include="Classes\BA\Algorithms\algorithms\SCC.cs" />
+    <Compile Include="Classes\BA\Algorithms\algorithms\Simulation.cs" />
+    <Compile Include="Classes\BA\Algorithms\automata\FAState.cs" />
+    <Compile Include="Classes\BA\Algorithms\automata\FiniteAutomaton.cs" />
+    <Compile Include="Classes\BA\Algorithms\comparator\GraphComparator.cs" />
+    <Compile Include="Classes\BA\Algorithms\comparator\PairedStringSortedSetComparator.cs" />
+    <Compile Include="Classes\BA\Algorithms\comparator\SetOfSetOfStateComparator.cs" />
+    <Compile Include="Classes\BA\Algorithms\comparator\SortedSetComparator.cs" />
+    <Compile Include="Classes\BA\Algorithms\comparator\StateComparator.cs" />
+    <Compile Include="Classes\BA\Algorithms\comparator\StatePairComparator.cs" />
+    <Compile Include="Classes\BA\Algorithms\comparator\StringSetPairComparator.cs" />
+    <Compile Include="Classes\BA\Algorithms\comparator\SuperGraphComparator.cs" />
+    <Compile Include="Classes\BA\Algorithms\datastructure\Arc.cs" />
+    <Compile Include="Classes\BA\Algorithms\datastructure\OneToOneHashMap.cs" />
+    <Compile Include="Classes\BA\Algorithms\datastructure\OneToOneMap.cs" />
+    <Compile Include="Classes\BA\Algorithms\datastructure\OneToOneTreeMap.cs" />
+    <Compile Include="Classes\BA\Algorithms\datastructure\Pair.cs" />
+    <Compile Include="Classes\BA\Algorithms\datastructure\SortedSet.cs" />
+    <Compile Include="Classes\BA\Algorithms\datastructure\State_Label.cs" />
+    <Compile Include="Classes\CUDD\CUDDAbstract.cs" />
+    <Compile Include="Classes\CUDD\CUDDConvert.cs" />
+    <Compile Include="Classes\CUDD\CUDDDebug.cs" />
+    <Compile Include="Classes\CUDD\CUDDFunction.cs" />
+    <Compile Include="Classes\CUDD\CUDDMatrix.cs" />
+    <Compile Include="Classes\CUDD\CUDDPrint.cs" />
+    <Compile Include="Classes\CUDD\CUDDVariable.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\AssertionLTL.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Composition\IntersectionAutomataBDD.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\ClassProperty.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\ClassPropertyAssignment.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\NullConstant.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\IndexedExpression.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\WildConstant.cs" />
+    <Compile Include="Classes\ModuleInterface\AssertionBase.cs" />
+    <Compile Include="Classes\ModuleInterface\ChannelEvents.cs" />
+    <Compile Include="Classes\ModuleInterface\IndexedEvent.cs" />
+    <Compile Include="Classes\ModuleInterface\ModelCheckingOptions.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\AssertionDeadLock.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\AssertionLTLwithFairness.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\AssertionLTLSafety.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\AssertionReachability.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\AssertionRefinement.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\AssertionRefinementF.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\AssertionRefinementFD.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\AssertionReachabilityWith.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\AssertionLTL-SafetyNegate.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\AssertionDeterminism.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\AssertionLTL.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\AssertionDeadLock.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Composition\ChannelInput.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Composition\ChannelOutput.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Composition\ChoiceAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\ConfigurationBDD.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\AssertionReachability.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Composition\InternalChoiceAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Composition\ExternalChoice.cs" />
+    <Compile Include="Classes\SemanticModels\MDP\RewardConfig.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\EventPrefixAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Composition\GuardAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Composition\InterleaveAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Composition\InterruptAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\LTSEncoding\State.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\BDDEncoder.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\LTSEncoding\SymbolicLTS.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Composition\ParallelAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Composition\SequenceAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Composition\SkipAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Composition\StopAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\ChannelInput.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\ChannelOutput.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\ChoiceAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Composition\EventPrefixAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\ExternalChoice.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\GuardAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\InterleaveAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\InternalChoiceAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\InterruptAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\ParallelAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\SequenceAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\SkipAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\StopAutomataBDD.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\SyncChannelInput.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\SyncChannelOutput.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\TimeInterrrupt.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\Deadline.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Composition\SyncChannelInput.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Composition\SyncChannelOutput.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\LTSEncoding\Transition.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\DeterministicAutomata.cs" />
+    <Compile Include="Classes\SemanticModels\MDP\ExplicitMCAlgo\AssertionDeadLock.cs" />
+    <Compile Include="Classes\SemanticModels\MDP\ExplicitMCAlgo\AssertionLTL-SafetyNegate.cs" />
+    <Compile Include="Classes\SemanticModels\MDP\ExplicitMCAlgo\AssertionLTL.cs" />
+    <Compile Include="Classes\SemanticModels\MDP\ExplicitMCAlgo\AssertionLTLSafety.cs" />
+    <Compile Include="Classes\SemanticModels\MDP\ExplicitMCAlgo\AssertionReachability.cs" />
+    <Compile Include="Classes\SemanticModels\MDP\ExplicitMCAlgo\AssertionRefinement.cs" />
+    <Compile Include="Classes\SemanticModels\MDP\ExplicitMCAlgo\AssertionStatisticApproach.cs" />
+    <Compile Include="Classes\SemanticModels\MDP\MDPStat.cs" />
+    <Compile Include="Classes\SemanticModels\MDP\MDPConfiguration.cs" />
+    <Compile Include="Classes\SemanticModels\MDP\Policy.cs" />
+    <Compile Include="Classes\SemanticModels\MDP\StatisticalModelCheckingAgorithm.cs" />
+    <Compile Include="Classes\SemanticModels\MDP\StatisticalModelCheckingDTMC.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\Timeout.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\Wait.cs" />
+    <Compile Include="Classes\SemanticModels\TTS\SymbolicMCAlgo\Within.cs" />
+    <Compile Include="GUI\ERAModule\ERACanvas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ERAModule\ERAStatecs.cs" />
+    <Compile Include="GUI\ERAModule\Parsing.cs" />
+    <Compile Include="GUI\ERAModule\ERAModel.cs" />
+    <Compile Include="GUI\ModelChecker\ModelCheckingForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ModelChecker\ModelCheckingForm2.designer.cs">
+      <DependentUpon>ModelCheckingForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Simulator\NormalizedState.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\ExplicitMCAlgo\AssertionDivergence.cs" />
+    <Compile Include="Classes\BA\LivenessChecking.cs" />
+    <Compile Include="Classes\ModuleInterface\VerificationOutput.cs" />
+    <Compile Include="Classes\DataStructure\FullDBMCompact.cs" />
+    <Compile Include="Classes\DataStructure\DBMConstraint.cs" />
+    <Compile Include="Classes\DataStructure\FullDBM.cs" />
+    <Compile Include="Classes\SemanticModels\MDP\MDP.cs" />
+    <Compile Include="Classes\DataStructure\StringDictionaryWithKey.cs" />
+    <Compile Include="Classes\DataStructure\DBM.cs" />
+    <Compile Include="Classes\DataStructure\Intervals.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\ClassMethodCall.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\ClassMethodCallInstance.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\NewObjectCreation.cs" />
+    <Compile Include="Classes\LTL2DRA\StutteredNBA2DAUnion.cs" />
+    <Compile Include="Classes\LTL2DRA\LTL2DRA.cs" />
+    <Compile Include="Classes\LTL2DRA\APElement.cs" />
+    <Compile Include="Classes\LTL2DRA\APMonom.cs" />
+    <Compile Include="Classes\LTL2DRA\APMonom2APElements.cs" />
+    <Compile Include="Classes\LTL2DRA\APSet.cs" />
+    <Compile Include="Classes\LTL2DRA\BA2DRAConverter.cs" />
+    <Compile Include="Classes\LTL2DRA\common\BitSet.cs" />
+    <Compile Include="Classes\LTL2DRA\common\BitSetIterator.cs" />
+    <Compile Include="Classes\LTL2DRA\common\HashFunction.cs" />
+    <Compile Include="Classes\LTL2DRA\common\SimpleBitSet.cs" />
+    <Compile Include="Classes\LTL2DRA\DA.cs" />
+    <Compile Include="Classes\LTL2DRA\DAUnionAlgorithm.cs" />
+    <Compile Include="Classes\LTL2DRA\DA_State.cs" />
+    <Compile Include="Classes\LTL2DRA\DBA2DRA.cs" />
+    <Compile Include="Classes\LTL2DRA\DRA.cs" />
+    <Compile Include="Classes\LTL2DRA\DRAOptimizations.cs" />
+    <Compile Include="Classes\LTL2DRA\EdgeContainerExplicit_APElement.cs" />
+    <Compile Include="Classes\LTL2DRA\exception\IllegalArgumentException.cs" />
+    <Compile Include="Classes\LTL2DRA\GraphAlgorithm.cs" />
+    <Compile Include="Classes\LTL2DRA\LTL2DSTAR_Options.cs" />
+    <Compile Include="Classes\LTL2DRA\LTL2DSTAR_Scheduler.cs" />
+    <Compile Include="Classes\LTL2DRA\LTL2NBA.cs" />
+    <Compile Include="Classes\LTL2DRA\LTLFormula.cs" />
+    <Compile Include="Classes\LTL2DRA\LTLPrefixParser.cs" />
+    <Compile Include="Classes\LTL2DRA\LTLSafetyAutomata.cs" />
+    <Compile Include="Classes\LTL2DRA\NBA.cs" />
+    <Compile Include="Classes\LTL2DRA\NBA2DA.cs" />
+    <Compile Include="Classes\LTL2DRA\NBA2DRA.cs" />
+    <Compile Include="Classes\LTL2DRA\NBAAnalysis.cs" />
+    <Compile Include="Classes\LTL2DRA\NBAStutterClosure.cs" />
+    <Compile Include="Classes\LTL2DRA\NBA_State.cs" />
+    <Compile Include="Classes\LTL2DRA\Options_Safra.cs" />
+    <Compile Include="Classes\LTL2DRA\parsers\NBABuilder.cs" />
+    <Compile Include="Classes\LTL2DRA\RabinAcceptance.cs" />
+    <Compile Include="Classes\LTL2DRA\SafraAlgorithm.cs" />
+    <Compile Include="Classes\LTL2DRA\SafraTree.cs" />
+    <Compile Include="Classes\LTL2DRA\SafraTreeNode.cs" />
+    <Compile Include="Classes\LTL2DRA\SafraTreeTemplate.cs" />
+    <Compile Include="Classes\LTL2DRA\SafraTreeVisitor.cs" />
+    <Compile Include="Classes\LTL2DRA\SafraTreeWalker.cs" />
+    <Compile Include="Classes\LTL2DRA\StateMapper.cs" />
+    <Compile Include="Classes\LTL2DRA\StateMapperFuzzy.cs" />
+    <Compile Include="Classes\LTL2DRA\StutteredNBA2DA.cs" />
+    <Compile Include="Classes\LTL2DRA\StutterSensitivenessInformation.cs" />
+    <Compile Include="Classes\LTL2DRA\Ultility.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Composition\AutomataBDD.cs" />
+    <Compile Include="Classes\CUDD\CUDD.cs" />
+    <Compile Include="Classes\CUDD\CUDDNode.cs" />
+    <Compile Include="Classes\CUDD\CUDDVars.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\SymbolicMCAlgo\Model.cs" />
+    <Compile Include="Classes\CUDD\PlatformInvoke.cs" />
+    <Compile Include="Classes\CUDD\VariableList.cs" />
+    <Compile Include="Classes\ModuleInterface\ConfigurationBase.cs" />
+    <Compile Include="Classes\SemanticModels\LTS\Automata.cs" />
+    <Compile Include="Classes\ModuleInterface\Declaration.cs" />
+    <Compile Include="Classes\ModuleInterface\Event.cs" />
+    <Compile Include="Classes\ModuleInterface\EventCollection.cs" />
+    <Compile Include="Classes\Expressions\ExpressionClass\LetDefinition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\ModuleInterface\SharedDataObjectBase.cs" />
+    <Compile Include="GUI\Drawing\LabelItem.cs" />
+    <Compile Include="GUI\Simulator\EventStepSim.cs" />
+    <Compile Include="Classes\ModuleInterface\ChannelQueue.cs" />
+    <Compile Include="Classes\ModuleInterface\ParallelDefinition.cs" />
+    <Compile Include="Classes\Ultility\Ultility.cs" />
+    <Compile Include="GUI\ExampleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ExampleForm.Designer.cs">
+      <DependentUpon>ExampleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\OptionPanelInterface.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ResourceFormInterface.cs" />
+    <Compile Include="GUI\SNModule\Parsing.cs" />
+    <Compile Include="GUI\SNModule\SNModel.cs" />
+    <Compile Include="GUI\StateInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\StateInfoControl.Designer.cs">
+      <DependentUpon>StateInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Simulator\SimulationWorker.cs" />
+    <Compile Include="GUI\Simulator\SimulationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Simulator\SimulationForm.designer.cs">
+      <DependentUpon>SimulationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Drawing\CanvasItem.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Decorators\FocusDecorator.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Decorators\RectangleDecorator.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Decorators\SizeGripDecorator.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Diagrams\BaseRectangle.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Diagrams\DependencyTree.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Diagrams\DependencyTreeNode.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Diagrams\DiagramRouter.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Diagrams\Direction.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Diagrams\Drawables\DrawableItemsStack.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Diagrams\Drawables\DrawableRectangle.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Diagrams\Drawables\HeaderedItem.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Diagrams\Drawables\IDrawable.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Diagrams\Drawables\IDrawableRectangle.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Diagrams\Drawables\TextSegment.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Diagrams\IRectangle.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Diagrams\ItemsStack.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Diagrams\Route.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Diagrams\RouteSegment.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Interactivity\IHitTestable.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Interactivity\IInteractiveDrawable.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Interactivity\IMouseInteractable.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Interactivity\InteractiveHeaderedItem.cs" />
+    <Compile Include="GUI\Drawing\Diagram\Interactivity\InteractiveItemsStack.cs" />
+    <Compile Include="GUI\Drawing\FocusDecorator.cs" />
+    <Compile Include="GUI\Drawing\GraphUltility.cs" />
+    <Compile Include="GUI\Drawing\LTSCanvas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Drawing\LTSCanvas.designer.cs">
+      <DependentUpon>LTSCanvas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Drawing\NailItem.cs" />
+    <Compile Include="GUI\Drawing\StateItem.cs" />
+    <Compile Include="GUI\Drawing\Transition.cs" />
+    <Compile Include="GUI\LTSModule\LTSModel.cs" />
+    <Compile Include="GUI\Drawing\GraphParsingException.cs" />
+    <Compile Include="GUI\LTSModule\Parsing.cs" />
+    <Compile Include="GUI\TAModule\TACanvas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\TAModule\TAModel.cs" />
+    <Compile Include="GUI\TAModule\Parsing.cs" />
+    <Compile Include="GUI\TAModule\TAState.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Ultility\ConfigSettings.cs" />
+    <Compile Include="Ultility\ParsingUltility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Knight.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\BA\Algorithms\mainfiles\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>"$(SolutionDir)DLL\VerHeader.exe" "$(ProjectDir)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

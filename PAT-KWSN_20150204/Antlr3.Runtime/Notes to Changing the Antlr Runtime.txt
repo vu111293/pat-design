@@ -1,0 +1,10 @@
+Antlr version 3.3.1.7705 is using
+
+1 Changed the following
+public interface IAstRuleReturnScope<TAstLabel>  IAstRuleReturnScope
+to
+public interface IAstRuleReturnScope<TAstLabel> : IRuleReturnScope
+
+This is because the new keyword is not working in .NET framework 3.5 or VS 2008.
+
+2 CommonToken.cs, ClassicToken and IToken.cs to add LongText for the ADL module to do the parsing of hirachical components.

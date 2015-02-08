@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F570A7C6-276B-4EA2-8BF1-2855C91A066D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PAT.KWSN</RootNamespace>
+    <AssemblyName>PAT.Module.KWSN</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\PAT.GUI2\bin\Debug\Modules\KWSN\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\DLL\PAT\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="PAT.Common, Version=3.4.4.18487, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PAT.Common\bin\Debug\PAT.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LTS\Sample\Assertion.cs" />
+    <Compile Include="LTS\Event1.cs" />
+    <Compile Include="Ultility\Ultility.cs" />
+    <Compile Include="Assertions\DataStore.cs" />
+    <Compile Include="LTS\Event2.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Assertions\Assertion.cs" />
+    <Compile Include="LTS\Sample\AtomicProcess.cs" />
+    <Compile Include="Assertions\KWSNAssertionDeadLock.cs" />
+    <Compile Include="Assertions\KWSNAssertionDeterminism.cs" />
+    <Compile Include="ModuleFacade.cs" />
+    <Compile Include="LTS\Sample\CaseProcess.cs" />
+    <Compile Include="Assertions\KWSNAssertionDivergence.cs" />
+    <Compile Include="LTS\Sample\ChannelInput.cs" />
+    <Compile Include="Assertions\KWSNAssertionLTL.cs" />
+    <Compile Include="Assertions\KWSNAssertionReachability.cs" />
+    <Compile Include="LTS\Sample\ChannelInputGuarded.cs" />
+    <Compile Include="Assertions\KWSNAssertionReachabilityWith.cs" />
+    <Compile Include="Assertions\KWSNAssertionRefinement.cs" />
+    <Compile Include="LTS\Sample\ChannelOutput.cs" />
+    <Compile Include="Assertions\KWSNAssertionRefinementF.cs" />
+    <Compile Include="LTS\Sample\ConditionalChoice.cs" />
+    <Compile Include="Assertions\KWSNAssertionRefinementFD.cs" />
+    <Compile Include="LTS\Sample\ConditionalChoiceAtomic.cs" />
+    <Compile Include="LTS\Sample\ConditionalChoiceBlocking.cs" />
+    <Compile Include="LTS\Sample\DataOperationPrefix.cs" />
+    <Compile Include="LTS\Sample\EventPrefix.cs" />
+    <Compile Include="LTS\Sample\GuardProcess.cs" />
+    <Compile Include="LTS\Sample\Hiding.cs" />
+    <Compile Include="LTS\Sample\IndexChoice.cs" />
+    <Compile Include="LTS\Sample\IndexedProcess.cs" />
+    <Compile Include="LTS\Sample\IndexExternalChoice.cs" />
+    <Compile Include="LTS\Sample\IndexInterleave.cs" />
+    <Compile Include="LTS\Sample\IndexInterleaveAbstract.cs" />
+    <Compile Include="LTS\Sample\IndexInternalChoice.cs" />
+    <Compile Include="LTS\Sample\IndexParallel.cs" />
+    <Compile Include="LTS\Sample\Interrupt.cs" />
+    <Compile Include="LTS\Sample\Sequence.cs" />
+    <Compile Include="LTS\Sample\Skip.cs" />
+    <Compile Include="LTS\Sample\Stop.cs" />
+    <Compile Include="LTS\Process.cs" />
+    <Compile Include="LTS\Definition.cs" />
+    <Compile Include="LTS\DefinitionRef.cs" />
+    <Compile Include="LTS\Configuration.cs" />
+    <Compile Include="LTS\ConfigurationWithChannelData.cs" />
+    <Compile Include="LTS\Specification.cs" />
+    <Content Include="Syntax.xshd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="_data_\wsn-pn-based.xml" />
+    <EmbeddedResource Include="wireless-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_data_\channels.pn" />
+    <None Include="_data_\sensors.pn" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>mkdir $(ProjectDir)\..\PAT.GUI2\bin\$(ConfigurationName)\Modules\KWSN
+copy $(TargetPath) $(ProjectDir)\..\PAT.GUI2\bin\$(ConfigurationName)\Modules\KWSN
+copy $(ProjectDir)\Syntax.xshd $(ProjectDir)\..\PAT.GUI2\bin\$(ConfigurationName)\Modules\KWSN
+copy $(ProjectDir)\_data_\wsn-pn-based.xml $(ProjectDir)\..\PAT.GUI2\bin\$(ConfigurationName)\Modules\KWSN</PostBuildEvent>
+  </PropertyGroup>
+</Project>

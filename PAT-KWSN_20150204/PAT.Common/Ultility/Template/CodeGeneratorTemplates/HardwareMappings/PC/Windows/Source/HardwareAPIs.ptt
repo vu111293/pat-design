@@ -1,0 +1,7 @@
+#include "HardwareAPIs.h"
+
+#include <iostream>
+
+void LCD_blink(int option){
+	std::cout<<"LCD no. "<<option<<" is blinking..."<<std::endl;
+}

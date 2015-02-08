@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="$this.Text" xml:space="preserve">
+    <value>선택사항</value>
+  </data>
+  <data name="Button_Cancel.Text" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="Button_DefaultSetting.Text" xml:space="preserve">
+    <value>기본 설정</value>
+  </data>
+  <data name="Button_OK.Text" xml:space="preserve">
+    <value>승인</value>
+  </data>
+  <data name="CheckBox_AutoSave.Text" xml:space="preserve">
+    <value>simulate, verification 수행시 모델 자동저장</value>
+  </data>
+  <data name="CheckBox_CheckUpdate.Text" xml:space="preserve">
+    <value>PAT 시작 전에 업데이트 검사하기</value>
+  </data>
+  <data name="CheckBox_EmailSSL.Text" xml:space="preserve">
+    <value>SSL로 이메일 보내기</value>
+  </data>
+  <data name="CheckBox_EmailSSL.ToolTip" xml:space="preserve">
+    <value>이메일 전송 실패할 경우 끄기</value>
+  </data>
+  <data name="CheckBox_LinkCSP.Text" xml:space="preserve">
+    <value>PAT로 CSP 모델 열기</value>
+  </data>
+  <data name="CheckBox_PerformDeterminization.Text" xml:space="preserve">
+    <value>개선모델 검사 수행후 결정화하기</value>
+  </data>
+  <data name="GroupBox_Simulation.Text" xml:space="preserve">
+    <value>시뮬레이션</value>
+  </data>
+  <data name="GroupBox_Verification.Text" xml:space="preserve">
+    <value>검증</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>변수의 상한</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>메시지의 상한</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>메시지의 하한</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>채널메시지의 최대 길이</value>
+  </data>
+  <data name="labelEventParaMax.Text" xml:space="preserve">
+    <value>이벤트 파라미터 상한</value>
+  </data>
+  <data name="labelEventParaMin.Text" xml:space="preserve">
+    <value>이벤트 파라미터 하한</value>
+  </data>
+  <data name="Label_CutNumberUpperBound.Text" xml:space="preserve">
+    <value>매개화시스템(Parameterized System)의 Cut Number 상한</value>
+  </data>
+  <data name="Label_DefaultModelingLanguage.Text" xml:space="preserve">
+    <value>기본 모델링 언어</value>
+  </data>
+  <data name="Label_InitialCutNumber.Text" xml:space="preserve">
+    <value>매개화시스템(Parameterized System)의 초기 Cut Number</value>
+  </data>
+  <data name="Label_SearchInitialSize.Text" xml:space="preserve">
+    <value>검색 해시테이블의 초기 크기</value>
+  </data>
+  <data name="Label_SearchUpperBound.Text" xml:space="preserve">
+    <value>상태 검색 상한</value>
+  </data>
+  <data name="Label_VarLowerBound.Text" xml:space="preserve">
+    <value>변수의 하한</value>
+  </data>
+  <data name="nudMessageLength.ToolTip" xml:space="preserve">
+    <value>채널메시지의 최대 길이. 예를 들어, 이 값이 2일 경우, c?x.y.z 같은 메시지는 길이가 3이므로 허용되지 않게 됨.</value>
+  </data>
+  <data name="nudMessageLower.ToolTip" xml:space="preserve">
+    <value>채널메시지 길이 하한. 예를 들어, c?x.y와 c!z 이면 x,y,z는 [하한 .. 상한] 범위에 있어야 함. 이 값은 모든 채널에 적용됨.</value>
+  </data>
+  <data name="nudMessageUpper.ToolTip" xml:space="preserve">
+    <value>채널메시지 길이 상한. 예를 들어, c?x.y와 c!z 이면 x,y,z는 [하한 .. 상한] 범위에 있어야 함. 이 값은 모든 채널에 적용됨.</value>
+  </data>
+  <data name="NUD_MC_Initial.ToolTip" xml:space="preserve">
+    <value>모델이 아주 클 경우 더 큰 값을 지정하세요. 그렇게 하면 너무 빈번한 해싱 작업을 피하게 되어 모델 검증속도를 높일 수 있습니다.</value>
+  </data>
+  <data name="NUD_SimulationBound.ToolTip" xml:space="preserve">
+    <value>시뮬레이터에서 그릴 수 있는 최대 상태 개수</value>
+  </data>
+  <data name="NUD_VarLowerBound.ToolTip" xml:space="preserve">
+    <value>변수의 하한. 범위를 따로 선언하지 않은 모든 변수에 이 값이 적용됨</value>
+  </data>
+  <data name="NUD_VarUpperBound.ToolTip" xml:space="preserve">
+    <value>변수의 상한. 범위를 따로 선언하지 않은 모든 변수에 이 값이 적용됨</value>
+  </data>
+  <data name="tabBDD.Text" xml:space="preserve">
+    <value>BDD 설정</value>
+  </data>
+  <data name="TabPage_CSP.Text" xml:space="preserve">
+    <value>CSP 모듈</value>
+  </data>
+  <data name="TabPage_General.Text" xml:space="preserve">
+    <value>일반</value>
+  </data>
+  <data name="textBoxEventParaMax.ToolTip" xml:space="preserve">
+    <value>[A1, A2, ..., An] 에서 Ai는 i 번째 이벤트의 상한값</value>
+  </data>
+  <data name="textBoxEventParaMin.ToolTip" xml:space="preserve">
+    <value>[A1, A2, ..., An] 에서 Ai는 i 번째 이벤트의 하한값</value>
+  </data>
+</root>

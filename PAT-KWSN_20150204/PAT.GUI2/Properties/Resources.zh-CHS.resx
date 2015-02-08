@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Please_wait_for_the_verification_to_stop_first__Otherwise_it_may_cause_exceptional_behaviors_" xml:space="preserve">
+    <value>请耐心等待验证停止, 否则可能发生异常 </value>
+  </data>
+  <data name="Grammar_Checked" xml:space="preserve">
+    <value>语法检测完成</value>
+  </data>
+  <data name="C__library_code_is_saved_successfully_" xml:space="preserve">
+    <value>成功保存c#库的源代码</value>
+  </data>
+  <data name="Are_you_sure_you_want_to_delete_the_selected_process_" xml:space="preserve">
+    <value>你确定删除选中的进程吗？</value>
+  </data>
+  <data name="Please_stop_verification_or_simulation_before_parsing_the_model_" xml:space="preserve">
+    <value>请在解析模型之前停止模拟或验证！</value>
+  </data>
+  <data name="Line_number" xml:space="preserve">
+    <value>行数</value>
+  </data>
+  <data name="Normal_Mode_Selected" xml:space="preserve">
+    <value>选择标准模式</value>
+  </data>
+  <data name="Parallel_Verification_UnSelected" xml:space="preserve">
+    <value>取消选择并行验证</value>
+  </data>
+  <data name="Result_Generation_Cancelled" xml:space="preserve">
+    <value>取消生成结果</value>
+  </data>
+  <data name="Exception_happened__" xml:space="preserve">
+    <value>异常发生在：</value>
+  </data>
+  <data name="Generate_Counterexample_UnSelected" xml:space="preserve">
+    <value>取消选择产生反例</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="BDD_Selected" xml:space="preserve">
+    <value>使用二值决策图</value>
+  </data>
+  <data name="Checking_file_" xml:space="preserve">
+    <value>检验文件：</value>
+  </data>
+  <data name="Exception_happened_during_the_Contracts_compilation__" xml:space="preserve">
+    <value>编译Contracts时发生错误 </value>
+  </data>
+  <data name="Verification_has_been_running_for_" xml:space="preserve">
+    <value>验证已经花费 </value>
+  </data>
+  <data name="The_Promela_model_is_empty_" xml:space="preserve">
+    <value>空的Promela模型！</value>
+  </data>
+  <data name="Specification_is_parsed_in__0_s" xml:space="preserve">
+    <value>解析规范花费{0}秒</value>
+  </data>
+  <data name="This_file_is_read_only__Do_you_want_to_overwrite_it_" xml:space="preserve">
+    <value>文件是只读的。确定要覆盖它？</value>
+  </data>
+  <data name="Partial_Order_Reduction_UnSelected" xml:space="preserve">
+    <value>取消选择偏序归约</value>
+  </data>
+  <data name="Verification_Starts___" xml:space="preserve">
+    <value>验证开始 </value>
+  </data>
+  <data name="Verbose_Mode_Selected" xml:space="preserve">
+    <value>选择显示验证细节</value>
+  </data>
+  <data name="Please_input_a_valid_output_file_" xml:space="preserve">
+    <value>请先输入一个正确的输出文件！</value>
+  </data>
+  <data name="Duplicate_Process_Name" xml:space="preserve">
+    <value>进程名重复</value>
+  </data>
+  <data name="File_format_is_not_supported_by_PAT_" xml:space="preserve">
+    <value>PAT不支持该文件格式 </value>
+  </data>
+  <data name="Please_input_a_model_first_" xml:space="preserve">
+    <value>请先输入一个模型！</value>
+  </data>
+  <data name="Runtime_Exception_Happened" xml:space="preserve">
+    <value>发生运行时错误</value>
+  </data>
+  <data name="Invalid_email_address_" xml:space="preserve">
+    <value>电子邮件地址不正确 </value>
+  </data>
+  <data name="Invalid_name_" xml:space="preserve">
+    <value>名字不正确 </value>
+  </data>
+  <data name="Parsing_error_at_line_" xml:space="preserve">
+    <value>解析错误发生在 </value>
+  </data>
+  <data name="Loading_error" xml:space="preserve">
+    <value>导入错误</value>
+  </data>
+  <data name="Partial_Order_Reduction_Selected" xml:space="preserve">
+    <value>选择偏序归约</value>
+  </data>
+  <data name="Error_happened_in_opening_" xml:space="preserve">
+    <value>打开文件时发生错误 </value>
+  </data>
+  <data name="At_least_one_process_is_needed_in_the_model_" xml:space="preserve">
+    <value>模型中应该至少有一个进程 </value>
+  </data>
+  <data name="Saving_error" xml:space="preserve">
+    <value>保存错误</value>
+  </data>
+  <data name="Parallel_Verification_Selected" xml:space="preserve">
+    <value>选择并行验证</value>
+  </data>
+  <data name="Email_is_sent_successfully_" xml:space="preserve">
+    <value>发送邮件成功 </value>
+  </data>
+  <data name="Generating_Result___" xml:space="preserve">
+    <value>正在生成结果……</value>
+  </data>
+  <data name="Verifying_Assertion__" xml:space="preserve">
+    <value>验证的断言：</value>
+  </data>
+  <data name="Exception_happened_during_the_compilation__" xml:space="preserve">
+    <value>编译时发生异常 </value>
+  </data>
+  <data name="Verification_Completed" xml:space="preserve">
+    <value>验证完成</value>
+  </data>
+  <data name="Apply_Zeno_Check_UnSelected" xml:space="preserve">
+    <value>取消使用 Zeno Check </value>
+  </data>
+  <data name="Save_Output_File" xml:space="preserve">
+    <value>保存输出文件</value>
+  </data>
+  <data name="_running_on_" xml:space="preserve">
+    <value> 运行在  </value>
+  </data>
+  <data name="Error_happned_in_loading_module_" xml:space="preserve">
+    <value>导入模块时发生错误 </value>
+  </data>
+  <data name="Open_Error__the_selected_file_is_not_found_" xml:space="preserve">
+    <value>打开错误：找不到选中文件 </value>
+  </data>
+  <data name="Generate_Counterexample_Selected" xml:space="preserve">
+    <value>选择产生反例</value>
+  </data>
+  <data name="Shortest_Witness_Trace_Selected" xml:space="preserve">
+    <value>选择最短见证迹</value>
+  </data>
+  <data name="Please_make_sure_that_the_format_is_correct_" xml:space="preserve">
+    <value>请确保格式正确 </value>
+  </data>
+  <data name="Verification_Cancelled" xml:space="preserve">
+    <value>取消验证</value>
+  </data>
+  <data name="Exception_happened_during_saving__" xml:space="preserve">
+    <value>保存时发生异常 </value>
+  </data>
+  <data name="Promela_Model_Translated" xml:space="preserve">
+    <value>转换Promela模型完成</value>
+  </data>
+  <data name="BDD_UnSelected" xml:space="preserve">
+    <value>取消使用二值决策图</value>
+  </data>
+  <data name="C__library_is_built_successfully__You_can_use_them_now_in_your_models_" xml:space="preserve">
+    <value>成功构建C#库，你现在可以在模型中使用它们。</value>
+  </data>
+  <data name="Please_select_some_input_files_" xml:space="preserve">
+    <value>请选择一些输入文件 </value>
+  </data>
+  <data name="Apply_Zeno_Check_Selected" xml:space="preserve">
+    <value>使用 Zeno Check</value>
+  </data>
+  <data name="_column_" xml:space="preserve">
+    <value>列 </value>
+  </data>
+  <data name="Error__file_format_is_not_supported_" xml:space="preserve">
+    <value>错误：不支持该文件格式 </value>
+  </data>
+  <data name="An_error_occurred_while_compiling_the_C__code__" xml:space="preserve">
+    <value>编译c#源代码时出现一个错误 </value>
+  </data>
+  <data name="Document__0__unsaved__Do_you_want_to_save_it_before_close_" xml:space="preserve">
+    <value>文件 {0}还没保存。你想在关闭前保存它吗？</value>
+  </data>
+  <data name="Double_click_to_open_the_folder_of_" xml:space="preserve">
+    <value>双击打开文件夹 </value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="No_duplicated_process_names_are_allowed" xml:space="preserve">
+    <value>不允许同名进程名</value>
+  </data>
+  <data name="UML_Model_Translated" xml:space="preserve">
+    <value>转换UML模型完成</value>
+  </data>
+  <data name="Shortest_Witness_Trace_UnSelected" xml:space="preserve">
+    <value>取消选择最短见证迹</value>
+  </data>
+  <data name="Please_load_a_model_first_" xml:space="preserve">
+    <value>请先导入一个模型！</value>
+  </data>
+  <data name="Parsing_error__" xml:space="preserve">
+    <value>解析错误 </value>
+  </data>
+  <data name="Sending_Email_failed_" xml:space="preserve">
+    <value>发送邮件失败</value>
+  </data>
+  <data name="Open_Error_" xml:space="preserve">
+    <value>打开错误</value>
+  </data>
+  <data name="Document_" xml:space="preserve">
+    <value>文件 </value>
+  </data>
+</root>

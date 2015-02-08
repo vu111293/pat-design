@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ToolbarButton_AddComment.Text" xml:space="preserve">
+    <value>Chọn comment (Ctrl+Shift+C)</value>
+  </data>
+  <data name="MenuButton_Languages.Text" xml:space="preserve">
+    <value>Languages (Ngôn ngữ)</value>
+  </data>
+  <data name="MenuButton_Simulation.Text" xml:space="preserve">
+    <value>Mô phỏng</value>
+  </data>
+  <data name="MenuButton_ToggleAllOutlines.Text" xml:space="preserve">
+    <value>Bật tắt tất cảl Outlinings</value>
+  </data>
+  <data name="ToolbarButton_ZoomIn.Text" xml:space="preserve">
+    <value>Tăng font chữ</value>
+  </data>
+  <data name="ToolbarButton_Print.Text" xml:space="preserve">
+    <value>In (Ctrl+P)</value>
+  </data>
+  <data name="StatusBar.Text" xml:space="preserve">
+    <value>Thanh trạng thái</value>
+  </data>
+  <data name="ToolbarButton_New.Text" xml:space="preserve">
+    <value>File mới</value>
+  </data>
+  <data name="MenuButton_Window.Text" xml:space="preserve">
+    <value>Cửa sổ</value>
+  </data>
+  <data name="MenuButton_FindNext.Text" xml:space="preserve">
+    <value>Tìm kế tiếp</value>
+  </data>
+  <data name="MenuButton_NavigateForward.Text" xml:space="preserve">
+    <value>Đi đến tab kế tiếp</value>
+  </data>
+  <data name="MenuButton_LineCounter.Text" xml:space="preserve">
+    <value>Số đếm dòng mã nguồn</value>
+  </data>
+  <data name="closeAllToolStripMenuItem.Text" xml:space="preserve">
+    <value>Đóng tất cả</value>
+  </data>
+  <data name="MenuButton_Undo.Text" xml:space="preserve">
+    <value>Ngược lại</value>
+  </data>
+  <data name="MenuButton_Redo.Text" xml:space="preserve">
+    <value>Trở lại</value>
+  </data>
+  <data name="MenuButton_Copy.Text" xml:space="preserve">
+    <value>Chép</value>
+  </data>
+  <data name="MenuButton_Help.Text" xml:space="preserve">
+    <value>Giúp đỡ</value>
+  </data>
+  <data name="MenuButton_HelpMenu.Text" xml:space="preserve">
+    <value>Giúp đỡ</value>
+  </data>
+  <data name="MenuButton_StatusBar.Text" xml:space="preserve">
+    <value>Thanh trạng thái</value>
+  </data>
+  <data name="MenuButton_Print.Text" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="MenuButton_EnableTrickingInAcceptingConditions.Text" xml:space="preserve">
+    <value>Cho phép tricking trong điều kiện chấp nhận</value>
+  </data>
+  <data name="MenuButton_SaveAs.Text" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="ToolbarButton_CheckGrammar.Text" xml:space="preserve">
+    <value>Kiểm tra ngữ pháp (F5)</value>
+  </data>
+  <data name="MenuStrip.Text" xml:space="preserve">
+    <value>Thanh Menu</value>
+  </data>
+  <data name="MenuButton_GoTo.Text" xml:space="preserve">
+    <value>Đi đến...</value>
+  </data>
+  <data name="MenuButton_View.Text" xml:space="preserve">
+    <value>Xem</value>
+  </data>
+  <data name="MenuButton_SubmitModel.Text" xml:space="preserve">
+    <value>Gửi mẫu cho PAT</value>
+  </data>
+  <data name="MenuButton_NavigateBack.Text" xml:space="preserve">
+    <value>Đi đến Tab trước đó</value>
+  </data>
+  <data name="MenuButton_SelectAll.Text" xml:space="preserve">
+    <value>Chọn tất cả</value>
+  </data>
+  <data name="ToolbarButton_Zoom100.Text" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="MenuButton_Outlining.Text" xml:space="preserve">
+    <value>&amp;Outlining</value>
+  </data>
+  <data name="ToolbarButton_LaTexGenerate.Text" xml:space="preserve">
+    <value>Tạo biểu diễn Latex của mô hình</value>
+  </data>
+  <data name="MenuButton_PreviousBookmark.Text" xml:space="preserve">
+    <value>Đánh dấu trước đó</value>
+  </data>
+  <data name="MenuButton_ErrorList.Text" xml:space="preserve">
+    <value>Danh sách lỗi</value>
+  </data>
+  <data name="closeAllButThisToolStripMenuItem.Text" xml:space="preserve">
+    <value>Đóng tất cả trừ cái này</value>
+  </data>
+  <data name="MenuButton_ChineseTraditional.Text" xml:space="preserve">
+    <value>Chinese (Phổ thông)</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>PAT - Tool Mô Phỏng và Kiểm Tra Mô Hình (Version</value>
+  </data>
+  <data name="MenuButton_ToggleBookmark.Text" xml:space="preserve">
+    <value>Bật tắt ghi chú</value>
+  </data>
+  <data name="ToolbarButton_SubmitModel.ToolTipText" xml:space="preserve">
+    <value>Gửi hiện tại mô hình nhóm PAT PAT để đóng góp vào dự án</value>
+  </data>
+  <data name="SplittoolStripMenuItem.Text" xml:space="preserve">
+    <value>Chia cửa sổ</value>
+  </data>
+  <data name="MenuButton_Vietnamese.Text" xml:space="preserve">
+    <value>Vietnamese</value>
+  </data>
+  <data name="MenuButton_EnableSimplificationOfTheFormula.Text" xml:space="preserve">
+    <value>Cho phép đơn giản công thức Logic</value>
+  </data>
+  <data name="MenuButton_LTLParsingOptions.Text" xml:space="preserve">
+    <value>chọn LTL Parsing</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>Thanh Menu 1</value>
+  </data>
+  <data name="MenuButton_New.Text" xml:space="preserve">
+    <value>Mới</value>
+  </data>
+  <data name="MenuButton_Japanese.Text" xml:space="preserve">
+    <value>Japanese</value>
+  </data>
+  <data name="ToolbarButton_Paste.Text" xml:space="preserve">
+    <value>Paste (Ctrl+V)</value>
+  </data>
+  <data name="MenuButton_SyntaxOptions.Text" xml:space="preserve">
+    <value>Tùy chọn cú pháp</value>
+  </data>
+  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Đóng</value>
+  </data>
+  <data name="ToolbarButton_SubmitModel.Text" xml:space="preserve">
+    <value>Gửi mẫu cho PAT</value>
+  </data>
+  <data name="MenuButton_Toolbar.Text" xml:space="preserve">
+    <value>Thanh công cụ</value>
+  </data>
+  <data name="MenuButton_ToggleOutline.Text" xml:space="preserve">
+    <value>Bật tắt Outlining</value>
+  </data>
+  <data name="MenuButton_CheckGrammer.Text" xml:space="preserve">
+    <value>Chọn ngữ pháp</value>
+  </data>
+  <data name="MenuButton_AlwaysOnTop.Text" xml:space="preserve">
+    <value>Luôn ở trên cùng</value>
+  </data>
+  <data name="ToolbarButton_Find.Text" xml:space="preserve">
+    <value>Tìm kiếm (Ctrl+F)</value>
+  </data>
+  <data name="MenuButton_Russian.Text" xml:space="preserve">
+    <value>Russian</value>
+  </data>
+  <data name="MenuButton_Cut.Text" xml:space="preserve">
+    <value>Cắt</value>
+  </data>
+  <data name="MenuButton_EnableOntheflyAutomataSimplification.Text" xml:space="preserve">
+    <value>Cho phép đơn giản automata on-the-fly</value>
+  </data>
+  <data name="ToolbarButton_FindNext.Text" xml:space="preserve">
+    <value>Tìm kế tiếp (F3)</value>
+  </data>
+  <data name="MenuButton_Open.Text" xml:space="preserve">
+    <value>Mở</value>
+  </data>
+  <data name="openFileDialog1.Title" xml:space="preserve">
+    <value>Mở file yêu cầu</value>
+  </data>
+  <data name="MenuButton_FindReplace.Text" xml:space="preserve">
+    <value>Tìm kiếm và thay thế</value>
+  </data>
+  <data name="MenuButton_ChineseSimplified.Text" xml:space="preserve">
+    <value>Chinese (Simplified)</value>
+  </data>
+  <data name="MenuButton_EnableAPosterioriAutomataSimplification.Text" xml:space="preserve">
+    <value>Cho phép đơn giản automata</value>
+  </data>
+  <data name="ToolbarButton_Save.Text" xml:space="preserve">
+    <value>Save (Ctrl+S)</value>
+  </data>
+  <data name="saveToolStripMenuItem.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="MenuButton_CloseCurrent.Text" xml:space="preserve">
+    <value>Đóng cửa sổ hiện tại</value>
+  </data>
+  <data name="ToolbarButton_Verification.Text" xml:space="preserve">
+    <value>Kiểm tra (F7)</value>
+  </data>
+  <data name="MenuButton_French.Text" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="newToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mới</value>
+  </data>
+  <data name="ToolbarButton_SaveAs.Text" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="MenuButton_HignlightCurrentLine.Text" xml:space="preserve">
+    <value>Tô màu dòng này</value>
+  </data>
+  <data name="MenuButton_Options.Text" xml:space="preserve">
+    <value>Những chọn lựa...</value>
+  </data>
+  <data name="MenuButton_Paste.Text" xml:space="preserve">
+    <value>Dán</value>
+  </data>
+  <data name="MenuButton_EnableStronglyConnectedComponentsSimplification.Text" xml:space="preserve">
+    <value> Cho phép đơn giản strongly &amp;Connected components</value>
+  </data>
+  <data name="MenuButton_Formatting.Text" xml:space="preserve">
+    <value>Định dạng</value>
+  </data>
+  <data name="MenuButton_English.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="ToolbarButton_Copy.Text" xml:space="preserve">
+    <value>Copy (Ctrl+C)</value>
+  </data>
+  <data name="MenuButton_Register.Text" xml:space="preserve">
+    <value>Mua bản đầy đủ</value>
+  </data>
+  <data name="MenuButton_Website.Text" xml:space="preserve">
+    <value>Trang web</value>
+  </data>
+  <data name="MenuButton_ClearAllBookmarks.Text" xml:space="preserve">
+    <value>Xóa tất cả đánh dấu</value>
+  </data>
+  <data name="MenuButton_Save.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="MenuButton_Split.Text" xml:space="preserve">
+    <value>ok</value>
+  </data>
+  <data name="openFileDialog1.Filter" xml:space="preserve">
+    <value>LTL Files|*.ltl|All files|*.*</value>
+  </data>
+  <data name="MenuButton_Edit.Text" xml:space="preserve">
+    <value>Thay đổi</value>
+  </data>
+  <data name="MenuButton_SubmitModel.ToolTipText" xml:space="preserve">
+    <value>Gửi hiện tại mô hình nhóm PAT PAT để đóng góp vào dự án</value>
+  </data>
+  <data name="MenuButton_Standard.Text" xml:space="preserve">
+    <value>Tiêu chuẩn</value>
+  </data>
+  <data name="ToolbarButton_Cut.Text" xml:space="preserve">
+    <value>Cắt (Ctrl+X)</value>
+  </data>
+  <data name="MenuButton_About.Text" xml:space="preserve">
+    <value>Về</value>
+  </data>
+  <data name="MenuButton_File.Text" xml:space="preserve">
+    <value>Tập tin</value>
+  </data>
+  <data name="ToolbarButton_CheckGrammar.ToolTipText" xml:space="preserve">
+    <value>Mô tả Parse(F5)</value>
+  </data>
+  <data name="ToolbarButton_Simulation.ToolTipText" xml:space="preserve">
+    <value>Mô phỏng (F6)</value>
+  </data>
+  <data name="MenuButton_AddComment.Text" xml:space="preserve">
+    <value>Chọn chú thích</value>
+  </data>
+  <data name="ToolbarButton_Simulation.Text" xml:space="preserve">
+    <value>Mô phỏng (F6)</value>
+  </data>
+  <data name="MenuButton_Spanish.Text" xml:space="preserve">
+    <value>Spanish</value>
+  </data>
+  <data name="MenuButton_German.Text" xml:space="preserve">
+    <value>German</value>
+  </data>
+  <data name="StatusLabel_Status.Text" xml:space="preserve">
+    <value>Sẵn sàng</value>
+  </data>
+  <data name="MenuButton_Register.ToolTipText" xml:space="preserve">
+    <value>Bản đầy đủ của PAT sẽ bao gồm nhiều Module và ví dụ hơn</value>
+  </data>
+  <data name="MenuButton_LTL2BA.Text" xml:space="preserve">
+    <value>Bộ chuyển LTL sang Automata</value>
+  </data>
+  <data name="MenuButton_CloseAllDocument.Text" xml:space="preserve">
+    <value>Đóng tất cả cửa sổ</value>
+  </data>
+  <data name="MenuButton_LineNumber.Text" xml:space="preserve">
+    <value>Số hàng</value>
+  </data>
+  <data name="MenuButton_NextBookmark.Text" xml:space="preserve">
+    <value>Bookmark kế tiếp</value>
+  </data>
+  <data name="ToolbarButton_ZoomOut.Text" xml:space="preserve">
+    <value>Giảm font chữ</value>
+  </data>
+  <data name="MenuButton_Verification.Text" xml:space="preserve">
+    <value>Kiểm tra</value>
+  </data>
+  <data name="MenuButton_VerificationBatch.Text" xml:space="preserve">
+    <value>Kiểm tra (chế độ cùng 1 lúc)</value>
+  </data>
+  <data name="MenuButton_Find.Text" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="ToolbarButton_RemoveComment.Text" xml:space="preserve">
+    <value>Bỏ chú thích (Ctrl+Shift+U)</value>
+  </data>
+  <data name="MenuButton_Specification.Text" xml:space="preserve">
+    <value>mô tả</value>
+  </data>
+  <data name="MenuButton_RemoveComment.Text" xml:space="preserve">
+    <value>Chọn không chú thích</value>
+  </data>
+  <data name="ToolbarButton_NewModelWizard.Text" xml:space="preserve">
+    <value>Mới Wizard</value>
+  </data>
+  <data name="MenuButton_WhatsNewInPAT.Text" xml:space="preserve">
+    <value>Điều gì mới trong PAT</value>
+  </data>
+  <data name="MenuButton_OutputPanel.Text" xml:space="preserve">
+    <value>Panel xuất</value>
+  </data>
+  <data name="MenuButton_Examples.Text" xml:space="preserve">
+    <value>Những ví dụ</value>
+  </data>
+  <data name="ToolbarButton_Zoom100.ToolTipText" xml:space="preserve">
+    <value>100% cỡ chữ</value>
+  </data>
+  <data name="MenuButton_Tools.Text" xml:space="preserve">
+    <value>Những công cụ</value>
+  </data>
+  <data name="MenuButton_NewModelWizard.Text" xml:space="preserve">
+    <value>Mới Wizard</value>
+  </data>
+  <data name="MenuButton_Delete.Text" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="StandardToolBar.Text" xml:space="preserve">
+    <value>Thanh công cụ tiêu chuẩn</value>
+  </data>
+  <data name="MenuButton_CheckForUpdate.Text" xml:space="preserve">
+    <value>Kiểm tra nâng cấp</value>
+  </data>
+  <data name="MenuButton_EmailFeedback.Text" xml:space="preserve">
+    <value>Gửi thư phản hồi</value>
+  </data>
+  <data name="ToolbarButton_Undo.Text" xml:space="preserve">
+    <value>Ngược lại (Ctrl+Z)</value>
+  </data>
+  <data name="ToolbarButton_Verification.ToolTipText" xml:space="preserve">
+    <value>Kiểm tra (F7)</value>
+  </data>
+  <data name="MenuButton_GenerateLatex.Text" xml:space="preserve">
+    <value>Trong LaTex</value>
+  </data>
+  <data name="MenuButton_Replace.Text" xml:space="preserve">
+    <value>Thay thế</value>
+  </data>
+  <data name="MenuButton_Import.Text" xml:space="preserve">
+    <value>Nhập vào</value>
+  </data>
+  <data name="MenuButton_Exit.Text" xml:space="preserve">
+    <value>Thoát</value>
+  </data>
+  <data name="toolStripContainer1.Text" xml:space="preserve">
+    <value>Thanh chứa 1</value>
+  </data>
+  <data name="openContainingFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mở folder chứa</value>
+  </data>
+  <data name="ToolbarButton_Replace.Text" xml:space="preserve">
+    <value>Thay thế (Ctrl+H)</value>
+  </data>
+  <data name="MenuButton_Bookmarks.Text" xml:space="preserve">
+    <value>Đánh dấu</value>
+  </data>
+  <data name="ToolbarButton_Open.Text" xml:space="preserve">
+    <value>Mở File (Ctrl+O)</value>
+  </data>
+  <data name="MenuButton_RecentFiles.Text" xml:space="preserve">
+    <value>Những file gần đây</value>
+  </data>
+  <data name="ToolbarButton_Redo.Text" xml:space="preserve">
+    <value>Sau đó (Ctrl+Y)</value>
+  </data>
+  <data name="ToolbarButton_Specification.Text" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="MenuButton_CSharpLibary.Text" xml:space="preserve">
+    <value>Thư viện soạn thảo và compile C# </value>
+  </data>
+  <data name="FunctionalToolBar.Text" xml:space="preserve">
+    <value>Thanh chức năng</value>
+  </data>
+  <data name="MenuButton_Portuguese.Text" xml:space="preserve">
+    <value>Portuguese</value>
+  </data>
+</root>

@@ -1,0 +1,124 @@
+MultiCoreNDFS()
+{
+	LocalBlueDFS(0)||LocalBlueDFS(1)||...
+}
+LocalBlueDFS(i)
+{
+	blueStack = Empty
+	blueStack.Push(initialState)
+	while (blueStack.Count > 0)
+	{
+		v = blueStack.Peek()
+		if (v.Color = White)
+		{
+			v.Color = Cyan
+			for (all w in successors(v))
+			{
+				if (w.Color = Cyan & (v is accepting || w is accepting)
+				{
+					report counterexample
+					isGlobalStop = True
+					return
+				}
+			}
+		}
+		unvisitedSuccessors = Empty
+		isAllRed = True
+		for (all w in successors(v))
+		{
+			if (w.Color = White & !w.isGlobalRed)
+			{
+				invisitedSuccessor.Add(w)
+			}
+			if (isAllRed)
+			{
+				if (!w.isGlobalRed)
+				{
+					isAllRed = False;
+				}
+			}
+		}
+		if (unvisitedSuccessors != Empty)
+		{
+			w = random(unvisitedSuccessors)
+			blueStack.Push(w)
+		}
+		else
+		{
+			if (v is deadlock & v is accepting)
+			{
+				report counterexample
+				return
+			}
+			if (isAllRed)
+			{
+				v.isGlobalRed = True
+			}
+			else if (v is accepting)
+			{
+				v.Count = v.Count + 1
+				isStop = LocalRedDFS(v, i)
+				if (isStop)
+				{
+					return
+				}
+			}
+			v.Color = Blue
+			blueStack.Pop()
+		}
+	}
+}
+
+LocalRedDFS(acceptingState, i)
+{
+	redStack = Empty
+	redStack.Push(acceptingState)
+	while (redStack.Count > 0)
+	{
+		v = redStack.Peek()
+		if (v.Color != Pink)
+		{
+			v.Color = Pink
+			for (all w in successors(v))
+			{
+				if (w.Color = Cyan)
+				{
+					report counterexample
+					isGlobalStop = True
+					return True
+				}
+			}
+		}
+		unvisitedSuccessor = Empty
+		for (all w in successors(v))
+		{
+			if (w.Color != Pink & !v.isGlobalRed)
+			{
+				unvisitedSuccessor.Add(w)
+			}
+		}
+		if (unvisitedSuccessors != Empty)
+		{
+			w = random(unvisitedSuccessors)
+			redStack.Push(w)
+		}
+		else
+		{
+			if (v is accepting)
+			{
+				v.Count = v.Count - 1
+				wait(v.Count = 0)
+			}
+			v.isGlobalRed = True
+			redStack.Pop()
+		}
+		return False
+	}
+}
+---------------------------------
+Choose successors in Blue DFS:
+1. Successors to explore: (white & not global red) Not in localDFSData & not in globalRedStates
+2. Successors for early cycle detection: (cyan) In localDFSData & color is cyan
+Choose successor in Red DFS:
+1. Successors to explore: (not pink & not global red) (In localDFSData & )color is not pink & not in globalRedStates
+2. Successors to check counter example: (cyan) In localDFSData & color is cyan

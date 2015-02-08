@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ToolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="ToolStripButton_Find.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="ToolStripButton_Find.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 22</value>
+  </data>
+  <data name="ToolStripButton_Find.Text" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="ToolStripButton_Replace.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="ToolStripButton_Replace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 22</value>
+  </data>
+  <data name="ToolStripButton_Replace.Text" xml:space="preserve">
+    <value>置換</value>
+  </data>
+  <data name="ToolStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ToolStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>412, 25</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ToolStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ToolStrip.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;ToolStrip.Name" xml:space="preserve">
+    <value>ToolStrip</value>
+  </data>
+  <data name="&gt;&gt;ToolStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ToolStrip.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="Label_FindWhat.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_FindWhat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 34</value>
+  </data>
+  <data name="Label_FindWhat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="Label_FindWhat.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Label_FindWhat.Text" xml:space="preserve">
+    <value>検索文字列:</value>
+  </data>
+  <data name="&gt;&gt;Label_FindWhat.Name" xml:space="preserve">
+    <value>Label_FindWhat</value>
+  </data>
+  <data name="&gt;&gt;Label_FindWhat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_FindWhat.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label_FindWhat.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ComboBox_FindWhat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 50</value>
+  </data>
+  <data name="ComboBox_FindWhat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 21</value>
+  </data>
+  <data name="ComboBox_FindWhat.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_FindWhat.Name" xml:space="preserve">
+    <value>ComboBox_FindWhat</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_FindWhat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_FindWhat.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_FindWhat.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="Label_ReplaceWith.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_ReplaceWith.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 76</value>
+  </data>
+  <data name="Label_ReplaceWith.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 13</value>
+  </data>
+  <data name="Label_ReplaceWith.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Label_ReplaceWith.Text" xml:space="preserve">
+    <value>置換文字列:</value>
+  </data>
+  <data name="Label_ReplaceWith.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Label_ReplaceWith.Name" xml:space="preserve">
+    <value>Label_ReplaceWith</value>
+  </data>
+  <data name="&gt;&gt;Label_ReplaceWith.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_ReplaceWith.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label_ReplaceWith.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ComboBox_ReplaceWith.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 92</value>
+  </data>
+  <data name="ComboBox_ReplaceWith.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 21</value>
+  </data>
+  <data name="ComboBox_ReplaceWith.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ComboBox_ReplaceWith.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_ReplaceWith.Name" xml:space="preserve">
+    <value>ComboBox_ReplaceWith</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_ReplaceWith.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_ReplaceWith.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_ReplaceWith.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ComboBox_LookIn.Items" xml:space="preserve">
+    <value>編集中ドキュメント内</value>
+  </data>
+  <data name="ComboBox_LookIn.Items1" xml:space="preserve">
+    <value>選択範囲内</value>
+  </data>
+  <data name="ComboBox_LookIn.Items2" xml:space="preserve">
+    <value>開いている全てのドキュメント</value>
+  </data>
+  <data name="ComboBox_LookIn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 138</value>
+  </data>
+  <data name="ComboBox_LookIn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 21</value>
+  </data>
+  <data name="ComboBox_LookIn.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_LookIn.Name" xml:space="preserve">
+    <value>ComboBox_LookIn</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_LookIn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_LookIn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_LookIn.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Label_LookIn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_LookIn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 122</value>
+  </data>
+  <data name="Label_LookIn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="Label_LookIn.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="Label_LookIn.Text" xml:space="preserve">
+    <value>検索範囲:</value>
+  </data>
+  <data name="&gt;&gt;Label_LookIn.Name" xml:space="preserve">
+    <value>Label_LookIn</value>
+  </data>
+  <data name="&gt;&gt;Label_LookIn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_LookIn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label_LookIn.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="CheckBox_MatchCase.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBox_MatchCase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 198</value>
+  </data>
+  <data name="CheckBox_MatchCase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 17</value>
+  </data>
+  <data name="CheckBox_MatchCase.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="CheckBox_MatchCase.Text" xml:space="preserve">
+    <value>大文字小文字を区別</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_MatchCase.Name" xml:space="preserve">
+    <value>CheckBox_MatchCase</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_MatchCase.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_MatchCase.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_MatchCase.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="CheckBox_MatchWholeWord.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBox_MatchWholeWord.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 221</value>
+  </data>
+  <data name="CheckBox_MatchWholeWord.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 17</value>
+  </data>
+  <data name="CheckBox_MatchWholeWord.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="CheckBox_MatchWholeWord.Text" xml:space="preserve">
+    <value>全ての単語を照合</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_MatchWholeWord.Name" xml:space="preserve">
+    <value>CheckBox_MatchWholeWord</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_MatchWholeWord.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_MatchWholeWord.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CheckBox_MatchWholeWord.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ComboBox_Use.Items" xml:space="preserve">
+    <value>標準的な検索</value>
+  </data>
+  <data name="ComboBox_Use.Items1" xml:space="preserve">
+    <value>正規表現</value>
+  </data>
+  <data name="ComboBox_Use.Items2" xml:space="preserve">
+    <value>ワイルドカード</value>
+  </data>
+  <data name="ComboBox_Use.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 263</value>
+  </data>
+  <data name="ComboBox_Use.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 21</value>
+  </data>
+  <data name="ComboBox_Use.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_Use.Name" xml:space="preserve">
+    <value>ComboBox_Use</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_Use.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_Use.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_Use.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Label_Use.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_Use.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 247</value>
+  </data>
+  <data name="Label_Use.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 13</value>
+  </data>
+  <data name="Label_Use.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="Label_Use.Text" xml:space="preserve">
+    <value>検索方法</value>
+  </data>
+  <data name="&gt;&gt;Label_Use.Name" xml:space="preserve">
+    <value>Label_Use</value>
+  </data>
+  <data name="&gt;&gt;Label_Use.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_Use.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label_Use.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Button_FindNext.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 297</value>
+  </data>
+  <data name="Button_FindNext.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 23</value>
+  </data>
+  <data name="Button_FindNext.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="Button_FindNext.Text" xml:space="preserve">
+    <value>次を検索</value>
+  </data>
+  <data name="Button_FindNext.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Button_FindNext.Name" xml:space="preserve">
+    <value>Button_FindNext</value>
+  </data>
+  <data name="&gt;&gt;Button_FindNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button_FindNext.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button_FindNext.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Button_Find.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 297</value>
+  </data>
+  <data name="Button_Find.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 23</value>
+  </data>
+  <data name="Button_Find.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="Button_Find.Text" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="&gt;&gt;Button_Find.Name" xml:space="preserve">
+    <value>Button_Find</value>
+  </data>
+  <data name="&gt;&gt;Button_Find.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button_Find.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button_Find.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Button_BookmarkAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>302, 297</value>
+  </data>
+  <data name="Button_BookmarkAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 23</value>
+  </data>
+  <data name="Button_BookmarkAll.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="Button_BookmarkAll.Text" xml:space="preserve">
+    <value>全てブックマーク</value>
+  </data>
+  <data name="&gt;&gt;Button_BookmarkAll.Name" xml:space="preserve">
+    <value>Button_BookmarkAll</value>
+  </data>
+  <data name="&gt;&gt;Button_BookmarkAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button_BookmarkAll.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button_BookmarkAll.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Button_ReplaceAll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Button_ReplaceAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>302, 297</value>
+  </data>
+  <data name="Button_ReplaceAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 23</value>
+  </data>
+  <data name="Button_ReplaceAll.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="Button_ReplaceAll.Text" xml:space="preserve">
+    <value>全て置換</value>
+  </data>
+  <data name="&gt;&gt;Button_ReplaceAll.Name" xml:space="preserve">
+    <value>Button_ReplaceAll</value>
+  </data>
+  <data name="&gt;&gt;Button_ReplaceAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button_ReplaceAll.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button_ReplaceAll.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Button_Replace.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Button_Replace.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 297</value>
+  </data>
+  <data name="Button_Replace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 23</value>
+  </data>
+  <data name="Button_Replace.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="Button_Replace.Text" xml:space="preserve">
+    <value>置換</value>
+  </data>
+  <data name="&gt;&gt;Button_Replace.Name" xml:space="preserve">
+    <value>Button_Replace</value>
+  </data>
+  <data name="&gt;&gt;Button_Replace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button_Replace.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button_Replace.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>412, 332</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Find and Replace</value>
+    <comment>finish</comment>
+  </data>
+  <data name="&gt;&gt;ToolStripButton_Find.Name" xml:space="preserve">
+    <value>ToolStripButton_Find</value>
+  </data>
+  <data name="&gt;&gt;ToolStripButton_Find.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripButton_Replace.Name" xml:space="preserve">
+    <value>ToolStripButton_Replace</value>
+  </data>
+  <data name="&gt;&gt;ToolStripButton_Replace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SearchAndReplaceFrom</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

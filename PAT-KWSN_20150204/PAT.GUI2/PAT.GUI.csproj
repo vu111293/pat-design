@@ -1,0 +1,1815 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA6509CC-1F1B-445C-9482-16F4CEFF4C65}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PAT.GUI</RootNamespace>
+    <AssemblyName>PAT 3</AssemblyName>
+    <ApplicationIcon>PAT.ico</ApplicationIcon>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>2D662BEAD47264C5AFC59A1615A2EC041D68D3A2</ManifestCertificateThumbprint>
+    <ManifestKeyFile>PAT.GUI_1_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <StartupObject>PAT.GUI.Program</StartupObject>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <TargetFrameworkProfile />
+    <PublishUrl>D:\Study\PAT 3.4.1\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://www.comp.nus.edu.sg/~pat/publish3/</InstallUrl>
+    <UpdateUrl>http://localhost/PAT/</UpdateUrl>
+    <ApplicationRevision>19499</ApplicationRevision>
+    <ApplicationVersion>3.4.1.19499</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;ACADEMIC;ENABLE_UPDATE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;ACADEMIC;ENABLE_UPDATE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\DLL\PAT\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Interop.Excel, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Interop.Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="License, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f80b1601a4d8a9dd">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\License.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Msagl.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Msagl.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Msagl.GraphViewerGdi, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Msagl.GraphViewerGdi.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextTemplating, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.VisualStudio.TextTemplating.dll</HintPath>
+    </Reference>
+    <Reference Include="PAT.Editor">
+      <HintPath>..\DLL\PAT\PAT.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="PAT.Editor.Core">
+      <HintPath>..\DLL\PAT\PAT.Editor.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PAT.Editor.Docking">
+      <HintPath>..\DLL\PAT\PAT.Editor.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Docking\FindUsagesWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\ModelExplorerWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="Resources\Add token.png" />
+    <Content Include="Resources\Delete token.png" />
+    <EmbeddedResource Include="Docking\EditorTabItem.ko.resx">
+      <DependentUpon>EditorTabItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\ErrorListWindow.ko.resx">
+      <DependentUpon>ErrorListWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\FindUsagesWindow.ko.resx">
+      <DependentUpon>FindUsagesWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\ModelExplorerWindow.ko.resx">
+      <DependentUpon>ModelExplorerWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\OutputDockingWindow.ko.resx">
+      <DependentUpon>OutputDockingWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsMDP\Assertion.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsMDP\AssertionDeadLock.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsMDP\AssertionDeterminism.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsMDP\AssertionDivergence.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsMDP\AssertionLTL.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsMDP\AssertionReachability.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsMDP\AssertionReachabilityWith.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsMDP\AssertionRefinement.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsMDP\AssertionRefinementF.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsMDP\AssertionRefinementFD.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\PCaseProcess.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Configuration.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\ConfigurationWithChannelData.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Specification.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\Assertion.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\AtomicProcess.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\CaseProcess.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\ChannelInput.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\ChannelInputGuarded.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\ChannelOutput.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\ConditionalChoice.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\ConditionalChoiceAtomic.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\ConditionalChoiceBlocking.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\DataOperationPrefix.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Definition.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\DefinitionRef.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\EventPrefix.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\GuardProcess.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\Hiding.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\IndexChoice.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\IndexedProcess.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\IndexExternalChoice.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\IndexInterleave.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\IndexInterleaveAbstract.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\IndexInternalChoice.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\IndexParallel.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\Interrupt.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Process.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\Sequence.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\Skip.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\Sample\Stop.ptt" />
+    <EmbeddedResource Include="Docs\Template\Main\EditorTabItem.ptt">
+      <SubType>Form</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Main\ErrorListWindow.ptt">
+      <SubType>Form</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Main\FormMain.ptt">
+      <SubType>Form</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Main\OutputDockingWindow.ptt">
+      <SubType>Form</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Main\Program.ptt" />
+    <EmbeddedResource Include="Docs\Template\Main\Properties\Resources.Designer.ptt" />
+    <Compile Include="EditingFunction\CodeCompletion\CodeCompletionData.cs" />
+    <Compile Include="EditingFunction\CodeCompletion\CodeCompletionKeyHandler.cs" />
+    <Compile Include="EditingFunction\CodeCompletion\CodeCompletionProvider.cs" />
+    <Compile Include="EditingFunction\CodeCompletion\CodeCompletionProviderDot.cs" />
+    <Compile Include="EditingFunction\CodeCompletion\HostCallbackImplementation.cs" />
+    <Compile Include="EditingFunction\CodeCompletion\MethodInsightDataProvider.cs" />
+    <Compile Include="EditingFunction\CodeCompletion\ToolTipProvider.cs" />
+    <Compile Include="Docking\CommentRegion.cs" />
+    <Compile Include="Docking\ErrorListWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\FoldingStrategy.cs" />
+    <Compile Include="Docking\OutputDockingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditingFunction\FindAndReplace\Commands\SearchMainMenuCommands.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Commands\SearchToolbarCommands.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\DocumentIterator\AllOpenDocumentIterator.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\DocumentIterator\CurrentDocumentIterator.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\DocumentIterator\DirectoryDocumentIterator.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\DocumentIterator\IDocumentIterator.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\DocumentIterator\WholeProjectDocumentIterator.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\DocumentIterator\WholeSolutionDocumentIterator.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\ITextIteratorBuilder.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\Search.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\SearchReplaceInFilesManager.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\SearchReplaceManager.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\SearchReplaceUtilities.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\SearchStrategy\BoyerMooreSearchStrategy.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\SearchStrategy\BruteForceSearchStrategy.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\SearchStrategy\ISearchStrategy.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\SearchStrategy\KMPSearchStrategy.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\SearchStrategy\RegExSearchStrategy.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\SearchStrategy\WildcardSearchStrategy.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\TextIterator\ForwardTextIterator.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\TextIterator\ForwardTextIteratorBuilder.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\TextIterator\ITextIterator.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Engine\TextSelection.cs" />
+    <Compile Include="EditingFunction\FindAndReplace\Gui\SearchAndReplaceFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditingFunction\FindAndReplace\Gui\SearchAndReplaceFrom.Designer.cs">
+      <DependentUpon>SearchAndReplaceFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditingFunction\FindAndReplace\SearchOptions.cs" />
+    <Compile Include="EditingFunction\GoTo\GotoLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChangeFormCulture.cs" />
+    <Compile Include="Forms\GenerateModule\CustomerHost.cs" />
+    <Compile Include="Forms\GenerateModule\GenerateModuleSolution.cs" />
+    <Compile Include="Forms\GenerateModule\Format.cs" />
+    <Compile Include="Forms\GenerateModule\GenerateOption.cs" />
+    <Compile Include="Forms\LaTexPrintingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LaTexPrintingDialog.Designer.cs">
+      <DependentUpon>LaTexPrintingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CSharpLibraryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CSharpLibraryForm.Designer.cs">
+      <DependentUpon>CSharpLibraryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MemoryBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MemoryBox.designer.cs">
+      <DependentUpon>MemoryBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModelCheckingBatchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModelCheckingBatchForm.designer.cs">
+      <DependentUpon>ModelCheckingBatchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModuleGeneratorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModuleGeneratorForm.Designer.cs">
+      <DependentUpon>ModuleGeneratorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewWizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewWizardForm.Designer.cs">
+      <DependentUpon>NewWizardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OptionForm.Designer.cs">
+      <DependentUpon>OptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RenameForm.Designer.cs">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubmitToAuthorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubmitToAuthorForm.Designer.cs">
+      <DependentUpon>SubmitToAuthorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\EditorTabItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\NewCodeEditorEventArgs.cs" />
+    <Compile Include="ModuleGUI\BPELDrawing\BPELTabItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\CLTSDrawing\CLTSProcessEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\CLTSDrawing\CLTSProcessEditingForm.Designer.cs">
+      <DependentUpon>CLTSProcessEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\CLTSDrawing\CLTSStateEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\CLTSDrawing\CLTSStateEditingForm.Designer.cs">
+      <DependentUpon>CLTSStateEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\CLTSDrawing\CLTSTabItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\CLTSDrawing\CLTSTransitionEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\CLTSDrawing\CLTSTransitionEditingForm.Designer.cs">
+      <DependentUpon>CLTSTransitionEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\ERADrawing\ERAProcessEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\ERADrawing\ERAProcessEditingForm.Designer.cs">
+      <DependentUpon>ERAProcessEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\ERADrawing\ERAStateEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\ERADrawing\ERAStateEditingForm.Designer.cs">
+      <DependentUpon>ERAStateEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\ERADrawing\ERATabItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\ERADrawing\ERATransitionEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\ERADrawing\ERATransitionEditingForm.Designer.cs">
+      <DependentUpon>ERATransitionEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\KWSNDrawing\SensorChannelEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\KWSNDrawing\SensorChannelEditForm.Designer.cs">
+      <DependentUpon>SensorChannelEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\KWSNDrawing\SensorEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\KWSNDrawing\SensorEditForm.Designer.cs">
+      <DependentUpon>SensorEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\KWSNDrawing\WSNTabItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\LTSDrawing\ProcessEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\LTSDrawing\ProcessEditingForm.Designer.cs">
+      <DependentUpon>ProcessEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\LTSDrawing\TransitionEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\LTSDrawing\TransitionEditingForm.Designer.cs">
+      <DependentUpon>TransitionEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\LTSDrawing\LTSTabItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\LTSDrawing\StateEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\LTSDrawing\StateEditingForm.Designer.cs">
+      <DependentUpon>StateEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\PDDLDrawing\PDDLTabItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\PNDrawing\ArcEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\PNDrawing\ArcEditingForm.designer.cs">
+      <DependentUpon>ArcEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\PNDrawing\ModelEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\PNDrawing\ModelEditingForm.designer.cs">
+      <DependentUpon>ModelEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\PNDrawing\PlaceEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\PNDrawing\PlaceEditingForm.designer.cs">
+      <DependentUpon>PlaceEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\PNDrawing\PNTabItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\PNDrawing\TransitionEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\PNDrawing\TransitionEditingForm.designer.cs">
+      <DependentUpon>TransitionEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\SNDrawing\StateMachineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\SNDrawing\StateMachineForm.Designer.cs">
+      <DependentUpon>StateMachineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\UMLDrawing\StateDiagramEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\UMLDrawing\StateDiagramEditingForm.Designer.cs">
+      <DependentUpon>StateDiagramEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\UMLDrawing\UMLTabItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Docking\EditorTabItem.de.resx">
+      <DependentUpon>EditorTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\EditorTabItem.ja.resx">
+      <DependentUpon>EditorTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\EditorTabItem.vi.resx">
+      <DependentUpon>EditorTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\EditorTabItem.zh-CHS.resx">
+      <DependentUpon>EditorTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\EditorTabItem.zh-CHT.resx">
+      <DependentUpon>EditorTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\ErrorListWindow.de.resx">
+      <DependentUpon>ErrorListWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\ErrorListWindow.ja.resx">
+      <DependentUpon>ErrorListWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\ErrorListWindow.resx">
+      <DependentUpon>ErrorListWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\ErrorListWindow.vi.resx">
+      <DependentUpon>ErrorListWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\ErrorListWindow.zh-CHS.resx">
+      <DependentUpon>ErrorListWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\ErrorListWindow.zh-CHT.resx">
+      <DependentUpon>ErrorListWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\OutputDockingWindow.de.resx">
+      <DependentUpon>OutputDockingWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\OutputDockingWindow.ja.resx">
+      <DependentUpon>OutputDockingWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\OutputDockingWindow.resx">
+      <DependentUpon>OutputDockingWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\OutputDockingWindow.vi.resx">
+      <DependentUpon>OutputDockingWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\OutputDockingWindow.zh-CHS.resx">
+      <DependentUpon>OutputDockingWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\OutputDockingWindow.zh-CHT.resx">
+      <DependentUpon>OutputDockingWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditingFunction\FindAndReplace\Gui\SearchAndReplaceFrom.ko.resx">
+      <DependentUpon>SearchAndReplaceFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditingFunction\GoTo\GotoLine.ko.resx">
+      <DependentUpon>GotoLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditingFunction\GoTo\GotoLine.resx">
+      <DependentUpon>GotoLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.de.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.ja.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.ko.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.vi.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.zh-CHS.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.zh-CHT.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutBox.de.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutBox.ja.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutBox.ko.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutBox.vi.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutBox.zh-CHS.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutBox.zh-CHT.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CSharpLibraryForm.ko.resx">
+      <DependentUpon>CSharpLibraryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LaTexPrintingDialog.de.resx">
+      <DependentUpon>LaTexPrintingDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LaTexPrintingDialog.ja.resx">
+      <DependentUpon>LaTexPrintingDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LaTexPrintingDialog.ko.resx">
+      <DependentUpon>LaTexPrintingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LaTexPrintingDialog.resx">
+      <DependentUpon>LaTexPrintingDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CSharpLibraryForm.de.resx">
+      <DependentUpon>CSharpLibraryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CSharpLibraryForm.ja.resx">
+      <DependentUpon>CSharpLibraryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CSharpLibraryForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CSharpLibraryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CSharpLibraryForm.vi.resx">
+      <DependentUpon>CSharpLibraryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CSharpLibraryForm.zh-CHS.resx">
+      <DependentUpon>CSharpLibraryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CSharpLibraryForm.zh-CHT.resx">
+      <DependentUpon>CSharpLibraryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LaTexPrintingDialog.zh-CHS.resx">
+      <DependentUpon>LaTexPrintingDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LaTexPrintingDialog.zh-CHT.resx">
+      <DependentUpon>LaTexPrintingDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MemoryBox.de.resx">
+      <DependentUpon>MemoryBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MemoryBox.ja.resx">
+      <DependentUpon>MemoryBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MemoryBox.ko.resx">
+      <DependentUpon>MemoryBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MemoryBox.resx">
+      <DependentUpon>MemoryBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MemoryBox.vi.resx">
+      <DependentUpon>MemoryBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MemoryBox.zh-CHS.resx">
+      <DependentUpon>MemoryBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MemoryBox.zh-CHT.resx">
+      <DependentUpon>MemoryBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModelCheckingBatchForm.ko.resx">
+      <DependentUpon>ModelCheckingBatchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewWizardForm.de.resx">
+      <DependentUpon>NewWizardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewWizardForm.ja.resx">
+      <DependentUpon>NewWizardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewWizardForm.ko.resx">
+      <DependentUpon>NewWizardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewWizardForm.resx">
+      <DependentUpon>NewWizardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewWizardForm.zh-CHS.resx">
+      <DependentUpon>NewWizardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewWizardForm.zh-CHT.resx">
+      <DependentUpon>NewWizardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionForm.de.resx">
+      <DependentUpon>OptionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionForm.ja.resx">
+      <DependentUpon>OptionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionForm.ko.resx">
+      <DependentUpon>OptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\EditorTabItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditorTabItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionForm.zh-CHS.resx">
+      <DependentUpon>OptionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionForm.zh-CHT.resx">
+      <DependentUpon>OptionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameForm.ko.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubmitToAuthorForm.de.resx">
+      <DependentUpon>SubmitToAuthorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubmitToAuthorForm.ja.resx">
+      <DependentUpon>SubmitToAuthorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubmitToAuthorForm.ko.resx">
+      <DependentUpon>SubmitToAuthorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubmitToAuthorForm.resx">
+      <DependentUpon>SubmitToAuthorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubmitToAuthorForm.vi.resx">
+      <DependentUpon>SubmitToAuthorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubmitToAuthorForm.zh-CHS.resx">
+      <DependentUpon>SubmitToAuthorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubmitToAuthorForm.zh-CHT.resx">
+      <DependentUpon>SubmitToAuthorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\BPELDrawing\BPELTabItem.de.resx">
+      <DependentUpon>BPELTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\BPELDrawing\BPELTabItem.ja.resx">
+      <DependentUpon>BPELTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\BPELDrawing\BPELTabItem.ko.resx">
+      <DependentUpon>BPELTabItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\BPELDrawing\BPELTabItem.resx">
+      <DependentUpon>BPELTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\BPELDrawing\BPELTabItem.vi.resx">
+      <DependentUpon>BPELTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\BPELDrawing\BPELTabItem.zh-CHS.resx">
+      <DependentUpon>BPELTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\BPELDrawing\BPELTabItem.zh-CHT.resx">
+      <DependentUpon>BPELTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSProcessEditingForm.de.resx">
+      <DependentUpon>CLTSProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSProcessEditingForm.ja.resx">
+      <DependentUpon>CLTSProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSProcessEditingForm.ko.resx">
+      <DependentUpon>CLTSProcessEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSProcessEditingForm.resx">
+      <DependentUpon>CLTSProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSProcessEditingForm.vi.resx">
+      <DependentUpon>CLTSProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSProcessEditingForm.zh-CHS.resx">
+      <DependentUpon>CLTSProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSProcessEditingForm.zh-CHT.resx">
+      <DependentUpon>CLTSProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSStateEditingForm.de.resx">
+      <DependentUpon>CLTSStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSStateEditingForm.ja.resx">
+      <DependentUpon>CLTSStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSStateEditingForm.ko.resx">
+      <DependentUpon>CLTSStateEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSStateEditingForm.resx">
+      <DependentUpon>CLTSStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSStateEditingForm.vi.resx">
+      <DependentUpon>CLTSStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSStateEditingForm.zh-CHS.resx">
+      <DependentUpon>CLTSStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSStateEditingForm.zh-CHT.resx">
+      <DependentUpon>CLTSStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSTabItem.de.resx">
+      <DependentUpon>CLTSTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSTabItem.ja.resx">
+      <DependentUpon>CLTSTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSTabItem.ko.resx">
+      <DependentUpon>CLTSTabItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSTabItem.resx">
+      <DependentUpon>CLTSTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSTabItem.vi.resx">
+      <DependentUpon>CLTSTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSTabItem.zh-CHS.resx">
+      <DependentUpon>CLTSTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSTabItem.zh-CHT.resx">
+      <DependentUpon>CLTSTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSTransitionEditingForm.de.resx">
+      <DependentUpon>CLTSTransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSTransitionEditingForm.ja.resx">
+      <DependentUpon>CLTSTransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSTransitionEditingForm.ko.resx">
+      <DependentUpon>CLTSTransitionEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSTransitionEditingForm.resx">
+      <DependentUpon>CLTSTransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSTransitionEditingForm.vi.resx">
+      <DependentUpon>CLTSTransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSTransitionEditingForm.zh-CHS.resx">
+      <DependentUpon>CLTSTransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\CLTSDrawing\CLTSTransitionEditingForm.zh-CHT.resx">
+      <DependentUpon>CLTSTransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERAProcessEditingForm.ko.resx">
+      <DependentUpon>ERAProcessEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERAStateEditingForm.ko.resx">
+      <DependentUpon>ERAStateEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERATabItem.ko.resx">
+      <DependentUpon>ERATabItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERATransitionEditingForm.ko.resx">
+      <DependentUpon>ERATransitionEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\KWSNDrawing\SensorChannelEditForm.resx">
+      <DependentUpon>SensorChannelEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\KWSNDrawing\SensorEditForm.resx">
+      <DependentUpon>SensorEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\LTSTabItem.ko.resx">
+      <DependentUpon>LTSTabItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\ProcessEditingForm.ko.resx">
+      <DependentUpon>ProcessEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\StateEditingForm.ko.resx">
+      <DependentUpon>StateEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\TransitionEditingForm.ko.resx">
+      <DependentUpon>TransitionEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\PDDLDrawing\PDDLTabItem.resx">
+      <DependentUpon>PDDLTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\PNDrawing\ArcEditingForm.resx">
+      <DependentUpon>ArcEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\PNDrawing\ModelEditingForm.resx">
+      <DependentUpon>ModelEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\PNDrawing\PlaceEditingForm.resx">
+      <DependentUpon>PlaceEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\PNDrawing\PNTabItem.de.resx">
+      <DependentUpon>PNTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\PNDrawing\PNTabItem.ja.resx">
+      <DependentUpon>PNTabItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\PNDrawing\PNTabItem.resx">
+      <DependentUpon>PNTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\PNDrawing\PNTabItem.vi.resx">
+      <DependentUpon>PNTabItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\PNDrawing\PNTabItem.zh-CHS.resx">
+      <DependentUpon>PNTabItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\PNDrawing\PNTabItem.zh-CHT.resx">
+      <DependentUpon>PNTabItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\PNDrawing\TransitionEditingForm.resx">
+      <DependentUpon>TransitionEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\SNDrawing\StateMachineForm.resx">
+      <DependentUpon>StateMachineForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TAProcessEditingForm.ko.resx">
+      <DependentUpon>TAProcessEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TAStateEditingForm.ko.resx">
+      <DependentUpon>TAStateEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TATabItem.ko.resx">
+      <DependentUpon>TATabItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TATransitionEditingForm.ko.resx">
+      <DependentUpon>TATransitionEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\UMLDrawing\StateDiagramEditingForm.resx">
+      <DependentUpon>StateDiagramEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\UMLDrawing\UMLTabItem.resx">
+      <DependentUpon>UMLTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\BitmapResources.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="PAT.GUI_1_TemporaryKey.pfx" />
+    <None Include="PAT.GUI_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="GUIUltility.cs" />
+    <Compile Include="Register\RegisterationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register\RegisterationForm.Designer.cs">
+      <DependentUpon>RegisterationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\SNDrawing\LinkEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\SNDrawing\LinkEditingForm.Designer.cs">
+      <DependentUpon>LinkEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\SNDrawing\NodeEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\SNDrawing\NodeEditingForm.Designer.cs">
+      <DependentUpon>NodeEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\SNDrawing\SNTabItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen\SplashScreen.cs" />
+    <Compile Include="SplashScreen\SplashScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen\SplashScreenForm.designer.cs">
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\TADrawing\TATabItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\TADrawing\TAProcessEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\TADrawing\TAProcessEditingForm.Designer.cs">
+      <DependentUpon>TAProcessEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\TADrawing\TAStateEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\TADrawing\TAStateEditingForm.Designer.cs">
+      <DependentUpon>TAStateEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleGUI\TADrawing\TATransitionEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleGUI\TADrawing\TATransitionEditingForm.Designer.cs">
+      <DependentUpon>TATransitionEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateChecking\Manifest.cs" />
+    <Compile Include="UpdateChecking\UpdateCheckingWorker.cs" />
+    <Compile Include="UpdateChecking\UpdateManager.cs" />
+    <Compile Include="UpdateChecking\ConfirmDoUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateChecking\ConfirmDoUpdateForm.Designer.cs">
+      <DependentUpon>ConfirmDoUpdateForm.cs</DependentUpon>
+    </Compile>
+    <None Include="Resources\save_as.png" />
+    <None Include="Resources\cut.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\paste.png" />
+    <None Include="Resources\selection.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\redo.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\open.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\find.png" />
+    <None Include="Resources\find_next.png" />
+    <None Include="Resources\replace.png" />
+    <None Include="Resources\printer.png" />
+    <EmbeddedResource Include="Properties\StringResources.resources" />
+    <EmbeddedResource Include="Properties\Resources.ko.resx" />
+    <EmbeddedResource Include="UpdateChecking\ConfirmDoUpdateForm.de.resx">
+      <DependentUpon>ConfirmDoUpdateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateChecking\ConfirmDoUpdateForm.ja.resx">
+      <DependentUpon>ConfirmDoUpdateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateChecking\ConfirmDoUpdateForm.ko.resx">
+      <DependentUpon>ConfirmDoUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateChecking\ConfirmDoUpdateForm.resx">
+      <DependentUpon>ConfirmDoUpdateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateChecking\ConfirmDoUpdateForm.vi.resx">
+      <DependentUpon>ConfirmDoUpdateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateChecking\ConfirmDoUpdateForm.zh-CHS.resx">
+      <DependentUpon>ConfirmDoUpdateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateChecking\ConfirmDoUpdateForm.zh-CHT.resx">
+      <DependentUpon>ConfirmDoUpdateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <Content Include="CUDDHelper.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Docs\Help.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Docs\pat.sty">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Docking\FindUsagesWindow.de.resx">
+      <DependentUpon>FindUsagesWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\FindUsagesWindow.ja.resx">
+      <DependentUpon>FindUsagesWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\FindUsagesWindow.resx">
+      <DependentUpon>FindUsagesWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\FindUsagesWindow.vi.resx">
+      <DependentUpon>FindUsagesWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\FindUsagesWindow.zh-CHS.resx">
+      <DependentUpon>FindUsagesWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\FindUsagesWindow.zh-CHT.resx">
+      <DependentUpon>FindUsagesWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\ModelExplorerWindow.de.resx">
+      <DependentUpon>ModelExplorerWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\ModelExplorerWindow.ja.resx">
+      <DependentUpon>ModelExplorerWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\ModelExplorerWindow.resx">
+      <DependentUpon>ModelExplorerWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\ModelExplorerWindow.vi.resx">
+      <DependentUpon>ModelExplorerWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\ModelExplorerWindow.zh-CHS.resx">
+      <DependentUpon>ModelExplorerWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\ModelExplorerWindow.zh-CHT.resx">
+      <DependentUpon>ModelExplorerWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Main\ErrorListWindow.resx.ptt" />
+    <EmbeddedResource Include="Docs\Template\Main\FormMain.resx.ptt" />
+    <EmbeddedResource Include="Docs\Template\Main\Properties\BitmapResources.ptt" />
+    <EmbeddedResource Include="Docs\Template\Main\Properties\Resources.ptt" />
+    <EmbeddedResource Include="Docs\Template\Main\Properties\StringResources.ptt" />
+    <EmbeddedResource Include="EditingFunction\FindAndReplace\Gui\SearchAndReplaceFrom.de.resx">
+      <DependentUpon>SearchAndReplaceFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditingFunction\FindAndReplace\Gui\SearchAndReplaceFrom.ja.resx">
+      <DependentUpon>SearchAndReplaceFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditingFunction\FindAndReplace\Gui\SearchAndReplaceFrom.resx">
+      <DependentUpon>SearchAndReplaceFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditingFunction\FindAndReplace\Gui\SearchAndReplaceFrom.vi.resx">
+      <DependentUpon>SearchAndReplaceFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditingFunction\FindAndReplace\Gui\SearchAndReplaceFrom.zh-CHS.resx">
+      <DependentUpon>SearchAndReplaceFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditingFunction\FindAndReplace\Gui\SearchAndReplaceFrom.zh-CHT.resx">
+      <DependentUpon>SearchAndReplaceFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditingFunction\GoTo\GotoLine.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GotoLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditingFunction\GoTo\GotoLine.ja.resx">
+      <DependentUpon>GotoLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditingFunction\GoTo\GotoLine.vi.resx">
+      <DependentUpon>GotoLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditingFunction\GoTo\GotoLine.zh-CHS.resx">
+      <DependentUpon>GotoLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditingFunction\GoTo\GotoLine.zh-CHT.resx">
+      <DependentUpon>GotoLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LaTexPrintingDialog.vi.resx">
+      <DependentUpon>LaTexPrintingDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModelCheckingBatchForm.de.resx">
+      <DependentUpon>ModelCheckingBatchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModelCheckingBatchForm.ja.resx">
+      <DependentUpon>ModelCheckingBatchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModelCheckingBatchForm.resx">
+      <DependentUpon>ModelCheckingBatchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModelCheckingBatchForm.vi.resx">
+      <DependentUpon>ModelCheckingBatchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModelCheckingBatchForm.zh-CHS.resx">
+      <DependentUpon>ModelCheckingBatchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModelCheckingBatchForm.zh-CHT.resx">
+      <DependentUpon>ModelCheckingBatchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModuleGeneratorForm.resx">
+      <DependentUpon>ModuleGeneratorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewWizardForm.vi.resx">
+      <DependentUpon>NewWizardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionForm.vi.resx">
+      <DependentUpon>OptionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameForm.de.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameForm.ja.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameForm.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameForm.vi.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameForm.zh-CHS.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameForm.zh-CHT.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERAProcessEditingForm.de.resx">
+      <DependentUpon>ERAProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERAProcessEditingForm.ja.resx">
+      <DependentUpon>ERAProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERAProcessEditingForm.resx">
+      <DependentUpon>ERAProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERAProcessEditingForm.vi.resx">
+      <DependentUpon>ERAProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERAProcessEditingForm.zh-CHS.resx">
+      <DependentUpon>ERAProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERAProcessEditingForm.zh-CHT.resx">
+      <DependentUpon>ERAProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERAStateEditingForm.de.resx">
+      <DependentUpon>ERAStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERAStateEditingForm.ja.resx">
+      <DependentUpon>ERAStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERAStateEditingForm.resx">
+      <DependentUpon>ERAStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERAStateEditingForm.vi.resx">
+      <DependentUpon>ERAStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERAStateEditingForm.zh-CHS.resx">
+      <DependentUpon>ERAStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERAStateEditingForm.zh-CHT.resx">
+      <DependentUpon>ERAStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERATabItem.de.resx">
+      <DependentUpon>ERATabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERATabItem.ja.resx">
+      <DependentUpon>ERATabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERATabItem.resx">
+      <DependentUpon>ERATabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERATabItem.vi.resx">
+      <DependentUpon>ERATabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERATabItem.zh-CHS.resx">
+      <DependentUpon>ERATabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERATabItem.zh-CHT.resx">
+      <DependentUpon>ERATabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERATransitionEditingForm.de.resx">
+      <DependentUpon>ERATransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERATransitionEditingForm.ja.resx">
+      <DependentUpon>ERATransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERATransitionEditingForm.resx">
+      <DependentUpon>ERATransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERATransitionEditingForm.vi.resx">
+      <DependentUpon>ERATransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERATransitionEditingForm.zh-CHS.resx">
+      <DependentUpon>ERATransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\ERADrawing\ERATransitionEditingForm.zh-CHT.resx">
+      <DependentUpon>ERATransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\LTSTabItem.de.resx">
+      <DependentUpon>LTSTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\LTSTabItem.ja.resx">
+      <DependentUpon>LTSTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\LTSTabItem.vi.resx">
+      <DependentUpon>LTSTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\LTSTabItem.zh-CHS.resx">
+      <DependentUpon>LTSTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\LTSTabItem.zh-CHT.resx">
+      <DependentUpon>LTSTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\ProcessEditingForm.de.resx">
+      <DependentUpon>ProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\ProcessEditingForm.ja.resx">
+      <DependentUpon>ProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\ProcessEditingForm.resx">
+      <DependentUpon>ProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\ProcessEditingForm.vi.resx">
+      <DependentUpon>ProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\ProcessEditingForm.zh-CHS.resx">
+      <DependentUpon>ProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\ProcessEditingForm.zh-CHT.resx">
+      <DependentUpon>ProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\StateEditingForm.de.resx">
+      <DependentUpon>StateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\StateEditingForm.ja.resx">
+      <DependentUpon>StateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\StateEditingForm.vi.resx">
+      <DependentUpon>StateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\StateEditingForm.zh-CHS.resx">
+      <DependentUpon>StateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\StateEditingForm.zh-CHT.resx">
+      <DependentUpon>StateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\TransitionEditingForm.de.resx">
+      <DependentUpon>TransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\TransitionEditingForm.ja.resx">
+      <DependentUpon>TransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\TransitionEditingForm.resx">
+      <DependentUpon>TransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\LTSTabItem.resx">
+      <DependentUpon>LTSTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\StateEditingForm.resx">
+      <DependentUpon>StateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\TransitionEditingForm.vi.resx">
+      <DependentUpon>TransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\TransitionEditingForm.zh-CHS.resx">
+      <DependentUpon>TransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\LTSDrawing\TransitionEditingForm.zh-CHT.resx">
+      <DependentUpon>TransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.zh-CHS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.zh-CHT.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register\RegisterationForm.resx">
+      <DependentUpon>RegisterationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\SNDrawing\LinkEditingForm.resx">
+      <DependentUpon>LinkEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\SNDrawing\NodeEditingForm.resx">
+      <DependentUpon>NodeEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\SNDrawing\SNTabItem.resx">
+      <DependentUpon>SNTabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen\SplashScreenForm.resx">
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TAProcessEditingForm.de.resx">
+      <DependentUpon>TAProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TAProcessEditingForm.ja.resx">
+      <DependentUpon>TAProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TAProcessEditingForm.vi.resx">
+      <DependentUpon>TAProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TAProcessEditingForm.zh-CHS.resx">
+      <DependentUpon>TAProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TAProcessEditingForm.zh-CHT.resx">
+      <DependentUpon>TAProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TAStateEditingForm.de.resx">
+      <DependentUpon>TAStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TAStateEditingForm.ja.resx">
+      <DependentUpon>TAStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TAStateEditingForm.vi.resx">
+      <DependentUpon>TAStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TAStateEditingForm.zh-CHS.resx">
+      <DependentUpon>TAStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TAStateEditingForm.zh-CHT.resx">
+      <DependentUpon>TAStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TATabItem.de.resx">
+      <DependentUpon>TATabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TATabItem.ja.resx">
+      <DependentUpon>TATabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TATabItem.resx">
+      <DependentUpon>TATabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TAProcessEditingForm.resx">
+      <DependentUpon>TAProcessEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TAStateEditingForm.resx">
+      <DependentUpon>TAStateEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TATabItem.vi.resx">
+      <DependentUpon>TATabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TATabItem.zh-CHS.resx">
+      <DependentUpon>TATabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TATabItem.zh-CHT.resx">
+      <DependentUpon>TATabItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TATransitionEditingForm.de.resx">
+      <DependentUpon>TATransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TATransitionEditingForm.ja.resx">
+      <DependentUpon>TATransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TATransitionEditingForm.resx">
+      <DependentUpon>TATransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TATransitionEditingForm.vi.resx">
+      <DependentUpon>TATransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TATransitionEditingForm.zh-CHS.resx">
+      <DependentUpon>TATransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleGUI\TADrawing\TATransitionEditingForm.zh-CHT.resx">
+      <DependentUpon>TATransitionEditingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\Syntax.ptt">
+      <LastGenOutput>Syntax.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Main\FormMain.Designer.ptt" />
+    <EmbeddedResource Include="Docs\Template\Main\PAT.Main.ptt">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\PAT3 Source.ptt" />
+    <Content Include="Examples\UML Examples\ATM.xmi">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Examples\UML Examples\basic.xmi">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Examples\UML Examples\fork&amp;Join.xmi">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Examples\UML Examples\orthogonal.xmi">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsLTS\Assertion.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsLTS\AssertionDeadLock.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsLTS\AssertionDeterminism.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsLTS\AssertionDivergence.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsLTS\AssertionLTL.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsLTS\AssertionReachability.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsLTS\AssertionReachabilityWith.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsLTS\AssertionRefinement.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsLTS\AssertionRefinementF.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsLTS\AssertionRefinementFD.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsLTS\DataStore.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Configuration.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\ConfigurationWithChannelData.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Process.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Definition.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\DefinitionRef.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Specification.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\ModuleFacade.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\Project.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\Properties\AssemblyInfo.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\Ultility\Ultility.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\Assertion.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\AtomicProcess.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\CaseProcess.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\ChannelInput.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\ChannelInputGuarded.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\ChannelOutput.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\ConditionalChoice.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\ConditionalChoiceAtomic.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\ConditionalChoiceBlocking.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\DataOperationPrefix.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\EventPrefix.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\GuardProcess.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\Hiding.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\IndexChoice.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\IndexedProcess.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\IndexExternalChoice.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\IndexInterleave.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\IndexInterleaveAbstract.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\IndexInternalChoice.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\IndexParallel.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\Interrupt.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\Sequence.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\Skip.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\Sample\Stop.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\LTSLTS\CustomSyntax.ptt">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docs\Template\Module\AssertionsMDP\DataStore.ptt" />
+    <EmbeddedResource Include="Docs\Template\Module\LTSMDP\CustomSyntax.ptt" />
+    <None Include="Resources\EnvelopeHS.png" />
+    <None Include="Resources\checkgrammarHS.png" />
+    <None Include="Resources\04378.ico" />
+    <None Include="Resources\04378.png" />
+    <None Include="Resources\options.png" />
+    <None Include="Resources\comment.png" />
+    <Content Include="ExtDLL\place your dll files here.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Modules\place your modules here.txt" />
+    <Content Include="PAT.ico" />
+    <None Include="Resources\PadIcons.ClassBrowser.png" />
+    <None Include="Resources\ProjectBrowser.Toolbar.Refresh.png" />
+    <None Include="Resources\link.png" />
+    <None Include="Resources\nail.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\plus_circle.png" />
+    <None Include="Resources\Icon1.ico" />
+    <None Include="Resources\data.png" />
+    <None Include="Resources\data.ico" />
+    <None Include="Resources\comments.ico" />
+    <None Include="Resources\modelcomments.ico" />
+    <None Include="Resources\modelcomments1.ico" />
+    <None Include="Resources\output.png" />
+    <None Include="Resources\uncomment.png" />
+    <None Include="Resources\SaveAllHS.png" />
+    <None Include="Resources\Web.png" />
+    <None Include="Resources\radialChartHS.png" />
+    <None Include="Resources\templates.ico" />
+    <None Include="Resources\templates.png" />
+    <None Include="Resources\submit.png" />
+    <None Include="Resources\csharp.png" />
+    <None Include="Resources\csharpLib.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PAT.Common\PAT.Common.csproj">
+      <Project>{5D7BA9A8-C774-4480-858A-92A04FBB8466}</Project>
+      <Name>PAT.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Syns\ORC.syn">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"$(SolutionDir)DLL\VerHeader.exe" "$(ProjectDir)</PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

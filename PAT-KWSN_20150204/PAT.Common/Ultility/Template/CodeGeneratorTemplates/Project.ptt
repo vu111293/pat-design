@@ -1,0 +1,151 @@
+﻿<#@ template language="C#" debug="False" hostspecific="true" #>
+<?xml version="1.0" encoding="utf-8"?>  
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <#
+      string[] headers = this.Host.ResolveParameterValue("","","Headers").Split('|');
+      foreach(string variable in headers)
+      {
+      if(!variable.Equals(""))
+      {
+      WriteLine("<ClInclude Include=\"Application\\include\\" + variable + "\" />" );
+      }
+      }
+      #>
+    <ClInclude Include="QuantumPlatform\include\bsp.h" />
+    <ClInclude Include="QuantumPlatform\include\qassert.h" />
+    <ClInclude Include="QuantumPlatform\include\qep.h" />
+    <ClInclude Include="QuantumPlatform\include\qep_pkg.h" />
+    <ClInclude Include="QuantumPlatform\include\qep_port.h" />
+    <ClInclude Include="QuantumPlatform\include\qequeue.h" />
+    <ClInclude Include="QuantumPlatform\include\qevent.h" />
+    <ClInclude Include="QuantumPlatform\include\qf.h" />
+    <ClInclude Include="QuantumPlatform\include\qf_pkg.h" />
+    <ClInclude Include="QuantumPlatform\include\qf_port.h" />
+    <ClInclude Include="QuantumPlatform\include\qk.h" />
+    <ClInclude Include="QuantumPlatform\include\qmpool.h" />
+    <ClInclude Include="QuantumPlatform\include\qpset.h" />
+    <ClInclude Include="QuantumPlatform\include\qp_port.h" />
+    <ClInclude Include="QuantumPlatform\include\qs.h" />
+    <ClInclude Include="QuantumPlatform\include\qs_dummy.h" />
+    <ClInclude Include="QuantumPlatform\include\qs_port.h" />
+    <ClInclude Include="QuantumPlatform\include\qvanilla.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <#
+    string[] classes = this.Host.ResolveParameterValue("","","Classes").Split('|');
+      foreach(string variable in classes)
+      {
+      if(!variable.Equals(""))
+      {
+      WriteLine("<ClCompile Include=\"Application\\" + variable +"\" />");
+		 }
+    }
+    #>
+    <ClCompile Include="QuantumPlatform\source\bsp.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qa_defer.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qa_fifo.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qa_get_.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qa_lifo.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qa_run.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qa_sub.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qa_usub.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qa_usuba.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qep.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qeq_fifo.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qeq_get.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qeq_init.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qeq_lifo.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qfsm_dis.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qfsm_ini.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qf_act.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qf_gc.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qf_log2.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qf_new.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qf_pool.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qf_port.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qf_psini.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qf_pspub.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qf_pwr2.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qf_tick.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qhsm_dis.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qhsm_in.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qhsm_ini.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qhsm_top.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qmp_get.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qmp_init.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qmp_put.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qte_arm.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qte_ctor.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qte_ctr.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qte_darm.cpp" />
+    <ClCompile Include="QuantumPlatform\source\qte_rarm.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{88563844-B8F4-4089-B447-9D9E7F422938}</ProjectGuid>
+    <RootNamespace><# Write(this.Host.ResolveParameterValue("","","ProjectName"));#></RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)\Application\include;$(SolutionDir)\QuantumPlatform\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <SourcePath>$(SolutionDir)\QuantumPlatform\source;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

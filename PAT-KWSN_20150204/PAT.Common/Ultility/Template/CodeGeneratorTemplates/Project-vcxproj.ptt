@@ -1,0 +1,223 @@
+﻿<#@ template language="C#" debug="False" hostspecific="true" #>
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="QuantumPlatform">
+      <UniqueIdentifier>{3bb4015f-70a4-4306-8c07-36d23e9fab49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QuantumPlatform\include">
+      <UniqueIdentifier>{d4838257-bdc1-4c44-8c83-f83300af1b4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QuantumPlatform\source">
+      <UniqueIdentifier>{1e8a7337-405f-49bd-9b3d-ef2d36e6b4fe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="QuantumPlatform\include\bsp.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumPlatform\include\qassert.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumPlatform\include\qep.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumPlatform\include\qep_pkg.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumPlatform\include\qep_port.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumPlatform\include\qequeue.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumPlatform\include\qevent.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumPlatform\include\qf.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumPlatform\include\qf_pkg.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumPlatform\include\qf_port.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumPlatform\include\qk.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumPlatform\include\qmpool.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumPlatform\include\qp_port.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumPlatform\include\qpset.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumPlatform\include\qs.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumPlatform\include\qs_dummy.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumPlatform\include\qs_port.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumPlatform\include\qvanilla.h">
+      <Filter>QuantumPlatform\include</Filter>
+    </ClInclude>
+   <#
+      string[] headers = this.Host.ResolveParameterValue("","","Headers").Split('|');
+    foreach(string variable in headers)
+    {
+    if(!variable.Equals(""))
+    {
+    WriteLine("<ClInclude Include=\"Application\\include\\" + variable + "\">");
+    WriteLine("<Filter>Header Files</Filter>");
+    WriteLine("</ClInclude>");
+    }
+    }
+    #>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="QuantumPlatform\source\bsp.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qa_defer.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qa_fifo.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qa_get_.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qa_lifo.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qa_run.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qa_sub.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qa_usub.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qa_usuba.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qep.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qeq_fifo.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qeq_get.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qeq_init.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qeq_lifo.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qf_act.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qf_gc.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qf_log2.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qf_new.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qf_pool.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qf_port.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qf_psini.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qf_pspub.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qf_pwr2.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qf_tick.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qfsm_dis.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qfsm_ini.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qhsm_dis.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qhsm_in.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qhsm_ini.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qhsm_top.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qmp_get.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qmp_init.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qmp_put.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qte_arm.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qte_ctor.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qte_ctr.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qte_darm.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumPlatform\source\qte_rarm.cpp">
+      <Filter>QuantumPlatform\source</Filter>
+    </ClCompile>
+    <#
+    string[] classes = this.Host.ResolveParameterValue("","","Classes").Split('|');
+    foreach(string variable in classes)
+    {
+      if(!variable.Equals(""))
+      {
+        WriteLine("<ClCompile Include=\"Application\\" + variable +"\">");
+        WriteLine("<Filter>Source Files</Filter>");
+        WriteLine("</ClCompile>");
+      }
+    }
+    #>
+  </ItemGroup>
+</Project>
